@@ -1,0 +1,407 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "services": "Serviços",
+    "gallery": "Galeria",
+    "protocols": "Protocolos",
+    "contacts": "Contactos"
+  },
+  "hero": {
+    "tagline": "Excelência em Saúde Oral e Bem-Estar",
+    "subtitle": "Uma clínica multidisciplinar dedicada ao seu sorriso e qualidade de vida, com três décadas de experiência ao serviço da comunidade.",
+    "cta": "Marcar Consulta",
+    "discover": "Descobrir Mais"
+  },
+  "home": {
+    "intro": {
+      "label": "Bem-vindo",
+      "title": "Cuidamos do Seu Sorriso com Dedicação",
+      "description": "Na Clínica Dentária Marina Macedo, combinamos tecnologia de ponta com um atendimento personalizado e humanizado. A nossa equipa multidisciplinar está empenhada em proporcionar-lhe os melhores cuidados de saúde oral e bem-estar geral."
+    },
+    "services": {
+      "label": "Os Nossos Serviços",
+      "title": "Cuidados Especializados",
+      "description": "Oferecemos uma gama completa de serviços médicos e dentários para toda a família.",
+      "viewAll": "Ver Todos os Serviços"
+    },
+    "whyUs": {
+      "label": "Porquê Escolher-nos",
+      "title": "A Sua Saúde, a Nossa Prioridade",
+      "reasons": {
+        "experience": {
+          "title": "Experiência Comprovada",
+          "description": "Mais de três décadas de dedicação à saúde oral e bem-estar dos nossos pacientes."
+        },
+        "team": {
+          "title": "Equipa Multidisciplinar",
+          "description": "Profissionais qualificados em diversas especialidades médicas e dentárias."
+        },
+        "technology": {
+          "title": "Tecnologia Avançada",
+          "description": "Equipamentos modernos para diagnósticos precisos e tratamentos eficazes."
+        },
+        "comfort": {
+          "title": "Ambiente Acolhedor",
+          "description": "Espaços pensados para o seu conforto e tranquilidade durante as consultas."
+        }
+      }
+    },
+    "locations": {
+      "label": "Onde Estamos",
+      "title": "As Nossas Clínicas",
+      "description": "Três localizações convenientes para melhor servi-lo.",
+      "hours": "Horário",
+      "contact": "Contactar"
+    },
+    "cta": {
+      "title": "Pronto para Transformar o Seu Sorriso?",
+      "description": "Entre em contacto connosco e agende a sua consulta. A nossa equipa está pronta para cuidar de si.",
+      "button": "Agendar Consulta"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Sobre Nós",
+      "title": "Uma História de Dedicação à Saúde",
+      "description": "Desde a nossa fundação, temos vindo a construir relações de confiança com os nossos pacientes, oferecendo cuidados de saúde de excelência."
+    },
+    "story": {
+      "title": "A Nossa História",
+      "p1": "A Clínica Dentária Marina Macedo e Cª Lda nasceu do sonho de criar um espaço onde a saúde oral e o bem-estar geral pudessem ser tratados com a mesma dedicação e profissionalismo. Ao longo dos anos, evoluímos de uma pequena clínica dentária para um centro multidisciplinar completo.",
+      "p2": "Com três localizações estratégicas em Amares, Adaúfe e Bouro, conseguimos estar mais próximos das comunidades que servimos, mantendo sempre os mesmos padrões de qualidade e excelência que nos caracterizam.",
+      "p3": "A nossa filosofia centra-se no paciente, tratando cada pessoa como única, com as suas necessidades e expectativas específicas. Acreditamos que um sorriso saudável é fundamental para a qualidade de vida e autoestima."
+    },
+    "mission": {
+      "title": "A Nossa Missão",
+      "description": "Proporcionar cuidados de saúde oral e bem-estar de excelência, num ambiente acolhedor e com tecnologia de ponta, contribuindo para a qualidade de vida dos nossos pacientes."
+    },
+    "vision": {
+      "title": "A Nossa Visão",
+      "description": "Ser reconhecida como uma clínica de referência na região, pela qualidade dos serviços prestados, inovação constante e satisfação dos pacientes."
+    },
+    "values": {
+      "title": "Os Nossos Valores",
+      "items": {
+        "excellence": {
+          "title": "Excelência",
+          "description": "Compromisso com os mais altos padrões de qualidade."
+        },
+        "ethics": {
+          "title": "Ética",
+          "description": "Transparência e integridade em todas as nossas ações."
+        },
+        "innovation": {
+          "title": "Inovação",
+          "description": "Atualização constante de técnicas e tecnologias."
+        },
+        "humanization": {
+          "title": "Humanização",
+          "description": "Cuidado personalizado e respeito pela individualidade."
+        }
+      }
+    },
+    "team": {
+      "label": "A Nossa Equipa",
+      "title": "Profissionais de Excelência",
+      "description": "Uma equipa multidisciplinar dedicada ao seu bem-estar e saúde oral."
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Serviços",
+      "title": "Cuidados Completos de Saúde",
+      "description": "Oferecemos uma vasta gama de serviços médicos e dentários, sempre com foco na qualidade e no bem-estar do paciente."
+    },
+    "dental": "Medicina Dentária",
+    "medical": "Especialidades Médicas",
+    "wellness": "Bem-Estar",
+    "learnMore": "Saber Mais",
+    "bookNow": "Marcar Consulta",
+    "whoIsItFor": "Para Quem é Indicado?",
+    "benefits": "Benefícios",
+    "whatToExpect": "O Que Esperar",
+    "backToServices": "Voltar aos Serviços",
+    "otherServices": "Outros Serviços",
+    "items": {
+      "general-dentistry": {
+        "title": "Medicina Dentária Geral",
+        "shortDesc": "Cuidados preventivos e restauradores para manter a sua saúde oral em dia.",
+        "description": "A Medicina Dentária Geral é a base de todos os cuidados orais. Engloba prevenção, diagnóstico e tratamento das condições mais comuns que afetam dentes e gengivas.",
+        "whoIsItFor": "Ideal para todas as pessoas que desejam manter uma boa saúde oral, prevenir problemas futuros ou tratar condições existentes como cáries, sensibilidade dentária ou problemas gengivais.",
+        "benefits": [
+          "Prevenção de problemas dentários graves",
+          "Deteção precoce de condições orais",
+          "Manutenção de dentes saudáveis",
+          "Orientação personalizada de higiene oral"
+        ],
+        "whatToExpect": "A consulta inclui um exame oral completo, limpeza profissional, e quando necessário, tratamentos como restaurações ou destartarizações. Receberá também orientações personalizadas para cuidar da sua saúde oral em casa."
+      },
+      "pediatric-dentistry": {
+        "title": "Odontopediatria",
+        "shortDesc": "Cuidados dentários especializados para crianças num ambiente acolhedor.",
+        "description": "A Odontopediatria dedica-se à saúde oral das crianças, desde bebés até à adolescência. O nosso objetivo é criar experiências positivas que promovam hábitos saudáveis para toda a vida.",
+        "whoIsItFor": "Crianças desde os primeiros dentes até à adolescência. Especialmente indicado para pais que desejam estabelecer bons hábitos de saúde oral desde cedo.",
+        "benefits": [
+          "Ambiente adaptado às crianças",
+          "Prevenção de problemas futuros",
+          "Educação sobre higiene oral",
+          "Acompanhamento do desenvolvimento dentário"
+        ],
+        "whatToExpect": "As consultas são realizadas de forma lúdica e acolhedora, para que as crianças se sintam confortáveis. Fazemos exames adaptados à idade, aplicação de flúor quando indicado, e orientamos os pais sobre cuidados diários."
+      },
+      "prosthetics": {
+        "title": "Prótese Fixa e Removível",
+        "shortDesc": "Soluções personalizadas para restaurar a função e estética do seu sorriso.",
+        "description": "A Prostodontia oferece soluções para substituir dentes perdidos ou danificados, restaurando a função mastigatória, a fala e a estética do sorriso através de próteses fixas ou removíveis.",
+        "whoIsItFor": "Pessoas que perderam um ou mais dentes, ou que têm dentes severamente danificados que precisam de ser reabilitados.",
+        "benefits": [
+          "Recuperação da função mastigatória",
+          "Melhoria estética significativa",
+          "Soluções duradouras e confortáveis",
+          "Prevenção de problemas associados à falta de dentes"
+        ],
+        "whatToExpect": "O processo começa com uma avaliação completa e planeamento personalizado. Serão feitas impressões ou digitalizações para criar a prótese à medida. Após a colocação, fazemos ajustes para garantir conforto e funcionalidade."
+      },
+      "aesthetic-dentistry": {
+        "title": "Dentisteria Estética",
+        "shortDesc": "Transforme o seu sorriso com tratamentos estéticos avançados.",
+        "description": "A Dentisteria Estética combina arte e ciência para melhorar a aparência do seu sorriso. Inclui branqueamento, facetas, restaurações estéticas e contorno gengival.",
+        "whoIsItFor": "Qualquer pessoa que deseje melhorar a aparência do seu sorriso, seja corrigindo a cor, forma, tamanho ou alinhamento dos dentes.",
+        "benefits": [
+          "Sorriso mais branco e harmonioso",
+          "Aumento da autoconfiança",
+          "Resultados naturais e duradouros",
+          "Procedimentos minimamente invasivos"
+        ],
+        "whatToExpect": "Começamos com uma consulta de avaliação para entender os seus objetivos. Apresentamos as opções de tratamento mais adequadas e criamos um plano personalizado para alcançar o sorriso que sempre desejou."
+      },
+      "implantology": {
+        "title": "Implantologia e Cirurgia Oral",
+        "shortDesc": "Implantes dentários de última geração para uma solução permanente.",
+        "description": "A Implantologia oferece a solução mais avançada para substituição de dentes perdidos. Os implantes funcionam como raízes artificiais, proporcionando uma base sólida para coroas, pontes ou próteses.",
+        "whoIsItFor": "Pessoas que perderam um ou mais dentes e procuram uma solução permanente, estável e esteticamente natural.",
+        "benefits": [
+          "Solução permanente e duradoura",
+          "Preservação do osso maxilar",
+          "Aspeto e sensação naturais",
+          "Não afeta os dentes adjacentes"
+        ],
+        "whatToExpect": "O tratamento começa com exames detalhados e planeamento digital. A colocação do implante é feita sob anestesia local, seguida de um período de cicatrização. Por fim, é colocada a coroa definitiva."
+      },
+      "endodontics": {
+        "title": "Endodontia",
+        "shortDesc": "Tratamento de canal para salvar dentes comprometidos.",
+        "description": "A Endodontia trata problemas no interior do dente, especificamente a polpa dentária. O tratamento de canal permite salvar dentes que de outra forma teriam de ser extraídos.",
+        "whoIsItFor": "Pessoas com infeções ou inflamações na polpa dentária, dor severa ou sensibilidade prolongada ao calor e frio.",
+        "benefits": [
+          "Preservação do dente natural",
+          "Eliminação da dor e infeção",
+          "Procedimento com alta taxa de sucesso",
+          "Alternativa à extração"
+        ],
+        "whatToExpect": "O tratamento é realizado sob anestesia local para o seu conforto. Removemos o tecido infetado, limpamos e desinfetamos os canais, e selamos o dente. Geralmente é necessária uma coroa para proteger o dente tratado."
+      },
+      "orthodontics": {
+        "title": "Ortodontia",
+        "shortDesc": "Alinhamento dentário para um sorriso perfeito em qualquer idade.",
+        "description": "A Ortodontia corrige o posicionamento dos dentes e maxilares, melhorando a função mastigatória, a estética e a saúde oral geral. Oferecemos opções tradicionais e invisíveis.",
+        "whoIsItFor": "Crianças, adolescentes e adultos com dentes desalinhados, apinhamento, espaçamento excessivo ou problemas de mordida.",
+        "benefits": [
+          "Sorriso mais harmonioso e bonito",
+          "Melhoria da mordida e mastigação",
+          "Facilita a higiene oral",
+          "Opções discretas disponíveis"
+        ],
+        "whatToExpect": "Após uma avaliação completa com exames e fotografias, apresentamos um plano de tratamento personalizado. O tempo de tratamento varia conforme a complexidade, com consultas regulares para ajustes."
+      },
+      "tmj": {
+        "title": "ATM e Dor Orofacial",
+        "shortDesc": "Tratamento especializado para disfunções da articulação temporomandibular.",
+        "description": "A especialidade de ATM e Dor Orofacial trata problemas da articulação que liga o maxilar ao crânio, bem como dores de cabeça, faciais e cervicais relacionadas.",
+        "whoIsItFor": "Pessoas com dor na mandíbula, estalos ao abrir a boca, dificuldade em mastigar, dores de cabeça frequentes ou ranger de dentes.",
+        "benefits": [
+          "Alívio da dor e desconforto",
+          "Melhoria da função mandibular",
+          "Tratamento personalizado",
+          "Abordagem não invasiva"
+        ],
+        "whatToExpect": "A avaliação inclui exame clínico detalhado e possivelmente exames de imagem. O tratamento pode incluir goteiras oclusais, fisioterapia, medicação ou outras abordagens conforme necessário."
+      },
+      "periodontics": {
+        "title": "Periodontologia",
+        "shortDesc": "Cuidados especializados para gengivas saudáveis.",
+        "description": "A Periodontologia dedica-se à prevenção, diagnóstico e tratamento das doenças que afetam as gengivas e os tecidos de suporte dos dentes.",
+        "whoIsItFor": "Pessoas com gengivas inflamadas, sangrantes ou retraídas, mau hálito persistente ou mobilidade dentária.",
+        "benefits": [
+          "Gengivas saudáveis e firmes",
+          "Prevenção da perda dentária",
+          "Melhoria do hálito",
+          "Tratamentos minimamente invasivos"
+        ],
+        "whatToExpect": "A avaliação periodontal completa permite determinar o estado das suas gengivas. O tratamento pode incluir destartarização profunda, alisamento radicular ou, em casos avançados, procedimentos regenerativos."
+      },
+      "ent": {
+        "title": "Otorrinolaringologia",
+        "shortDesc": "Diagnóstico e tratamento de problemas do ouvido, nariz e garganta.",
+        "description": "A Otorrinolaringologia trata condições que afetam os ouvidos, nariz, garganta, cabeça e pescoço. Desde alergias a problemas de audição, oferecemos cuidados abrangentes.",
+        "whoIsItFor": "Pessoas com problemas de audição, sinusite, amigdalites frequentes, roncopatia, vertigens ou outras condições ORL.",
+        "benefits": [
+          "Diagnóstico preciso",
+          "Tratamento abrangente",
+          "Melhoria da qualidade de vida",
+          "Abordagem integrada"
+        ],
+        "whatToExpect": "A consulta inclui uma avaliação completa dos sintomas e exame físico detalhado. Podem ser necessários exames complementares. O tratamento é personalizado às suas necessidades específicas."
+      },
+      "general-medicine": {
+        "title": "Medicina Geral e Familiar",
+        "shortDesc": "Cuidados de saúde primários para toda a família.",
+        "description": "A Medicina Geral e Familiar oferece cuidados de saúde abrangentes e continuados, focados na prevenção, diagnóstico e tratamento de uma vasta gama de condições.",
+        "whoIsItFor": "Todas as pessoas que necessitam de cuidados de saúde primários, acompanhamento de doenças crónicas ou orientação médica geral.",
+        "benefits": [
+          "Acompanhamento médico contínuo",
+          "Prevenção de doenças",
+          "Gestão de condições crónicas",
+          "Encaminhamento para especialistas"
+        ],
+        "whatToExpect": "As consultas permitem uma avaliação global da sua saúde, com tempo para discutir preocupações, realizar exames e definir um plano de cuidados personalizado."
+      },
+      "orthopedics": {
+        "title": "Ortopedia",
+        "shortDesc": "Tratamento de problemas músculo-esqueléticos e articulares.",
+        "description": "A Ortopedia dedica-se ao diagnóstico e tratamento de lesões e doenças do sistema músculo-esquelético, incluindo ossos, articulações, músculos e tendões.",
+        "whoIsItFor": "Pessoas com dores articulares, lesões desportivas, problemas de coluna, artroses ou outras condições ortopédicas.",
+        "benefits": [
+          "Alívio da dor",
+          "Recuperação da mobilidade",
+          "Tratamento personalizado",
+          "Opções conservadoras e cirúrgicas"
+        ],
+        "whatToExpect": "A consulta inclui avaliação detalhada da sua condição, possivelmente com exames de imagem. O plano de tratamento pode incluir medicação, fisioterapia ou, quando necessário, cirurgia."
+      },
+      "nutrition": {
+        "title": "Nutrição",
+        "shortDesc": "Orientação nutricional personalizada para uma vida mais saudável.",
+        "description": "O serviço de Nutrição oferece aconselhamento alimentar especializado, ajudando-o a atingir os seus objetivos de saúde através de uma alimentação equilibrada e sustentável.",
+        "whoIsItFor": "Pessoas que desejam perder peso, gerir condições como diabetes ou colesterol, melhorar a performance desportiva ou simplesmente adotar uma alimentação mais saudável.",
+        "benefits": [
+          "Planos alimentares personalizados",
+          "Gestão de peso sustentável",
+          "Melhoria da saúde geral",
+          "Acompanhamento contínuo"
+        ],
+        "whatToExpect": "A primeira consulta inclui uma avaliação completa dos seus hábitos alimentares, medições corporais e definição de objetivos. Receberá um plano alimentar personalizado e acompanhamento regular."
+      },
+      "massage": {
+        "title": "Massagens Terapêuticas e de Relaxamento",
+        "shortDesc": "Tratamentos de bem-estar para aliviar tensões e promover relaxamento.",
+        "description": "Os nossos serviços de massagem combinam técnicas terapêuticas e de relaxamento para aliviar dores musculares, reduzir o stress e promover o bem-estar geral.",
+        "whoIsItFor": "Qualquer pessoa que procure aliviar tensões musculares, reduzir o stress, melhorar a circulação ou simplesmente relaxar.",
+        "benefits": [
+          "Alívio de tensões musculares",
+          "Redução do stress e ansiedade",
+          "Melhoria da circulação",
+          "Sensação de bem-estar geral"
+        ],
+        "whatToExpect": "Antes da sessão, fazemos uma breve avaliação das suas necessidades e preferências. A massagem é realizada num ambiente tranquilo e relaxante, adaptada aos seus objetivos."
+      }
+    }
+  },
+  "gallery": {
+    "hero": {
+      "label": "Galeria",
+      "title": "Os Nossos Espaços",
+      "description": "Conheça as nossas instalações modernas e acolhedoras, pensadas para o seu conforto."
+    },
+    "categories": {
+      "all": "Todos",
+      "clinic": "Clínica",
+      "equipment": "Equipamentos",
+      "spaces": "Espaços"
+    },
+    "placeholder": "Em breve serão adicionadas fotografias das nossas instalações."
+  },
+  "protocols": {
+    "hero": {
+      "label": "Protocolos",
+      "title": "Acordos e Convenções",
+      "description": "Trabalhamos com diversas entidades para facilitar o seu acesso aos nossos serviços."
+    },
+    "intro": "A nossa clínica mantém protocolos e acordos com várias entidades, permitindo aos beneficiários usufruir de condições especiais nos nossos serviços.",
+    "contact": "Para mais informações sobre as condições específicas de cada protocolo, entre em contacto connosco."
+  },
+  "contacts": {
+    "hero": {
+      "label": "Contactos",
+      "title": "Entre em Contacto",
+      "description": "Estamos aqui para responder às suas questões e agendar a sua consulta."
+    },
+    "form": {
+      "title": "Envie-nos uma mensagem",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefone",
+      "clinic": "Clínica Preferida",
+      "selectClinic": "Selecione uma clínica",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "sending": "A enviar...",
+      "success": "Mensagem enviada com sucesso! Entraremos em contacto brevemente.",
+      "error": "Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente."
+    },
+    "info": {
+      "title": "Informações de Contacto",
+      "email": "Email",
+      "locations": "Localizações",
+      "hours": "Horário",
+      "phone": "Telefone"
+    },
+    "locations": {
+      "amares": {
+        "name": "Amares",
+        "address": "Rua Santa Catarina n36 A",
+        "city": "4720-352 Ferreiros Amares",
+        "phones": ["253 994 232", "925 460 202"],
+        "hours": "Segunda a Sexta: 9h-12h, 14h-19h\nSábado: 9h-12h30"
+      },
+      "adaufe": {
+        "name": "Adaúfe",
+        "address": "Travessa do Comércio n12 sala 2",
+        "city": "4710-820 Adaúfe",
+        "phones": ["253 284 121", "913 958 650"],
+        "hours": "Segunda a Sexta: 9h-12h, 14h-19h\nSábado: 9h-12h30"
+      },
+      "bouro": {
+        "name": "Bouro",
+        "address": "Largo do Terreiro, Edif. da Caixa Agrícola",
+        "city": "4720-688 Bouro Santa Maria",
+        "phones": ["253 377 770", "935 383 101"],
+        "hours": "A confirmar"
+      }
+    }
+  },
+  "footer": {
+    "description": "Clínica multidisciplinar dedicada à saúde oral e bem-estar geral, com três décadas de experiência.",
+    "quickLinks": "Links Rápidos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos e Condições",
+    "complaints": "Livro de Reclamações",
+    "schedule": "Horário",
+    "weekdays": "Segunda a Sexta: 9h-12h, 14h-19h",
+    "saturday": "Sábado: 9h-12h30",
+    "rights": "Todos os direitos reservados.",
+    "followUs": "Siga-nos"
+  },
+  "common": {
+    "readMore": "Saber Mais",
+    "bookAppointment": "Marcar Consulta",
+    "contactUs": "Contacte-nos",
+    "learnMore": "Saber Mais",
+    "viewAll": "Ver Todos",
+    "close": "Fechar",
+    "loading": "A carregar..."
+  }
+}

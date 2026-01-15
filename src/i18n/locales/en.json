@@ -1,0 +1,407 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "protocols": "Protocols",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "tagline": "Excellence in Oral Health and Wellness",
+    "subtitle": "A multidisciplinary clinic dedicated to your smile and quality of life, with three decades of experience serving the community.",
+    "cta": "Book Appointment",
+    "discover": "Discover More"
+  },
+  "home": {
+    "intro": {
+      "label": "Welcome",
+      "title": "We Care for Your Smile with Dedication",
+      "description": "At Clínica Dentária Marina Macedo, we combine cutting-edge technology with personalized and humanized care. Our multidisciplinary team is committed to providing you with the best oral health and overall wellness care."
+    },
+    "services": {
+      "label": "Our Services",
+      "title": "Specialized Care",
+      "description": "We offer a complete range of medical and dental services for the whole family.",
+      "viewAll": "View All Services"
+    },
+    "whyUs": {
+      "label": "Why Choose Us",
+      "title": "Your Health, Our Priority",
+      "reasons": {
+        "experience": {
+          "title": "Proven Experience",
+          "description": "Over three decades of dedication to the oral health and wellness of our patients."
+        },
+        "team": {
+          "title": "Multidisciplinary Team",
+          "description": "Qualified professionals in various medical and dental specialties."
+        },
+        "technology": {
+          "title": "Advanced Technology",
+          "description": "Modern equipment for accurate diagnoses and effective treatments."
+        },
+        "comfort": {
+          "title": "Welcoming Environment",
+          "description": "Spaces designed for your comfort and tranquility during appointments."
+        }
+      }
+    },
+    "locations": {
+      "label": "Where We Are",
+      "title": "Our Clinics",
+      "description": "Three convenient locations to better serve you.",
+      "hours": "Hours",
+      "contact": "Contact"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Smile?",
+      "description": "Get in touch with us and schedule your appointment. Our team is ready to take care of you.",
+      "button": "Schedule Appointment"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About Us",
+      "title": "A History of Dedication to Health",
+      "description": "Since our founding, we have been building relationships of trust with our patients, offering excellent healthcare."
+    },
+    "story": {
+      "title": "Our Story",
+      "p1": "Clínica Dentária Marina Macedo was born from the dream of creating a space where oral health and general wellness could be treated with the same dedication and professionalism. Over the years, we have evolved from a small dental clinic to a complete multidisciplinary center.",
+      "p2": "With three strategic locations in Amares, Adaúfe and Bouro, we are able to be closer to the communities we serve, always maintaining the same standards of quality and excellence that characterize us.",
+      "p3": "Our philosophy centers on the patient, treating each person as unique, with their specific needs and expectations. We believe that a healthy smile is fundamental to quality of life and self-esteem."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide excellent oral health and wellness care, in a welcoming environment with cutting-edge technology, contributing to the quality of life of our patients."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be recognized as a reference clinic in the region, for the quality of services provided, constant innovation and patient satisfaction."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": {
+        "excellence": {
+          "title": "Excellence",
+          "description": "Commitment to the highest quality standards."
+        },
+        "ethics": {
+          "title": "Ethics",
+          "description": "Transparency and integrity in all our actions."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Constant updating of techniques and technologies."
+        },
+        "humanization": {
+          "title": "Humanization",
+          "description": "Personalized care and respect for individuality."
+        }
+      }
+    },
+    "team": {
+      "label": "Our Team",
+      "title": "Excellence Professionals",
+      "description": "A multidisciplinary team dedicated to your wellness and oral health."
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Services",
+      "title": "Complete Health Care",
+      "description": "We offer a wide range of medical and dental services, always focused on quality and patient wellness."
+    },
+    "dental": "Dental Medicine",
+    "medical": "Medical Specialties",
+    "wellness": "Wellness",
+    "learnMore": "Learn More",
+    "bookNow": "Book Appointment",
+    "whoIsItFor": "Who Is It For?",
+    "benefits": "Benefits",
+    "whatToExpect": "What to Expect",
+    "backToServices": "Back to Services",
+    "otherServices": "Other Services",
+    "items": {
+      "general-dentistry": {
+        "title": "General Dentistry",
+        "shortDesc": "Preventive and restorative care to maintain your oral health.",
+        "description": "General Dentistry is the foundation of all oral care. It encompasses prevention, diagnosis and treatment of the most common conditions affecting teeth and gums.",
+        "whoIsItFor": "Ideal for everyone who wants to maintain good oral health, prevent future problems or treat existing conditions such as cavities, dental sensitivity or gum problems.",
+        "benefits": [
+          "Prevention of serious dental problems",
+          "Early detection of oral conditions",
+          "Maintenance of healthy teeth",
+          "Personalized oral hygiene guidance"
+        ],
+        "whatToExpect": "The appointment includes a complete oral exam, professional cleaning, and when necessary, treatments such as restorations or scaling. You will also receive personalized guidance to care for your oral health at home."
+      },
+      "pediatric-dentistry": {
+        "title": "Pediatric Dentistry",
+        "shortDesc": "Specialized dental care for children in a welcoming environment.",
+        "description": "Pediatric Dentistry is dedicated to children's oral health, from babies to adolescence. Our goal is to create positive experiences that promote healthy habits for life.",
+        "whoIsItFor": "Children from their first teeth to adolescence. Especially recommended for parents who want to establish good oral health habits early.",
+        "benefits": [
+          "Child-friendly environment",
+          "Prevention of future problems",
+          "Oral hygiene education",
+          "Monitoring of dental development"
+        ],
+        "whatToExpect": "Appointments are conducted in a playful and welcoming manner, so children feel comfortable. We perform age-appropriate exams, fluoride application when indicated, and guide parents on daily care."
+      },
+      "prosthetics": {
+        "title": "Fixed and Removable Prosthetics",
+        "shortDesc": "Personalized solutions to restore the function and aesthetics of your smile.",
+        "description": "Prosthodontics offers solutions to replace lost or damaged teeth, restoring masticatory function, speech and smile aesthetics through fixed or removable prostheses.",
+        "whoIsItFor": "People who have lost one or more teeth, or who have severely damaged teeth that need rehabilitation.",
+        "benefits": [
+          "Recovery of masticatory function",
+          "Significant aesthetic improvement",
+          "Durable and comfortable solutions",
+          "Prevention of problems associated with missing teeth"
+        ],
+        "whatToExpect": "The process begins with a complete evaluation and personalized planning. Impressions or scans will be made to create the custom prosthesis. After placement, we make adjustments to ensure comfort and functionality."
+      },
+      "aesthetic-dentistry": {
+        "title": "Aesthetic Dentistry",
+        "shortDesc": "Transform your smile with advanced aesthetic treatments.",
+        "description": "Aesthetic Dentistry combines art and science to improve the appearance of your smile. It includes whitening, veneers, aesthetic restorations and gingival contouring.",
+        "whoIsItFor": "Anyone who wants to improve the appearance of their smile, whether correcting color, shape, size or alignment of teeth.",
+        "benefits": [
+          "Whiter and more harmonious smile",
+          "Increased self-confidence",
+          "Natural and lasting results",
+          "Minimally invasive procedures"
+        ],
+        "whatToExpect": "We start with an evaluation consultation to understand your goals. We present the most suitable treatment options and create a personalized plan to achieve the smile you have always wanted."
+      },
+      "implantology": {
+        "title": "Implantology and Oral Surgery",
+        "shortDesc": "State-of-the-art dental implants for a permanent solution.",
+        "description": "Implantology offers the most advanced solution for replacing lost teeth. Implants function as artificial roots, providing a solid base for crowns, bridges or prostheses.",
+        "whoIsItFor": "People who have lost one or more teeth and are looking for a permanent, stable and aesthetically natural solution.",
+        "benefits": [
+          "Permanent and durable solution",
+          "Preservation of jaw bone",
+          "Natural look and feel",
+          "Does not affect adjacent teeth"
+        ],
+        "whatToExpect": "Treatment begins with detailed exams and digital planning. Implant placement is done under local anesthesia, followed by a healing period. Finally, the definitive crown is placed."
+      },
+      "endodontics": {
+        "title": "Endodontics",
+        "shortDesc": "Root canal treatment to save compromised teeth.",
+        "description": "Endodontics treats problems inside the tooth, specifically the dental pulp. Root canal treatment saves teeth that would otherwise have to be extracted.",
+        "whoIsItFor": "People with infections or inflammation in the dental pulp, severe pain or prolonged sensitivity to heat and cold.",
+        "benefits": [
+          "Preservation of natural tooth",
+          "Elimination of pain and infection",
+          "High success rate procedure",
+          "Alternative to extraction"
+        ],
+        "whatToExpect": "Treatment is performed under local anesthesia for your comfort. We remove infected tissue, clean and disinfect the canals, and seal the tooth. A crown is usually needed to protect the treated tooth."
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "shortDesc": "Dental alignment for a perfect smile at any age.",
+        "description": "Orthodontics corrects the positioning of teeth and jaws, improving masticatory function, aesthetics and overall oral health. We offer traditional and invisible options.",
+        "whoIsItFor": "Children, teenagers and adults with misaligned teeth, crowding, excessive spacing or bite problems.",
+        "benefits": [
+          "More harmonious and beautiful smile",
+          "Improved bite and chewing",
+          "Facilitates oral hygiene",
+          "Discreet options available"
+        ],
+        "whatToExpect": "After a complete evaluation with exams and photographs, we present a personalized treatment plan. Treatment time varies according to complexity, with regular appointments for adjustments."
+      },
+      "tmj": {
+        "title": "TMJ & Orofacial Pain",
+        "shortDesc": "Specialized treatment for temporomandibular joint dysfunctions.",
+        "description": "The TMJ and Orofacial Pain specialty treats problems of the joint that connects the jaw to the skull, as well as related headaches, facial and cervical pain.",
+        "whoIsItFor": "People with jaw pain, clicking when opening the mouth, difficulty chewing, frequent headaches or teeth grinding.",
+        "benefits": [
+          "Pain and discomfort relief",
+          "Improved jaw function",
+          "Personalized treatment",
+          "Non-invasive approach"
+        ],
+        "whatToExpect": "The evaluation includes a detailed clinical examination and possibly imaging exams. Treatment may include occlusal splints, physiotherapy, medication or other approaches as needed."
+      },
+      "periodontics": {
+        "title": "Periodontology",
+        "shortDesc": "Specialized care for healthy gums.",
+        "description": "Periodontology is dedicated to the prevention, diagnosis and treatment of diseases affecting the gums and supporting tissues of teeth.",
+        "whoIsItFor": "People with inflamed, bleeding or receding gums, persistent bad breath or tooth mobility.",
+        "benefits": [
+          "Healthy and firm gums",
+          "Prevention of tooth loss",
+          "Improved breath",
+          "Minimally invasive treatments"
+        ],
+        "whatToExpect": "The complete periodontal evaluation determines the state of your gums. Treatment may include deep scaling, root planing or, in advanced cases, regenerative procedures."
+      },
+      "ent": {
+        "title": "ENT (Otolaryngology)",
+        "shortDesc": "Diagnosis and treatment of ear, nose and throat problems.",
+        "description": "Otolaryngology treats conditions affecting the ears, nose, throat, head and neck. From allergies to hearing problems, we offer comprehensive care.",
+        "whoIsItFor": "People with hearing problems, sinusitis, frequent tonsillitis, snoring, vertigo or other ENT conditions.",
+        "benefits": [
+          "Accurate diagnosis",
+          "Comprehensive treatment",
+          "Improved quality of life",
+          "Integrated approach"
+        ],
+        "whatToExpect": "The consultation includes a complete evaluation of symptoms and detailed physical examination. Additional tests may be necessary. Treatment is personalized to your specific needs."
+      },
+      "general-medicine": {
+        "title": "General & Family Medicine",
+        "shortDesc": "Primary healthcare for the whole family.",
+        "description": "General and Family Medicine offers comprehensive and continuous healthcare, focused on prevention, diagnosis and treatment of a wide range of conditions.",
+        "whoIsItFor": "Everyone who needs primary healthcare, chronic disease monitoring or general medical guidance.",
+        "benefits": [
+          "Continuous medical follow-up",
+          "Disease prevention",
+          "Chronic condition management",
+          "Referral to specialists"
+        ],
+        "whatToExpect": "Consultations allow for a comprehensive evaluation of your health, with time to discuss concerns, perform exams and define a personalized care plan."
+      },
+      "orthopedics": {
+        "title": "Orthopedics",
+        "shortDesc": "Treatment of musculoskeletal and joint problems.",
+        "description": "Orthopedics is dedicated to the diagnosis and treatment of injuries and diseases of the musculoskeletal system, including bones, joints, muscles and tendons.",
+        "whoIsItFor": "People with joint pain, sports injuries, spine problems, osteoarthritis or other orthopedic conditions.",
+        "benefits": [
+          "Pain relief",
+          "Recovery of mobility",
+          "Personalized treatment",
+          "Conservative and surgical options"
+        ],
+        "whatToExpect": "The consultation includes a detailed evaluation of your condition, possibly with imaging exams. The treatment plan may include medication, physiotherapy or, when necessary, surgery."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "shortDesc": "Personalized nutritional guidance for a healthier life.",
+        "description": "The Nutrition service offers specialized dietary counseling, helping you achieve your health goals through balanced and sustainable nutrition.",
+        "whoIsItFor": "People who want to lose weight, manage conditions such as diabetes or cholesterol, improve sports performance or simply adopt a healthier diet.",
+        "benefits": [
+          "Personalized meal plans",
+          "Sustainable weight management",
+          "Improved overall health",
+          "Continuous follow-up"
+        ],
+        "whatToExpect": "The first consultation includes a complete assessment of your eating habits, body measurements and goal setting. You will receive a personalized meal plan and regular follow-up."
+      },
+      "massage": {
+        "title": "Therapeutic & Relaxation Massages",
+        "shortDesc": "Wellness treatments to relieve tension and promote relaxation.",
+        "description": "Our massage services combine therapeutic and relaxation techniques to relieve muscle pain, reduce stress and promote overall wellness.",
+        "whoIsItFor": "Anyone looking to relieve muscle tension, reduce stress, improve circulation or simply relax.",
+        "benefits": [
+          "Relief of muscle tension",
+          "Reduction of stress and anxiety",
+          "Improved circulation",
+          "Overall sense of wellness"
+        ],
+        "whatToExpect": "Before the session, we do a brief assessment of your needs and preferences. The massage is performed in a calm and relaxing environment, adapted to your goals."
+      }
+    }
+  },
+  "gallery": {
+    "hero": {
+      "label": "Gallery",
+      "title": "Our Spaces",
+      "description": "Discover our modern and welcoming facilities, designed for your comfort."
+    },
+    "categories": {
+      "all": "All",
+      "clinic": "Clinic",
+      "equipment": "Equipment",
+      "spaces": "Spaces"
+    },
+    "placeholder": "Photos of our facilities will be added soon."
+  },
+  "protocols": {
+    "hero": {
+      "label": "Protocols",
+      "title": "Agreements and Conventions",
+      "description": "We work with various entities to facilitate your access to our services."
+    },
+    "intro": "Our clinic maintains protocols and agreements with various entities, allowing beneficiaries to enjoy special conditions on our services.",
+    "contact": "For more information about the specific conditions of each protocol, please contact us."
+  },
+  "contacts": {
+    "hero": {
+      "label": "Contacts",
+      "title": "Get in Touch",
+      "description": "We are here to answer your questions and schedule your appointment."
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "clinic": "Preferred Clinic",
+      "selectClinic": "Select a clinic",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We will contact you shortly.",
+      "error": "An error occurred while sending the message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "locations": "Locations",
+      "hours": "Hours",
+      "phone": "Phone"
+    },
+    "locations": {
+      "amares": {
+        "name": "Amares",
+        "address": "Rua Santa Catarina n36 A",
+        "city": "4720-352 Ferreiros Amares",
+        "phones": ["253 994 232", "925 460 202"],
+        "hours": "Monday to Friday: 9am-12pm, 2pm-7pm\nSaturday: 9am-12:30pm"
+      },
+      "adaufe": {
+        "name": "Adaúfe",
+        "address": "Travessa do Comércio n12 room 2",
+        "city": "4710-820 Adaúfe",
+        "phones": ["253 284 121", "913 958 650"],
+        "hours": "Monday to Friday: 9am-12pm, 2pm-7pm\nSaturday: 9am-12:30pm"
+      },
+      "bouro": {
+        "name": "Bouro",
+        "address": "Largo do Terreiro, Caixa Agrícola Building",
+        "city": "4720-688 Bouro Santa Maria",
+        "phones": ["253 377 770", "935 383 101"],
+        "hours": "To be confirmed"
+      }
+    }
+  },
+  "footer": {
+    "description": "Multidisciplinary clinic dedicated to oral health and general wellness, with three decades of experience.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "complaints": "Complaints Book",
+    "schedule": "Schedule",
+    "weekdays": "Monday to Friday: 9am-12pm, 2pm-7pm",
+    "saturday": "Saturday: 9am-12:30pm",
+    "rights": "All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "common": {
+    "readMore": "Read More",
+    "bookAppointment": "Book Appointment",
+    "contactUs": "Contact Us",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "close": "Close",
+    "loading": "Loading..."
+  }
+}
