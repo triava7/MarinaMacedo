@@ -16,7 +16,6 @@ import GalleryPage from './pages/GalleryPage';
 import ProtocolsPage from './pages/ProtocolsPage';
 import ContactsPage from './pages/ContactsPage';
 
-import { Toaster } from './components/ui/sonner';
 
 function App() {
   return (
