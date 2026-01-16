@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MarinaMacedo/static/css/main.88351793.css",
-    "main.js": "/MarinaMacedo/static/js/main.469b293a.js",
+    "main.js": "/MarinaMacedo/static/js/main.7a78e5b7.js",
     "static/media/img1.png": "/MarinaMacedo/static/media/img1.0913fd1ba8dc8085c37f.png",
     "static/media/logo.png": "/MarinaMacedo/static/media/logo.ee694183e1a6bc09e70b.png",
     "static/media/img9.png": "/MarinaMacedo/static/media/img9.a9383b151caf5a2844e6.png",
@@ -23,10 +23,10 @@
     "static/media/cheque-dentista.png": "/MarinaMacedo/static/media/cheque-dentista.c7a1ba83bc654c923518.png",
     "index.html": "/MarinaMacedo/index.html",
     "main.88351793.css.map": "/MarinaMacedo/static/css/main.88351793.css.map",
-    "main.469b293a.js.map": "/MarinaMacedo/static/js/main.469b293a.js.map"
+    "main.7a78e5b7.js.map": "/MarinaMacedo/static/js/main.7a78e5b7.js.map"
   },
   "entrypoints": [
     "static/css/main.88351793.css",
-    "static/js/main.469b293a.js"
+    "static/js/main.7a78e5b7.js"
   ]
 }
