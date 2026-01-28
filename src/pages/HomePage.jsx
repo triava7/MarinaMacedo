@@ -15,11 +15,10 @@ const HomePage = () => {
 
   const featuredServices = [
     { id: 'general-dentistry', icon: Stethoscope },
-    { id: 'aesthetic-dentistry', icon: Sparkle },
-    { id: 'implantology', icon: Target },
     { id: 'orthodontics', icon: Smile },
+    { id: 'implantology', icon: Target },
     { id: 'pediatric-dentistry', icon: Baby },
-    { id: 'nutrition', icon: Apple },
+    { id: 'aesthetic-dentistry', icon: Sparkle },
   ];
 
   const locations = [
@@ -78,7 +77,7 @@ const HomePage = () => {
                backgroundImage: `url(${img1})`,
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/85 to-background" />
         </div>
 
         {/* Content */}
@@ -198,13 +197,25 @@ const HomePage = () => {
             variants={staggerContainer}
             className="text-center mb-16"
           >
-            <motion.span variants={fadeInUp} className="text-label text-primary mb-4 block">
+            <motion.span
+              variants={fadeInUp}
+              className="text-label text-primary mb-4 block"
+            >
               {t('home.services.label')}
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-headline font-serif text-foreground mb-4">
+
+            <motion.h2
+              variants={fadeInUp}
+              className="text-headline font-serif text-foreground mb-4"
+            >
               {t('home.services.title')}
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
+
+            {/* Texto maior + branco */}
+            <motion.p
+              variants={fadeInUp}
+              className="text-lg md:text-xl text-white max-w-2xl mx-auto"
+            >
               {t('home.services.description')}
             </motion.p>
           </motion.div>
@@ -218,6 +229,7 @@ const HomePage = () => {
           >
             {featuredServices.map((service) => {
               const IconComponent = service.icon;
+
               return (
                 <motion.div key={service.id} variants={fadeInUp}>
                   <Link to={`/services/${service.id}`}>
@@ -225,12 +237,15 @@ const HomePage = () => {
                       <div className="w-14 h-14 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mb-6">
                         <IconComponent className="w-6 h-6 text-primary" />
                       </div>
-                      <h3 className="text-xl font-serif text-foreground mb-3">
+
+                      <h3 className="text-xl font-serif text-white mb-3">
                         {t(`services.items.${service.id}.title`)}
                       </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
+
+                      <p className="text-base md:text-[15px] text-white leading-relaxed flex-grow">
                         {t(`services.items.${service.id}.shortDesc`)}
                       </p>
+
                       <div className="mt-6 flex items-center text-primary text-sm font-medium">
                         {t('services.learnMore')}
                         <ArrowRight className="ml-2 w-4 h-4" />
@@ -240,24 +255,26 @@ const HomePage = () => {
                 </motion.div>
               );
             })}
+
+            {/* Card Ver Mais */}
+            <motion.div variants={fadeInUp}>
+              <Link to="/services">
+                <div className="card-luxury rounded-lg p-8 h-full flex flex-col items-center justify-center text-center">
+                  <div className="w-14 h-14 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mb-6">
+                    <ArrowRight className="w-6 h-6 text-primary" />
+                  </div>
+
+                  <h3 className="text-xl font-serif text-white mb-3">
+                    {t('services.viewAllTitle')}
+                  </h3>
+                </div>
+              </Link>
+            </motion.div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="text-center mt-12"
-          >
-            <Link to="/services">
-              <Button variant="outline" className="btn-ghost-luxury">
-                {t('home.services.viewAll')}
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-          </motion.div>
         </div>
       </section>
+
 
       {/* Why Choose Us Section */}
       <section className="section-luxury bg-charcoal relative">

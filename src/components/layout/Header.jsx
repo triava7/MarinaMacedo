@@ -62,7 +62,7 @@ const Header = () => {
             </div>
             <div className="hidden sm:block">
               <span className="text-foreground font-serif text-lg tracking-wide">Marina Macedo</span>
-              <span className="block text-primary text-xs tracking-widest uppercase">Clínica Dentária</span>
+              <span className="block text-primary text-xs tracking-widest uppercase">Clínica Médico-Dentária</span>
             </div>
           </Link>
 

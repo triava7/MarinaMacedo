@@ -9,7 +9,8 @@
 @layer base {
   :root {
     /* Core colors - Dark Charcoal & Gold Palette */
-    --background: 30 5% 12%;               /* Dark charcoal #1f1d1a */
+    /* CHANGE BACKGROUND COLOR */
+    --background: 30 6% 20%;               /* Dark charcoal #1f1d1a */
     --foreground: 40 15% 95%;              /* Warm off-white #f5f3f0 */
     
     /* Card and surfaces */
@@ -166,7 +167,8 @@
   .card-luxury {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
-    box-shadow: var(--shadow-card);
+    border-color: hsl(var(--gold) / 0.4);
+    box-shadow: var(--shadow-gold);
     transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
   }
   
@@ -331,6 +333,7 @@
     border-color: hsl(var(--gold));
   }
 }
+
 
 /* Debug wrapper styles */
 @layer base {

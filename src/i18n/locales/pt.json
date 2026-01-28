@@ -113,7 +113,7 @@
       "title": "Cuidados Completos de Saúde",
       "description": "Oferecemos uma vasta gama de serviços médicos e dentários, sempre com foco na qualidade e no bem-estar do paciente."
     },
-    "dental": "Medicina Dentária",
+    "dental": "Medicina Dentária Geral",
     "medical": "Especialidades Médicas",
     "wellness": "Bem-Estar",
     "learnMore": "Saber Mais",
@@ -123,6 +123,7 @@
     "whatToExpect": "O Que Esperar",
     "backToServices": "Voltar aos Serviços",
     "otherServices": "Outros Serviços",
+    "viewAllTitle": "Conheça todos os nossos serviços",
     "items": {
       "general-dentistry": {
         "title": "Medicina Dentária Geral",
@@ -131,11 +132,11 @@
         "whoIsItFor": "Ideal para todas as pessoas que desejam manter uma boa saúde oral, prevenir problemas futuros ou tratar condições existentes como cáries, sensibilidade dentária ou problemas gengivais.",
         "benefits": [
           "Prevenção de problemas dentários graves",
-          "Deteção precoce de condições orais",
+          "Deteção precoce de alterações orais",
           "Manutenção de dentes saudáveis",
           "Orientação personalizada de higiene oral"
         ],
-        "whatToExpect": "A consulta inclui um exame oral completo, limpeza profissional, e quando necessário, tratamentos como restaurações ou destartarizações. Receberá também orientações personalizadas para cuidar da sua saúde oral em casa."
+        "whatToExpect": "A consulta inclui um exame oral completo, avaliação profissional, e quando necessário, tratamentos como restaurações ou destartarizações. Receberá também orientações personalizadas para cuidar da sua saúde oral em casa."
       },
       "pediatric-dentistry": {
         "title": "Odontopediatria",
@@ -148,7 +149,7 @@
           "Educação sobre higiene oral",
           "Acompanhamento do desenvolvimento dentário"
         ],
-        "whatToExpect": "As consultas são realizadas de forma lúdica e acolhedora, para que as crianças se sintam confortáveis. Fazemos exames adaptados à idade, aplicação de flúor quando indicado, e orientamos os pais sobre cuidados diários."
+        "whatToExpect": "As consultas são realizadas de forma lúdica e acolhedora, para que as crianças se sintam confortáveis. Fazemos exames adaptados à idade e orientamos os pais sobre cuidados diários."
       },
       "prosthetics": {
         "title": "Prótese Fixa e Removível",
@@ -164,20 +165,20 @@
         "whatToExpect": "O processo começa com uma avaliação completa e planeamento personalizado. Serão feitas impressões ou digitalizações para criar a prótese à medida. Após a colocação, fazemos ajustes para garantir conforto e funcionalidade."
       },
       "aesthetic-dentistry": {
-        "title": "Dentisteria Estética",
+        "title": "Branqueamento",
         "shortDesc": "Transforme o seu sorriso com tratamentos estéticos avançados.",
         "description": "A Dentisteria Estética combina arte e ciência para melhorar a aparência do seu sorriso. Inclui branqueamento, facetas, restaurações estéticas e contorno gengival.",
-        "whoIsItFor": "Qualquer pessoa que deseje melhorar a aparência do seu sorriso, seja corrigindo a cor, forma, tamanho ou alinhamento dos dentes.",
+        "whoIsItFor": "Qualquer pessoa que deseje melhorar o seu sorriso através de mudança de cor dos dentes.",
         "benefits": [
           "Sorriso mais branco e harmonioso",
           "Aumento da autoconfiança",
           "Resultados naturais e duradouros",
           "Procedimentos minimamente invasivos"
         ],
-        "whatToExpect": "Começamos com uma consulta de avaliação para entender os seus objetivos. Apresentamos as opções de tratamento mais adequadas e criamos um plano personalizado para alcançar o sorriso que sempre desejou."
+        "whatToExpect": "Melhorar a autoestima sendo que o branqueamento varia de pessoa para pessoa dependendo da permeabilidade dos dentes"
       },
       "implantology": {
-        "title": "Implantologia e Cirurgia Oral",
+        "title": "Implantologia",
         "shortDesc": "Implantes dentários de última geração para uma solução permanente.",
         "description": "A Implantologia oferece a solução mais avançada para substituição de dentes perdidos. Os implantes funcionam como raízes artificiais, proporcionando uma base sólida para coroas, pontes ou próteses.",
         "whoIsItFor": "Pessoas que perderam um ou mais dentes e procuram uma solução permanente, estável e esteticamente natural.",
@@ -189,18 +190,31 @@
         ],
         "whatToExpect": "O tratamento começa com exames detalhados e planeamento digital. A colocação do implante é feita sob anestesia local, seguida de um período de cicatrização. Por fim, é colocada a coroa definitiva."
       },
+       "oral-surgery": {
+        "title": "Cirurgia Oral",
+        "shortDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das dores e tensões(?) maxilares e estruturas anexas dos dentes",
+        "description": "A Implantologia oferece a solução mais avançada para substituição de dentes perdidos. Os implantes funcionam como raízes artificiais, proporcionando uma base sólida para coroas, pontes ou próteses.",
+        "whoIsItFor": "Quistos, Lesões na mucosa/ língua, Dentes para extrair inclusos ou não, Fibromas (?), Cirurgia para a preparação protética (colocação/ … do osso maxilar/ mandíbula), Gengivoplastias, Correção de retrações gengivais (foto)",
+        "benefits": [
+          "Solução permanente e duradoura",
+          "Preservação do osso maxilar",
+          "Aspeto e sensação naturais",
+          "Não afeta os dentes adjacentes"
+        ],
+        "whatToExpect": "O tratamento começa com exames detalhados e planeamento digital. A colocação do implante é feita sob anestesia local, seguida de um período de cicatrização. Por fim, é colocada a coroa definitiva."
+      },
       "endodontics": {
         "title": "Endodontia",
         "shortDesc": "Tratamento de canal para salvar dentes comprometidos.",
-        "description": "A Endodontia trata problemas no interior do dente, especificamente a polpa dentária. O tratamento de canal permite salvar dentes que de outra forma teriam de ser extraídos.",
-        "whoIsItFor": "Pessoas com infeções ou inflamações na polpa dentária, dor severa ou sensibilidade prolongada ao calor e frio.",
+        "description": "A Endodontia é vulgarmente conhecida como desnitalitação de dentes e é um tratamento conservador que se realiza quando a polpa ( nervo e outros tecidos que se no interior do dente) está inflamado ou sem vitalidade",
+        "whoIsItFor": "Pessoas com dentes com cáries profundas e atingem o interior do dente causando dor mal-estar e infeção.",
         "benefits": [
           "Preservação do dente natural",
           "Eliminação da dor e infeção",
           "Procedimento com alta taxa de sucesso",
           "Alternativa à extração"
         ],
-        "whatToExpect": "O tratamento é realizado sob anestesia local para o seu conforto. Removemos o tecido infetado, limpamos e desinfetamos os canais, e selamos o dente. Geralmente é necessária uma coroa para proteger o dente tratado."
+        "whatToExpect": "O espaço da polpa é adequado e preenchido como uma material biocompatível de modo a selar os dentes até até há a ponta da raiz"
       },
       "orthodontics": {
         "title": "Ortodontia",
@@ -216,15 +230,14 @@
         "whatToExpect": "Após uma avaliação completa com exames e fotografias, apresentamos um plano de tratamento personalizado. O tempo de tratamento varia conforme a complexidade, com consultas regulares para ajustes."
       },
       "tmj": {
-        "title": "ATM e Dor Orofacial",
+        "title": "Oclusão",
         "shortDesc": "Tratamento especializado para disfunções da articulação temporomandibular.",
-        "description": "A especialidade de ATM e Dor Orofacial trata problemas da articulação que liga o maxilar ao crânio, bem como dores de cabeça, faciais e cervicais relacionadas.",
-        "whoIsItFor": "Pessoas com dor na mandíbula, estalos ao abrir a boca, dificuldade em mastigar, dores de cabeça frequentes ou ranger de dentes.",
+        "description": "Disfunção Mandibular (DTM) afeta a articulação e os músculos da mastigação podendo provocar dor estalidos dificuldade em abrir a boca e até de fechar quando em abertura máxima com um simples bocejoA dor oral facial é dor localizada na face, boca ou maxilar. Com diferentes origens e requer avaliação especializada",
+        "whoIsItFor": "Pessoas com dor maxilar constante ao abrir a boca têm dificuldade em mastigar dor de cabeça frequente e/ou que afetam dentes levando ao seu desgaste",
         "benefits": [
           "Alívio da dor e desconforto",
           "Melhoria da função mandibular",
-          "Tratamento personalizado",
-          "Abordagem não invasiva"
+          "Impedimento dos desgaste dentário"
         ],
         "whatToExpect": "A avaliação inclui exame clínico detalhado e possivelmente exames de imagem. O tratamento pode incluir goteiras oclusais, fisioterapia, medicação ou outras abordagens conforme necessário."
       },
@@ -240,19 +253,6 @@
           "Tratamentos minimamente invasivos"
         ],
         "whatToExpect": "A avaliação periodontal completa permite determinar o estado das suas gengivas. O tratamento pode incluir destartarização profunda, alisamento radicular ou, em casos avançados, procedimentos regenerativos."
-      },
-      "ent": {
-        "title": "Otorrinolaringologia",
-        "shortDesc": "Diagnóstico e tratamento de problemas do ouvido, nariz e garganta.",
-        "description": "A Otorrinolaringologia trata condições que afetam os ouvidos, nariz, garganta, cabeça e pescoço. Desde alergias a problemas de audição, oferecemos cuidados abrangentes.",
-        "whoIsItFor": "Pessoas com problemas de audição, sinusite, amigdalites frequentes, roncopatia, vertigens ou outras condições ORL.",
-        "benefits": [
-          "Diagnóstico preciso",
-          "Tratamento abrangente",
-          "Melhoria da qualidade de vida",
-          "Abordagem integrada"
-        ],
-        "whatToExpect": "A consulta inclui uma avaliação completa dos sintomas e exame físico detalhado. Podem ser necessários exames complementares. O tratamento é personalizado às suas necessidades específicas."
       },
       "general-medicine": {
         "title": "Medicina Geral e Familiar",

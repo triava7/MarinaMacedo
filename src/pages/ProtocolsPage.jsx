@@ -14,7 +14,7 @@ import cttLogo from '../img/protocols/ctt.png';
 import medisLogo from '../img/protocols/medis.png';
 import cgdLogo from '../img/protocols/cgd.png';
 import chequeDentistaLogo from '../img/protocols/cheque-dentista.png';
-
+import quadrosLogo from '../img/protocols/sams-quadros.png';
 
 const ProtocolsPage = () => {
   const { t } = useTranslation();
@@ -69,6 +69,11 @@ const ProtocolsPage = () => {
       id: 'cheques-dentistas',
       name: 'Cheque-Dentista',
       logo: chequeDentistaLogo,
+    },
+     {
+      id: 'sams-quadros',
+      name: 'SAMS Quadros',
+      logo: quadrosLogo,
     },
   ];
 
