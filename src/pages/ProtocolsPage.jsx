@@ -15,6 +15,7 @@ import medisLogo from '../img/protocols/medis.png';
 import cgdLogo from '../img/protocols/cgd.png';
 import chequeDentistaLogo from '../img/protocols/cheque-dentista.png';
 import quadrosLogo from '../img/protocols/sams-quadros.png';
+import img1 from "../img/galery/7.jpeg";
 
 const ProtocolsPage = () => {
   const { t } = useTranslation();
@@ -98,7 +99,7 @@ const ProtocolsPage = () => {
         label={t('protocols.hero.label')}
         title={t('protocols.hero.title')}
         description={t('protocols.hero.description')}
-        backgroundImage="https://images.unsplash.com/photo-1629909613638-0e4a1fad8f81?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzY4MDQ0NTY4fDA&ixlib=rb-4.1.0&q=85"
+        backgroundImage={img1}
       />
 
       {/* Protocols Grid */}

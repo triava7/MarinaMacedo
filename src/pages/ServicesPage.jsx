@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart } from 'lucide-react';
 import PageHero from '../components/layout/PageHero';
+import img1 from "../img/galery/6.jpeg";
 
 const ServicesPage = () => {
   const { t } = useTranslation();
@@ -116,7 +117,7 @@ const ServicesPage = () => {
         label={t('services.hero.label')}
         title={t('services.hero.title')}
         description={t('services.hero.description')}
-        backgroundImage="https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzY4MDQ0NTY4fDA&ixlib=rb-4.1.0&q=85"
+        backgroundImage={img1}
       />
 
       {/* Services Grid */}

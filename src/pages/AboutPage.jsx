@@ -10,6 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '../components/ui/carousel';
+import img1 from "../img/galery/17.jpeg";
+import img2 from "../img/galery/13.jpeg";
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -94,7 +96,7 @@ const AboutPage = () => {
         label={t('about.hero.label')}
         title={t('about.hero.title')}
         description={t('about.hero.description')}
-        backgroundImage="https://images.unsplash.com/photo-1643660527072-9c702932f606?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzY4MDQ0NTY4fDA&ixlib=rb-4.1.0&q=85"
+        backgroundImage={img1}
       />
 
       {/* Story Section */}
@@ -111,7 +113,7 @@ const AboutPage = () => {
             <motion.div variants={fadeInUp} className="relative">
               <div className="relative aspect-square rounded-lg overflow-hidden shadow-elegant">
                 <img
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzY4MDQ0NTY4fDA&ixlib=rb-4.1.0&q=85"
+                  src={img2}
                   alt="Nossa Clínica"
                   className="w-full h-full object-cover"
                 />

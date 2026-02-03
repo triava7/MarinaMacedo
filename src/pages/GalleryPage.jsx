@@ -3,14 +3,26 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Image as ImageIcon } from 'lucide-react';
 import PageHero from '../components/layout/PageHero';
-import img2 from '../img/img2.png';
-import img3 from '../img/img3.png';
-import img4 from '../img/img4.png';
-import img5 from '../img/img5.png';
-import img6 from '../img/img6.png';
-import img7 from '../img/img7.png';
-import img8 from '../img/img8.png';
-import img9 from '../img/img9.png';
+import img1 from "../img/galery/1.jpeg";
+import img2 from "../img/galery/2.jpeg";
+import img3 from "../img/galery/3.jpeg";
+import img4 from "../img/galery/4.jpeg";
+import img5 from "../img/galery/5.jpeg";
+import img6 from "../img/galery/6.jpeg";
+import img7 from "../img/galery/7.jpeg";
+import img8 from "../img/galery/8.jpeg";
+import img9 from "../img/galery/9.jpeg";
+import img10 from "../img/galery/10.jpeg";
+import img11 from "../img/galery/11.jpeg";
+import img12 from "../img/galery/12.jpeg";
+import img13 from "../img/galery/13.jpeg";
+import img14 from "../img/galery/14.jpeg";
+import img15 from "../img/galery/15.jpeg";
+import img16 from "../img/galery/16.jpeg";
+import img17 from "../img/galery/17.jpeg";
+import img18 from "../img/galery/18.jpeg";
+import img19 from "../img/galery/19.jpeg";
+
 
 
 const GalleryPage = () => {
@@ -23,51 +35,57 @@ const GalleryPage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: img2,
+      src: img11,
       category: 'clinic',
       alt: 'Clinic Interior',
     },
     {
       id: 2,
-      src: img3,
+      src: img1,
       category: 'equipment',
       alt: 'Modern Equipment',
     },
     {
       id: 3,
-      src: img4,
+      src: img18,
       category: 'spaces',
       alt: 'Waiting Area',
     },
     {
       id: 4,
-      src: img5,
+      src: img7,
       category: 'clinic',
       alt: 'Treatment Room',
     },
     {
       id: 5,
-      src: img6,
+      src: img2,
       category: 'equipment',
       alt: 'Dental Equipment',
     },
     {
       id: 6,
-      src: img7,
+      src: img13,
       category: 'spaces',
       alt: 'Reception',
     },
     {
       id: 7,
-      src: img8,
+      src: img12,
       category: 'clinic',
       alt: 'Clinic Detail',
     },
     {
       id: 8,
-      src: img9,
+      src: img6,
       category: 'equipment',
       alt: 'Advanced Technology',
+    },
+    {
+      id: 9,
+      src: img17,
+      category: 'spaces',
+      alt: 'Outside View',
     },
   ];
 
@@ -83,7 +101,7 @@ const GalleryPage = () => {
         label={t('gallery.hero.label')}
         title={t('gallery.hero.title')}
         description={t('gallery.hero.description')}
-        backgroundImage="https://images.unsplash.com/photo-1629909613654-28e377c37b09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzY4MDQ0NTY4fDA&ixlib=rb-4.1.0&q=85"
+        backgroundImage={img11}
       />
 
       {/* Gallery Section */}
@@ -137,21 +155,6 @@ const GalleryPage = () => {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* Placeholder Message */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="mt-16 text-center"
-          >
-            <div className="inline-flex items-center gap-3 px-6 py-4 rounded-lg bg-charcoal border border-border">
-              <ImageIcon className="w-5 h-5 text-primary" />
-              <span className="text-muted-foreground text-sm">
-                {t('gallery.placeholder')}
-              </span>
-            </div>
           </motion.div>
         </div>
       </section>

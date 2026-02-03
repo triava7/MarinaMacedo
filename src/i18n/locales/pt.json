@@ -371,14 +371,14 @@
         "address": "Travessa do Comércio n12 sala 2",
         "city": "4710-820 Adaúfe",
         "phones": ["253 284 121", "913 958 650"],
-        "hours": "Segunda a Sexta: 9h-12h, 14h-19h\nSábado: 9h-12h30"
+        "hours": "Segunda a Sexta: 9:30h-12h, 14h/14:30h-19h\nSábado: 9h-13h"
       },
       "bouro": {
         "name": "Bouro",
         "address": "Largo do Terreiro, Edif. da Caixa Agrícola",
         "city": "4720-688 Bouro Santa Maria",
         "phones": ["253 377 770", "935 383 101"],
-        "hours": "A confirmar"
+        "hours": "Segunda a Sexta: 9h-12h, 14h/15h-19h\nSábado: 9h-13h"
       }
     }
   },

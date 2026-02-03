@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import PageHero from '../components/layout/PageHero';
+import img1 from "../img/galery/18.jpeg";
 
 const ContactsPage = () => {
   const { t } = useTranslation();
@@ -25,7 +26,7 @@ const ContactsPage = () => {
       city: t('contacts.locations.adaufe.city'),
       phones: ['253 284 121', '913 958 650'],
       hours: t('contacts.locations.adaufe.hours'),
-      mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.123456789!2d-8.43!3d41.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sTravessa%20do%20Com%C3%A9rcio%2012%2C%20Ada%C3%BAfe!5e0!3m2!1spt!2spt!4v1234567890',
+      mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.380071680482!2d-8.40764842344966!3d41.58265978385934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fe7a9b56448d%3A0xf2138df50e76cc35!2zVHYuIGRvIENvbcOpcmNpbywgQWRhw7pmZQ!5e0!3m2!1sen!2spt!4v1770130783949!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade',
     },
     {
       id: 'bouro',
@@ -59,7 +60,7 @@ const ContactsPage = () => {
         label={t('contacts.hero.label')}
         title={t('contacts.hero.title')}
         description={t('contacts.hero.description')}
-        backgroundImage="https://images.unsplash.com/photo-1629909613654-28e377c37b09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzY4MDQ0NTY4fDA&ixlib=rb-4.1.0&q=85"
+        backgroundImage={img1}
       />
 
       {/* Main CTA - Phone */}
@@ -149,25 +150,6 @@ const ContactsPage = () => {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
-
-          {/* Email */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
-          >
-            <p className="text-muted-foreground mb-4">Ou envie-nos um email:</p>
-            <a
-              href="mailto:clinicamarina@gmail.com"
-              className="inline-flex items-center gap-3 text-foreground hover:text-primary transition-colors duration-300 text-lg"
-            >
-              <div className="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
-                <Mail className="w-5 h-5 text-primary" />
-              </div>
-              <span className="font-medium">clinicamarina@gmail.com</span>
-            </a>
           </motion.div>
         </div>
       </section>

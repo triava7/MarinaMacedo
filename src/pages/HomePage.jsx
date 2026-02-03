@@ -7,8 +7,8 @@ import {
   Stethoscope, Baby, Smile, Sparkle, Target, Apple
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import img1 from "../img/img1.png";
-import img9 from "../img/img9.png";
+import img1 from "../img/galery/19.jpeg";
+import img9 from "../img/galery/7.jpeg";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -38,7 +38,7 @@ const HomePage = () => {
       city: '4710-820 Adaúfe',
       phone: '253 284 121',
       mobilePhone: '913 958 650',
-      hours: 'Seg-Sex: 9h-12h, 14h-19h',
+      hours: 'Seg-Sex: 9:30h-12h, 14/14:30h-19h; Sáb: 9h-13h',
     },
     {
       id: 'bouro',
@@ -47,7 +47,7 @@ const HomePage = () => {
       city: '4720-688 Bouro Santa Maria',
       phone: '253 377 770',
       mobilePhone: '935 383 101',
-      hours: 'A confirmar',
+      hours: 'Seg-Sex: 9h-12h, 14/15h-19h; Sáb: 9h-13h',
     },
   ];
 
