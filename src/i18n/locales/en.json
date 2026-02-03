@@ -150,18 +150,31 @@
         ],
         "whatToExpect": "Appointments are conducted in a playful and welcoming manner, so children feel comfortable. We perform age-appropriate exams, fluoride application when indicated, and guide parents on daily care."
       },
-      "prosthetics": {
-        "title": "Fixed and Removable Prosthetics",
-        "shortDesc": "Personalized solutions to restore the function and aesthetics of your smile.",
-        "description": "Prosthodontics offers solutions to replace lost or damaged teeth, restoring masticatory function, speech and smile aesthetics through fixed or removable prostheses.",
-        "whoIsItFor": "People who have lost one or more teeth, or who have severely damaged teeth that need rehabilitation.",
+      "prosthetics-fixed": {
+        "title": "Fixed Prosthetics",
+        "shortDesc": "Crowns, bridges and veneers to permanently restore teeth.",
+        "description": "Fixed Prosthetics offers permanent solutions to restore damaged teeth or replace lost teeth. Includes crowns, bridges and veneers that are cemented to teeth, providing a stable and lasting solution.",
+        "whoIsItFor": "People with fractured, decayed or worn teeth that need restoration, or who have lost one or a few teeth and want a fixed solution.",
         "benefits": [
-          "Recovery of masticatory function",
-          "Significant aesthetic improvement",
-          "Durable and comfortable solutions",
-          "Prevention of problems associated with missing teeth"
+          "Permanent and stable solution",
+          "Natural and aesthetic appearance",
+          "Complete masticatory function",
+          "No daily removal needed"
         ],
-        "whatToExpect": "The process begins with a complete evaluation and personalized planning. Impressions or scans will be made to create the custom prosthesis. After placement, we make adjustments to ensure comfort and functionality."
+        "whatToExpect": "Treatment involves tooth preparation, molding, and placement of the final prosthesis. Usually 2-3 appointments are needed to complete the process."
+      },
+      "prosthetics-removable": {
+        "title": "Removable Prosthetics",
+        "shortDesc": "Partial and complete removable dentures for oral rehabilitation.",
+        "description": "Removable Prosthetics offers accessible and effective solutions to replace multiple teeth or complete dentitions. These are prostheses that can be removed for hygiene and maintenance.",
+        "whoIsItFor": "People who have lost multiple teeth or all teeth, or who are not candidates for fixed prostheses or implants.",
+        "benefits": [
+          "Economical solution",
+          "Easy maintenance and hygiene",
+          "Adaptable to future changes",
+          "Recovery of function and aesthetics"
+        ],
+        "whatToExpect": "The process includes molding, trials and adjustments until ideal comfort is achieved. You will receive detailed instructions on use, hygiene and maintenance of the prosthesis."
       },
       "aesthetic-dentistry": {
         "title": "Aesthetic Dentistry",
