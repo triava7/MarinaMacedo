@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, X, ChevronLeft, ChevronRight, Camera, Eye, Zap, Shield } from 'lucide-react';
 import { Button } from '../components/ui/button';
 
 const ServiceDetailPage = () => {
@@ -15,8 +15,7 @@ const ServiceDetailPage = () => {
   const allServices = [
     'general-dentistry',
     'pediatric-dentistry',
-    'prosthetics-fixed',
-    'prosthetics-removable',
+    'prosthetics',
     'aesthetic-dentistry',
     'implantology',
     'oral-surgery',
@@ -34,8 +33,7 @@ const ServiceDetailPage = () => {
   const serviceIcons = {
     'general-dentistry': Stethoscope,
     'pediatric-dentistry': Baby,
-    'prosthetics-fixed': Cog,
-    'prosthetics-removable': Cog,
+    'prosthetics': Cog,
     'aesthetic-dentistry': Sparkle,
     'implantology': Target,
     'oral-surgery': Target,
@@ -54,8 +52,7 @@ const ServiceDetailPage = () => {
   const serviceBackgrounds = {
     'general-dentistry': 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80',
     'pediatric-dentistry': 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&q=80',
-    'prosthetics-fixed': 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&q=80',
-    'prosthetics-removable': 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&q=80',
+    'prosthetics': 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&q=80',
     'aesthetic-dentistry': 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1920&q=80',
     'implantology': 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
     'oral-surgery': 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
@@ -70,158 +67,8 @@ const ServiceDetailPage = () => {
     'massage': 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=80',
   };
 
-  // Clinical cases data for services that require them
-  const clinicalCasesData = {
-    'oral-surgery': {
-      title: 'Caso Clínico',
-      cases: [
-        {
-          id: 1,
-          title: 'Correção de Retração Gengival',
-          description: 'Tratamento cirúrgico para correção de retração gengival com enxerto de tecido conjuntivo.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes do procedimento' },
-            { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Durante a cirurgia' },
-            { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Resultado final' }
-          ]
-        }
-      ]
-    },
-    'orthodontics': {
-      title: 'Casos Clínicos',
-      featured: true,
-      cases: [
-        {
-          id: 1,
-          title: 'Correção de Apinhamento Severo',
-          description: 'Tratamento ortodôntico completo com aparelho fixo para correção de apinhamento dentário severo.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
-            { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
-          ]
-        },
-        {
-          id: 2,
-          title: 'Mordida Cruzada',
-          description: 'Correção de mordida cruzada posterior com expansão maxilar e alinhamento.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
-            { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
-          ]
-        },
-        {
-          id: 3,
-          title: 'Diastema Central',
-          description: 'Encerramento de diastema central com alinhadores invisíveis.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
-            { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
-          ]
-        },
-        {
-          id: 4,
-          title: 'Classe II Divisão 1',
-          description: 'Tratamento de má oclusão Classe II com aparelho funcional e fixo.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
-            { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
-          ]
-        },
-        {
-          id: 5,
-          title: 'Sobremordida Profunda',
-          description: 'Correção de sobremordida profunda com intrusão dos incisivos.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
-            { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
-          ]
-        },
-        {
-          id: 6,
-          title: 'Mordida Aberta Anterior',
-          description: 'Tratamento de mordida aberta com controlo vertical e correção funcional.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
-            { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
-          ]
-        }
-      ]
-    },
-    'prosthetics-fixed': {
-      title: 'Caso Clínico',
-      cases: [
-        {
-          id: 1,
-          title: 'Reabilitação com Coroas Cerâmicas',
-          description: 'Reabilitação estética e funcional com coroas totais em cerâmica sobre dentes anteriores.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80', caption: 'Situação inicial' },
-            { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Preparação dentária' },
-            { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Resultado final' }
-          ]
-        }
-      ]
-    },
-    'prosthetics-removable': {
-      title: 'Caso Clínico',
-      cases: [
-        {
-          id: 1,
-          title: 'Prótese Parcial Removível Esquelética',
-          description: 'Reabilitação com prótese parcial removível esquelética para substituição de dentes posteriores.',
-          images: [
-            { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80', caption: 'Antes da prótese' },
-            { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Prótese confeccionada' },
-            { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Prótese em boca' }
-          ]
-        }
-      ]
-    },
-    'implantology': {
-      title: 'Casos Clínicos',
-      implantImages: [
-        { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80', caption: 'Implante dentário' },
-        { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80', caption: 'Sistema de implante' },
-        { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', caption: 'Componentes' }
-      ],
-      cases: [
-        {
-          id: 1,
-          title: 'Implante Unitário Anterior',
-          description: 'Colocação de implante unitário em zona estética com carga imediata.',
-          placeholder: true,
-          images: []
-        },
-        {
-          id: 2,
-          title: 'Reabilitação Total',
-          description: 'Reabilitação total com protocolo All-on-4.',
-          placeholder: true,
-          images: []
-        }
-      ]
-    }
-  };
-
-  // TMJ specific illustration
-  const tmjIllustration = {
-    url: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
-    caption: 'Dor orofacial e disfunção temporomandibular'
-  };
-
-  // Get related services (excluding current and grouped prosthetics)
-  const getRelatedServices = () => {
-    let filtered = allServices.filter(s => s !== serviceId);
-    // If viewing a prosthetics page, exclude the other prosthetics variant
-    if (serviceId === 'prosthetics-fixed') {
-      filtered = filtered.filter(s => s !== 'prosthetics-removable');
-    } else if (serviceId === 'prosthetics-removable') {
-      filtered = filtered.filter(s => s !== 'prosthetics-fixed');
-    }
-    return filtered.slice(0, 3);
-  };
-
-  const relatedServices = getRelatedServices();
+  // Get related services
+  const relatedServices = allServices.filter(s => s !== serviceId).slice(0, 3);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -265,211 +112,800 @@ const ServiceDetailPage = () => {
     }
   };
 
-  // Render Clinical Cases Section
-  const renderClinicalCases = () => {
-    const caseData = clinicalCasesData[serviceId];
-    if (!caseData) return null;
+  // ========== ORTODONTIA - Alinhadores Invisíveis ==========
+  const renderOrthodonticsSection = () => {
+    if (serviceId !== 'orthodontics') return null;
 
-    const isFeatured = caseData.featured;
+    const alignerImages = [
+      { url: 'https://images.unsplash.com/photo-1670250492416-570b5b7343b1?w=800&q=80', caption: 'Alinhador em posição' },
+      { url: 'https://images.unsplash.com/photo-1694364596437-904741b3335f?w=800&q=80', caption: 'Resultado do tratamento' },
+    ];
+
+    const plasterModels = [
+      { url: 'https://images.unsplash.com/photo-1656623807884-f6c9b7f389e9?w=800&q=80', caption: 'Modelo de estudo' },
+      { url: 'https://images.unsplash.com/photo-1562330743-fbc6ef07ca78?w=800&q=80', caption: 'Planeamento ortodôntico' },
+      { url: 'https://images.pexels.com/photos/33748059/pexels-photo-33748059.jpeg?w=800', caption: 'Molde dentário' },
+    ];
+
+    const clinicalCases = [
+      {
+        id: 1,
+        title: 'Correção de Apinhamento',
+        description: 'Tratamento com alinhadores invisíveis para correção de apinhamento severo.',
+        images: [
+          { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
+          { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Encerramento de Diastema',
+        description: 'Correção de espaçamento entre dentes anteriores.',
+        images: [
+          { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
+          { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Mordida Cruzada',
+        description: 'Tratamento de mordida cruzada com alinhadores.',
+        images: [
+          { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
+          { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Sobremordida',
+        description: 'Correção de sobremordida profunda.',
+        images: [
+          { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
+          { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
+        ]
+      }
+    ];
 
     return (
-      <section className={`py-16 ${isFeatured ? 'bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5' : 'bg-beige-dark/30'} relative`}>
-        <div className="container-luxury relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <Camera className={`w-6 h-6 ${isFeatured ? 'text-primary' : 'text-primary/70'}`} />
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                {isFeatured ? 'Galeria de Resultados' : 'Documentação Clínica'}
-              </span>
-            </div>
-            <h2 className={`${isFeatured ? 'text-display' : 'text-title'} font-serif text-foreground`}>
-              {caseData.title}
-            </h2>
-            {isFeatured && (
-              <p className="text-muted-foreground mt-4 max-w-2xl">
-                Explore a nossa galeria de casos clínicos reais e veja os resultados transformadores que alcançamos para os nossos pacientes.
+      <>
+        {/* Alinhadores Invisíveis Section */}
+        <section className="py-20 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5 relative">
+          <div className="container-luxury relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Tecnologia Avançada</span>
+              <h2 className="text-display font-serif text-foreground mb-6">Alinhadores Invisíveis</h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
+                Feitos à medida de cada paciente com material plástico termoplástico e biocompatível, 
+                adaptando-se confortavelmente à anatomia de cada boca.
               </p>
-            )}
-          </motion.div>
+            </motion.div>
 
-          {/* Implant Images for Implantology */}
-          {caseData.implantImages && (
+            {/* How it works */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-12"
+              className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-primary/20"
             >
-              <h3 className="text-xl font-serif text-foreground mb-6">Sistemas de Implantes</h3>
-              <div className="grid grid-cols-3 gap-4">
-                {caseData.implantImages.map((img, idx) => (
+              <h3 className="text-xl font-serif text-foreground mb-4">Como Funcionam?</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Funcionam através da aplicação controlada de forças suaves e progressivas que vão 
+                movimentando os dentes para as posições desejadas. Cada conjunto de alinhadores é 
+                usado durante aproximadamente duas semanas antes de passar para o seguinte.
+              </p>
+            </motion.div>
+
+            {/* Benefits Grid */}
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-4 gap-6 mb-16"
+            >
+              {[
+                { icon: Eye, title: 'Estética', desc: 'Praticamente impercetíveis' },
+                { icon: Sparkle, title: 'Imperceptíveis', desc: 'Transparentes e discretos' },
+                { icon: Shield, title: 'Conforto', desc: 'Material suave e adaptável' },
+                { icon: Zap, title: 'Eficiência', desc: 'Resultados previsíveis' }
+              ].map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={fadeInUp}
+                  className="text-center p-6 rounded-xl bg-background/60 border border-primary/10 hover:border-primary/30 transition-all"
+                >
+                  <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-serif text-foreground mb-2">{item.title}</h4>
+                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Aligner Images */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-16"
+            >
+              <h3 className="text-xl font-serif text-foreground mb-6 text-center">Alinhadores em Ação</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                {alignerImages.map((img, idx) => (
                   <motion.div
                     key={idx}
                     whileHover={{ scale: 1.02 }}
-                    className="relative aspect-square rounded-lg overflow-hidden cursor-pointer group"
-                    onClick={() => openImageModal(caseData.implantImages, idx)}
+                    className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                    onClick={() => openImageModal(alignerImages, idx)}
                   >
-                    <img
-                      src={img.url}
-                      alt={img.caption}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                      <span className="absolute bottom-4 left-4 text-white font-medium">{img.caption}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Plaster Models */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mb-16"
+            >
+              <h3 className="text-xl font-serif text-foreground mb-6 text-center">Modelos de Gesso - Planeamento</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                {plasterModels.map((img, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.03 }}
+                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                    onClick={() => openImageModal(plasterModels, idx)}
+                  >
+                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
                       <span className="absolute bottom-4 left-4 text-white text-sm font-medium">{img.caption}</span>
                     </div>
                   </motion.div>
                 ))}
               </div>
             </motion.div>
-          )}
+          </div>
+        </section>
 
-          {/* Cases Grid */}
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className={`grid ${isFeatured ? 'sm:grid-cols-2 lg:grid-cols-3' : 'grid-cols-1 max-w-4xl mx-auto'} gap-8`}
-          >
-            {caseData.cases.map((caseItem) => (
-              <motion.div
-                key={caseItem.id}
-                variants={fadeInUp}
-                className={`${isFeatured ? 'card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500' : 'card-luxury rounded-xl p-6'}`}
-              >
-                {caseItem.placeholder ? (
-                  // Placeholder for cases without images yet
-                  <div className="p-6">
-                    <div className="aspect-video bg-muted/20 rounded-lg flex items-center justify-center mb-4 border-2 border-dashed border-primary/30">
-                      <div className="text-center">
-                        <Camera className="w-8 h-8 text-primary/40 mx-auto mb-2" />
-                        <span className="text-muted-foreground text-sm">Imagens em breve</span>
+        {/* Clinical Cases Gallery */}
+        <section className="py-20 bg-beige-dark/30 relative">
+          <div className="container-luxury relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
+              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Galeria de Resultados</span>
+              <h2 className="text-title font-serif text-foreground">Casos Clínicos</h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                Veja exemplos reais de transformações com os nossos tratamentos ortodônticos.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            >
+              {clinicalCases.map((caseItem) => (
+                <motion.div
+                  key={caseItem.id}
+                  variants={fadeInUp}
+                  className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500"
+                >
+                  <div className="grid grid-cols-2">
+                    {caseItem.images.map((img, idx) => (
+                      <div
+                        key={idx}
+                        className="aspect-square relative cursor-pointer"
+                        onClick={() => openImageModal(caseItem.images, idx)}
+                      >
+                        <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+                          <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">{img.caption}</span>
+                        </div>
                       </div>
-                    </div>
-                    <h4 className="text-lg font-serif text-foreground mb-2">{caseItem.title}</h4>
-                    <p className="text-muted-foreground text-sm">{caseItem.description}</p>
+                    ))}
                   </div>
-                ) : isFeatured ? (
-                  // Featured style for orthodontics
-                  <>
-                    <div className="relative overflow-hidden">
-                      <div className="grid grid-cols-2">
-                        {caseItem.images.slice(0, 2).map((img, idx) => (
-                          <div
-                            key={idx}
-                            className="aspect-square relative cursor-pointer"
-                            onClick={() => openImageModal(caseItem.images, idx)}
-                          >
-                            <img
-                              src={img.url}
-                              alt={img.caption}
-                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
-                              <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
-                                {img.caption}
-                              </span>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="p-5">
-                      <h4 className="text-lg font-serif text-foreground mb-2 group-hover:text-primary transition-colors">
-                        {caseItem.title}
-                      </h4>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {caseItem.description}
-                      </p>
-                    </div>
-                  </>
-                ) : (
-                  // Standard style for other services
-                  <>
-                    <h4 className="text-xl font-serif text-foreground mb-4">{caseItem.title}</h4>
-                    <p className="text-muted-foreground mb-6">{caseItem.description}</p>
-                    <div className="grid grid-cols-3 gap-3">
-                      {caseItem.images.map((img, idx) => (
-                        <motion.div
-                          key={idx}
-                          whileHover={{ scale: 1.05 }}
-                          className="relative aspect-square rounded-lg overflow-hidden cursor-pointer group"
-                          onClick={() => openImageModal(caseItem.images, idx)}
-                        >
-                          <img
-                            src={img.url}
-                            alt={img.caption}
-                            className="w-full h-full object-cover"
-                          />
-                          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span className="text-white text-xs font-medium text-center px-2">{img.caption}</span>
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </>
-                )}
+                  <div className="p-4">
+                    <h4 className="font-serif text-foreground group-hover:text-primary transition-colors">{caseItem.title}</h4>
+                    <p className="text-muted-foreground text-sm mt-1">{caseItem.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+      </>
+    );
+  };
+
+  // ========== CIRURGIA ORAL ==========
+  const renderOralSurgerySection = () => {
+    if (serviceId !== 'oral-surgery') return null;
+
+    const clinicalImages = [
+      { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80', caption: 'Procedimento cirúrgico' },
+      { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80', caption: 'Ambiente cirúrgico' },
+      { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80', caption: 'Resultado pós-operatório' },
+    ];
+
+    const indications = [
+      'Quistos',
+      'Lesões na mucosa/língua',
+      'Dentes para extrair (inclusos ou não)',
+      'Fibromas',
+      'Cirurgia para preparação protética',
+      'Gengivoplastias',
+      'Correção de retrações gengivais'
+    ];
+
+    return (
+      <section className="py-20 bg-gradient-to-b from-background to-beige-dark/20 relative">
+        <div className="container-luxury relative">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Documentação Clínica</span>
+            <h2 className="text-display font-serif text-foreground mb-6">Caso Clínico</h2>
+          </motion.div>
+
+          {/* Main Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8">
+                <h3 className="text-xl font-serif text-foreground mb-4">O que é a Cirurgia Oral?</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico 
+                  das dores e tensões maxilares e estruturas anexas dos dentes.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-serif text-foreground mb-6 flex items-center gap-3">
+                  <Users className="w-5 h-5 text-primary" />
+                  Para quem é indicado?
+                </h3>
+                <ul className="space-y-3">
+                  {indications.map((item, idx) => (
+                    <li key={idx} className="flex items-center gap-3 text-muted-foreground">
+                      <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+
+            {/* Large Images */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              {/* Main Large Image */}
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer group shadow-2xl"
+                onClick={() => openImageModal(clinicalImages, 0)}
+              >
+                <img 
+                  src={clinicalImages[0].url} 
+                  alt={clinicalImages[0].caption} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                  <div className="absolute bottom-6 left-6">
+                    <span className="text-white font-serif text-xl">{clinicalImages[0].caption}</span>
+                  </div>
+                </div>
               </motion.div>
-            ))}
+
+              {/* Two smaller images */}
+              <div className="grid grid-cols-2 gap-6">
+                {clinicalImages.slice(1).map((img, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.03 }}
+                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                    onClick={() => openImageModal(clinicalImages, idx + 1)}
+                  >
+                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">{img.caption}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  // ========== PRÓTESES (Fixa e Removível juntas) ==========
+  const renderProstheticsSection = () => {
+    if (serviceId !== 'prosthetics') return null;
+
+    const fixedImages = [
+      { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80', caption: 'Coroa cerâmica' },
+      { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Ponte fixa' },
+      { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Facetas' },
+    ];
+
+    const removableImages = [
+      { url: 'https://images.unsplash.com/photo-1562330743-fbc6ef07ca78?w=800&q=80', caption: 'Prótese parcial' },
+      { url: 'https://images.pexels.com/photos/4687406/pexels-photo-4687406.jpeg?w=800', caption: 'Prótese total' },
+      { url: 'https://images.unsplash.com/photo-1658994477987-42468f4dbbb2?w=800&q=80', caption: 'Modelo de trabalho' },
+    ];
+
+    return (
+      <section className="py-20 bg-background relative">
+        <div className="container-luxury relative">
+          {/* Prótese Fixa */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <Cog className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">Soluções Permanentes</span>
+                <h2 className="text-title font-serif text-foreground">Prótese Fixa</h2>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  A Prótese Fixa oferece soluções permanentes para restaurar dentes danificados ou 
+                  substituir dentes perdidos. Inclui coroas, pontes e facetas que ficam cimentadas 
+                  aos dentes, proporcionando uma solução estável e duradoura.
+                </p>
+                <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
+                  <h4 className="font-serif text-foreground mb-4">Vantagens:</h4>
+                  <ul className="space-y-2">
+                    {['Solução permanente e estável', 'Aspeto natural e estético', 'Função mastigatória completa', 'Não necessita remoção diária'].map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-muted-foreground text-sm">
+                        <Check className="w-4 h-4 text-primary" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-4">
+                {fixedImages.map((img, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.05 }}
+                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                    onClick={() => openImageModal(fixedImages, idx)}
+                  >
+                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-white text-xs font-medium text-center px-2">{img.caption}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Divider */}
+          <div className="border-t border-border my-12" />
+
+          {/* Prótese Removível */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                <Cog className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">Soluções Flexíveis</span>
+                <h2 className="text-title font-serif text-foreground">Prótese Removível</h2>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1 grid grid-cols-3 gap-4">
+                {removableImages.map((img, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.05 }}
+                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                    onClick={() => openImageModal(removableImages, idx)}
+                  >
+                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-white text-xs font-medium text-center px-2">{img.caption}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              <div className="order-1 lg:order-2 space-y-6">
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  A Prótese Removível oferece soluções acessíveis e eficazes para substituir 
+                  múltiplos dentes ou dentições completas. São próteses que podem ser retiradas 
+                  para higiene e manutenção.
+                </p>
+                <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
+                  <h4 className="font-serif text-foreground mb-4">Vantagens:</h4>
+                  <ul className="space-y-2">
+                    {['Solução económica', 'Fácil manutenção e higiene', 'Adaptável a alterações futuras', 'Recuperação da função e estética'].map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-muted-foreground text-sm">
+                        <Check className="w-4 h-4 text-primary" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
     );
   };
 
-  // Render TMJ Illustration Section
-  const renderTmjIllustration = () => {
-    if (serviceId !== 'tmj') return null;
+  // ========== IMPLANTOLOGIA (Estrutura Primadent) ==========
+  const renderImplantologySection = () => {
+    if (serviceId !== 'implantology') return null;
+
+    const implantImages = [
+      { url: 'https://images.unsplash.com/photo-1675285657370-541bd9616b85?w=800&q=80', caption: 'Implante dentário' },
+      { url: 'https://primadent.pt/wp-content/uploads/2025/09/implante-unico-e1758038758205.jpg', caption: 'Sistema de implante' },
+      { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Procedimento' },
+    ];
+
+    const indicationImages = [
+      { 
+        url: 'https://primadent.pt/wp-content/uploads/2025/09/266-d8fb546e-250499c1-1920w-1000x667-1920w.webp', 
+        title: 'Apenas 1 dente em falta',
+        desc: 'Um dente em falta deverá ser substituído por um implante dentário para prevenir problemas futuros.'
+      },
+      { 
+        url: 'https://primadent.pt/wp-content/uploads/2025/09/055-1920w-1000x666-1920w.webp', 
+        title: 'Vários dentes em falta',
+        desc: 'Se tem dois ou mais dentes em falta, a solução ideal é substituí-los através de uma ponte suportada por implantes.'
+      },
+      { 
+        url: 'https://primadent.pt/wp-content/uploads/2025/09/427-1920w-1000x667-1920w.webp', 
+        title: 'Todos os dentes em falta',
+        desc: 'Reabilitação total com protocolo All-on-4 ou All-on-6 para uma solução fixa e definitiva.'
+      },
+    ];
+
+    const advantages = [
+      'Recuperação da função mastigatória e da fala',
+      'Melhoria da estética facial e do sorriso',
+      'Prevenção da reabsorção óssea',
+      'Conforto e estabilidade superiores',
+      'Preservação dos dentes adjacentes'
+    ];
 
     return (
-      <section className="py-16 bg-background relative">
+      <>
+        {/* What are implants */}
+        <section className="py-20 bg-gradient-to-b from-background to-primary/5 relative">
+          <div className="container-luxury relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Tecnologia de Ponta</span>
+              <h2 className="text-display font-serif text-foreground mb-6">O que são Implantes Dentários?</h2>
+            </motion.div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="space-y-6"
+              >
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  São pequenas estruturas, geralmente de titânio, que são colocadas cirurgicamente 
+                  no osso maxilar ou mandibular, funcionando como uma raiz artificial.
+                </p>
+                <div className="bg-primary/10 border border-primary/20 rounded-2xl p-8">
+                  <h4 className="font-serif text-foreground mb-4 text-xl">Biocompatibilidade</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    O titânio é um metal biocompatível, o que significa que é bem tolerado pelo 
+                    organismo e permite a <strong className="text-foreground">osseointegração</strong>, ou seja, 
+                    a união do implante ao osso, conferindo estabilidade e durabilidade ao tratamento.
+                  </p>
+                </div>
+                <div className="bg-beige-dark/50 rounded-2xl p-8">
+                  <h4 className="font-serif text-foreground mb-4 text-xl">Objetivo</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Devolver ao paciente a função mastigatória, estética e autoestima, proporcionando 
+                    uma solução fixa, segura e duradoura para a perda dentária.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="grid grid-cols-2 gap-4"
+              >
+                {implantImages.slice(0, 2).map((img, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.03 }}
+                    className={`relative rounded-xl overflow-hidden cursor-pointer group shadow-lg ${idx === 0 ? 'col-span-2 aspect-video' : 'aspect-square'}`}
+                    onClick={() => openImageModal(implantImages, idx)}
+                  >
+                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                      <span className="absolute bottom-4 left-4 text-white font-medium">{img.caption}</span>
+                    </div>
+                  </motion.div>
+                ))}
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                  onClick={() => openImageModal(implantImages, 2)}
+                >
+                  <img src={implantImages[2].url} alt={implantImages[2].caption} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                    <span className="absolute bottom-4 left-4 text-white font-medium">{implantImages[2].caption}</span>
+                  </div>
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Indications */}
+        <section className="py-20 bg-beige-dark/30 relative">
+          <div className="container-luxury relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-title font-serif text-foreground mb-4">Indicações para Implantes Dentários</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                A colocação de implantes está indicada para pacientes que perderam um ou mais dentes 
+                e que desejam uma solução fixa, sem recorrer a próteses removíveis.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-3 gap-8"
+            >
+              {indicationImages.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={fadeInUp}
+                  className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <div className="aspect-video relative">
+                    <img src={item.url} alt={item.title} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-serif text-foreground text-lg mb-3">{item.title}</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Advantages */}
+        <section className="py-20 bg-background relative">
+          <div className="container-luxury relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-3xl mx-auto text-center"
+            >
+              <h2 className="text-title font-serif text-foreground mb-12">Vantagens dos Implantes Dentários</h2>
+              <div className="space-y-4">
+                {advantages.map((item, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="flex items-center gap-4 bg-primary/5 border border-primary/10 rounded-xl p-4"
+                  >
+                    <Check className="w-6 h-6 text-primary flex-shrink-0" />
+                    <span className="text-foreground">{item}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Cases placeholder */}
+        <section className="py-16 bg-beige-dark/20 relative">
+          <div className="container-luxury relative">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
+              <h2 className="text-title font-serif text-foreground mb-4">Casos Clínicos</h2>
+              <p className="text-muted-foreground mb-8">
+                Em breve serão adicionados casos clínicos com resultados reais dos nossos tratamentos.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="aspect-video bg-muted/10 rounded-xl border-2 border-dashed border-primary/20 flex items-center justify-center">
+                    <Camera className="w-8 h-8 text-primary/30" />
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      </>
+    );
+  };
+
+  // ========== OCLUSÃO (TMJ) - Expandido ==========
+  const renderTmjSection = () => {
+    if (serviceId !== 'tmj') return null;
+
+    const symptoms = [
+      'Dor na região da face e maxilar',
+      'Dificuldade em abrir ou fechar a boca',
+      'Estalidos na articulação temporomandibular',
+      'Dores de cabeça frequentes',
+      'Desgaste dentário excessivo',
+      'Dor ao mastigar ou falar',
+      'Tensão muscular na face e pescoço',
+      'Zumbido nos ouvidos'
+    ];
+
+    const treatments = [
+      { title: 'Goteiras Oclusais', desc: 'Dispositivos personalizados para proteção e relaxamento muscular' },
+      { title: 'Fisioterapia', desc: 'Exercícios específicos para a articulação temporomandibular' },
+      { title: 'Medicação', desc: 'Anti-inflamatórios e relaxantes musculares quando necessário' },
+      { title: 'Ajuste Oclusal', desc: 'Correção da mordida para aliviar tensões' }
+    ];
+
+    return (
+      <section className="py-20 bg-gradient-to-b from-background to-beige-dark/20 relative">
         <div className="container-luxury relative">
+          {/* Header with large image */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
+            className="grid lg:grid-cols-2 gap-12 items-center mb-20"
           >
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <Brain className="w-5 h-5 text-primary" />
-                  <span className="text-primary text-sm font-medium tracking-wider uppercase">
-                    Compreender a DTM
-                  </span>
-                </div>
-                <h2 className="text-title font-serif text-foreground mb-4">
-                  Dor Orofacial e Disfunção Temporomandibular
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  A dor orofacial pode manifestar-se de diversas formas, afetando a qualidade de vida dos pacientes. 
-                  O diagnóstico correto é fundamental para um tratamento eficaz.
-                </p>
-                <ul className="space-y-2">
-                  {['Dor na região da face e maxilar', 'Dificuldade em abrir ou fechar a boca', 'Estalidos na articulação', 'Dores de cabeça frequentes', 'Desgaste dentário'].map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-muted-foreground text-sm">
-                      <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Brain className="w-6 h-6 text-primary" />
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">Compreender a DTM</span>
               </div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative rounded-xl overflow-hidden shadow-2xl"
-              >
-                <img
-                  src={tmjIllustration.url}
-                  alt={tmjIllustration.caption}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
-              </motion.div>
+              <h2 className="text-display font-serif text-foreground mb-6">
+                Dor Orofacial e Disfunção Temporomandibular
+              </h2>
+              <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+                A Disfunção Temporomandibular (DTM) afeta a articulação e os músculos da mastigação, 
+                podendo provocar dor, estalidos, dificuldade em abrir a boca e até dificuldade em 
+                fechar quando em abertura máxima com um simples bocejo.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                A dor orofacial é dor localizada na face, boca ou maxilar, com diferentes origens 
+                que requerem avaliação especializada para determinar a causa e o tratamento adequado.
+              </p>
+            </div>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="relative rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1000&q=80"
+                alt="Dor orofacial"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+            </motion.div>
+          </motion.div>
+
+          {/* Symptoms */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <h3 className="text-title font-serif text-foreground mb-8 text-center">Sintomas Comuns</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {symptoms.map((symptom, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.05 }}
+                  className="bg-background border border-primary/10 rounded-xl p-4 flex items-center gap-3"
+                >
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-muted-foreground text-sm">{symptom}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Treatments */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-title font-serif text-foreground mb-8 text-center">Opções de Tratamento</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {treatments.map((treatment, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="bg-primary/5 border border-primary/20 rounded-xl p-6 text-center hover:bg-primary/10 transition-colors"
+                >
+                  <h4 className="font-serif text-foreground mb-2">{treatment.title}</h4>
+                  <p className="text-muted-foreground text-sm">{treatment.desc}</p>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
@@ -505,25 +941,16 @@ const ServiceDetailPage = () => {
             className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
             onClick={closeImageModal}
           >
-            <button
-              onClick={closeImageModal}
-              className="absolute top-4 right-4 text-white/80 hover:text-white p-2 transition-colors"
-            >
+            <button onClick={closeImageModal} className="absolute top-4 right-4 text-white/80 hover:text-white p-2">
               <X className="w-8 h-8" />
             </button>
             
             {selectedImage.length > 1 && (
               <>
-                <button
-                  onClick={(e) => { e.stopPropagation(); prevImage(); }}
-                  className="absolute left-4 text-white/80 hover:text-white p-2 transition-colors"
-                >
+                <button onClick={(e) => { e.stopPropagation(); prevImage(); }} className="absolute left-4 text-white/80 hover:text-white p-2">
                   <ChevronLeft className="w-10 h-10" />
                 </button>
-                <button
-                  onClick={(e) => { e.stopPropagation(); nextImage(); }}
-                  className="absolute right-4 text-white/80 hover:text-white p-2 transition-colors"
-                >
+                <button onClick={(e) => { e.stopPropagation(); nextImage(); }} className="absolute right-4 text-white/80 hover:text-white p-2">
                   <ChevronRight className="w-10 h-10" />
                 </button>
               </>
@@ -533,164 +960,113 @@ const ServiceDetailPage = () => {
               key={currentImageIndex}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              className="max-w-4xl max-h-[80vh] relative"
+              className="max-w-5xl max-h-[85vh] relative"
               onClick={(e) => e.stopPropagation()}
             >
               <img
                 src={selectedImage[currentImageIndex].url}
                 alt={selectedImage[currentImageIndex].caption}
-                className="max-w-full max-h-[75vh] object-contain rounded-lg"
+                className="max-w-full max-h-[80vh] object-contain rounded-lg"
               />
               <p className="text-white text-center mt-4 text-lg font-medium">
                 {selectedImage[currentImageIndex].caption}
               </p>
               {selectedImage.length > 1 && (
-                <p className="text-white/60 text-center mt-2 text-sm">
-                  {currentImageIndex + 1} / {selectedImage.length}
-                </p>
+                <p className="text-white/60 text-center mt-2 text-sm">{currentImageIndex + 1} / {selectedImage.length}</p>
               )}
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Hero Section with Background Image */}
+      {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url('${serviceBackgrounds[serviceId]}')` }}
-          />
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('${serviceBackgrounds[serviceId]}')` }} />
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/75 to-background" />
         </div>
 
         <div className="relative container-luxury pt-32 pb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto"
-          >
-            {/* Back button */}
+          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl mx-auto">
             <motion.button
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
               onClick={() => navigate('/services')}
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary mb-8 transition-colors duration-300"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary mb-8 transition-colors"
               data-testid="back-to-services-btn"
             >
               <ArrowLeft className="w-4 h-4" />
               {t('services.backToServices')}
             </motion.button>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="w-20 h-20 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mb-6 backdrop-blur-sm"
-            >
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }} className="w-20 h-20 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mb-6 backdrop-blur-sm">
               {IconComponent && <IconComponent className="w-9 h-9 text-primary" />}
             </motion.div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-display font-serif text-foreground mb-6"
-              data-testid="service-title"
-            >
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="text-display font-serif text-foreground mb-6" data-testid="service-title">
               {t(`services.items.${serviceId}.title`)}
             </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="text-body-lg text-muted-foreground"
-            >
+            <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="text-body-lg text-muted-foreground">
               {t(`services.items.${serviceId}.description`)}
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* TMJ Illustration (only for TMJ service) */}
-      {renderTmjIllustration()}
+      {/* Service-specific sections */}
+      {renderOrthodonticsSection()}
+      {renderOralSurgerySection()}
+      {renderProstheticsSection()}
+      {renderImplantologySection()}
+      {renderTmjSection()}
 
-      {/* Content Sections */}
-      <section className="section-luxury bg-background relative">
-        <div className="container-luxury relative">
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="grid lg:grid-cols-3 gap-8"
-          >
-            {/* Who is it for */}
-            <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8" data-testid="who-is-it-for-card">
-              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                <Users className="w-5 h-5 text-primary" />
-              </div>
-              <h3 className="text-xl font-serif text-foreground mb-4">
-                {t('services.whoIsItFor')}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {t(`services.items.${serviceId}.whoIsItFor`)}
-              </p>
+      {/* Standard Content (for services without custom sections) */}
+      {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj'].includes(serviceId) && (
+        <section className="section-luxury bg-background relative">
+          <div className="container-luxury relative">
+            <motion.div initial="initial" whileInView="animate" viewport={{ once: true }} variants={staggerContainer} className="grid lg:grid-cols-3 gap-8">
+              <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                  <Users className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.whoIsItFor')}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{t(`services.items.${serviceId}.whoIsItFor`)}</p>
+              </motion.div>
+
+              <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                  <Gift className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.benefits')}</h3>
+                <ul className="space-y-3">
+                  {Array.isArray(benefits) && benefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm">
+                      <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+
+              <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                  <ClipboardList className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.whatToExpect')}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{t(`services.items.${serviceId}.whatToExpect`)}</p>
+              </motion.div>
             </motion.div>
-
-            {/* Benefits */}
-            <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8" data-testid="benefits-card">
-              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                <Gift className="w-5 h-5 text-primary" />
-              </div>
-              <h3 className="text-xl font-serif text-foreground mb-4">
-                {t('services.benefits')}
-              </h3>
-              <ul className="space-y-3">
-                {Array.isArray(benefits) && benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm">
-                    <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>{benefit}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            {/* What to expect */}
-            <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8" data-testid="what-to-expect-card">
-              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                <ClipboardList className="w-5 h-5 text-primary" />
-              </div>
-              <h3 className="text-xl font-serif text-foreground mb-4">
-                {t('services.whatToExpect')}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {t(`services.items.${serviceId}.whatToExpect`)}
-              </p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Clinical Cases Section */}
-      {renderClinicalCases()}
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className="py-16 bg-beige-dark relative">
         <div className="container-luxury relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="text-title font-serif text-foreground mb-6">
-              {t('home.cta.title')}
-            </h2>
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
+            <h2 className="text-title font-serif text-foreground mb-6">{t('home.cta.title')}</h2>
             <a href="tel:+351253994232">
               <Button className="btn-luxury text-cream px-8 py-4 h-auto text-base font-medium" data-testid="cta-phone-btn">
                 <Phone className="mr-2 w-4 h-4" />
@@ -704,40 +1080,23 @@ const ServiceDetailPage = () => {
       {/* Related Services */}
       <section className="section-luxury bg-background relative">
         <div className="container-luxury relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-title font-serif text-foreground">
-              {t('services.otherServices')}
-            </h2>
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
+            <h2 className="text-title font-serif text-foreground">{t('services.otherServices')}</h2>
           </motion.div>
 
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
+          <motion.div initial="initial" whileInView="animate" viewport={{ once: true }} variants={staggerContainer} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedServices.map((service) => {
               const RelatedIcon = serviceIcons[service];
               return (
                 <motion.div key={service} variants={fadeInUp}>
                   <Link to={`/services/${service}`}>
-                    <div className="card-luxury rounded-lg p-6 h-full flex flex-col group" data-testid={`related-service-${service}`}>
+                    <div className="card-luxury rounded-lg p-6 h-full flex flex-col group">
                       <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-4">
                         {RelatedIcon && <RelatedIcon className="w-5 h-5 text-primary" />}
                       </div>
-                      <h3 className="text-lg font-serif text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                        {t(`services.items.${service}.title`)}
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
-                        {t(`services.items.${service}.shortDesc`)}
-                      </p>
-                      <div className="mt-4 flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <h3 className="text-lg font-serif text-foreground mb-2 group-hover:text-primary transition-colors">{t(`services.items.${service}.title`)}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed flex-grow">{t(`services.items.${service}.shortDesc`)}</p>
+                      <div className="mt-4 flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                         {t('services.learnMore')}
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </div>
