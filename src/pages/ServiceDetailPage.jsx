@@ -541,8 +541,8 @@ const ServiceDetailPage = () => {
                 <Cog className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <span className="text-primary text-sm font-medium tracking-wider uppercase">Soluções Flexíveis</span>
-                <h2 className="text-title font-serif text-foreground">Prótese Removível</h2>
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">{t('services.flexibleSolutions')}</span>
+                <h2 className="text-title font-serif text-foreground">{t('services.prosthetics.removableTitle')}</h2>
               </div>
             </div>
 
@@ -564,14 +564,12 @@ const ServiceDetailPage = () => {
               </div>
               <div className="order-1 lg:order-2 space-y-6">
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  A Prótese Removível oferece soluções acessíveis e eficazes para substituir 
-                  múltiplos dentes ou dentições completas. São próteses que podem ser retiradas 
-                  para higiene e manutenção.
+                  {t('services.prosthetics.removableDesc')}
                 </p>
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
-                  <h4 className="font-serif text-foreground mb-4">Vantagens:</h4>
+                  <h4 className="font-serif text-foreground mb-4">{t('services.advantages')}:</h4>
                   <ul className="space-y-2">
-                    {['Solução económica', 'Fácil manutenção e higiene', 'Adaptável a alterações futuras', 'Recuperação da função e estética'].map((item, idx) => (
+                    {(t('services.prosthetics.removableAdvantages', { returnObjects: true }) || []).map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-muted-foreground text-sm">
                         <Check className="w-4 h-4 text-primary" />
                         {item}
