@@ -865,22 +865,13 @@ const ServiceDetailPage = () => {
   const renderTmjSection = () => {
     if (serviceId !== 'tmj') return null;
 
-    const symptoms = [
-      'Dor na região da face e maxilar',
-      'Dificuldade em abrir ou fechar a boca',
-      'Estalidos na articulação temporomandibular',
-      'Dores de cabeça frequentes',
-      'Desgaste dentário excessivo',
-      'Dor ao mastigar ou falar',
-      'Tensão muscular na face e pescoço',
-      'Zumbido nos ouvidos'
-    ];
-
+    const symptoms = t('services.tmj.symptoms', { returnObjects: true }) || [];
+    
     const treatments = [
-      { title: 'Goteiras Oclusais', desc: 'Dispositivos personalizados para proteção e relaxamento muscular' },
-      { title: 'Fisioterapia', desc: 'Exercícios específicos para a articulação temporomandibular' },
-      { title: 'Medicação', desc: 'Anti-inflamatórios e relaxantes musculares quando necessário' },
-      { title: 'Ajuste Oclusal', desc: 'Correção da mordida para aliviar tensões' }
+      { title: t('services.tmj.treatments.splints.title'), desc: t('services.tmj.treatments.splints.desc') },
+      { title: t('services.tmj.treatments.physiotherapy.title'), desc: t('services.tmj.treatments.physiotherapy.desc') },
+      { title: t('services.tmj.treatments.medication.title'), desc: t('services.tmj.treatments.medication.desc') },
+      { title: t('services.tmj.treatments.occlusalAdjustment.title'), desc: t('services.tmj.treatments.occlusalAdjustment.desc') }
     ];
 
     return (
@@ -896,19 +887,16 @@ const ServiceDetailPage = () => {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <Brain className="w-6 h-6 text-primary" />
-                <span className="text-primary text-sm font-medium tracking-wider uppercase">Compreender a DTM</span>
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">{t('services.tmj.understandDTM')}</span>
               </div>
               <h2 className="text-display font-serif text-foreground mb-6">
-                Dor Orofacial e Disfunção Temporomandibular
+                {t('services.tmj.orofacialPain')}
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-                A Disfunção Temporomandibular (DTM) afeta a articulação e os músculos da mastigação, 
-                podendo provocar dor, estalidos, dificuldade em abrir a boca e até dificuldade em 
-                fechar quando em abertura máxima com um simples bocejo.
+                {t('services.tmj.description')}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                A dor orofacial é dor localizada na face, boca ou maxilar, com diferentes origens 
-                que requerem avaliação especializada para determinar a causa e o tratamento adequado.
+                {t('services.tmj.painDescription')}
               </p>
             </div>
             <motion.div
@@ -917,7 +905,7 @@ const ServiceDetailPage = () => {
             >
               <img
                 src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1000&q=80"
-                alt="Dor orofacial"
+                alt={t('services.tmj.orofacialPain')}
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
@@ -931,7 +919,7 @@ const ServiceDetailPage = () => {
             viewport={{ once: true }}
             className="mb-20"
           >
-            <h3 className="text-title font-serif text-foreground mb-8 text-center">Sintomas Comuns</h3>
+            <h3 className="text-title font-serif text-foreground mb-8 text-center">{t('services.tmj.commonSymptoms')}</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {symptoms.map((symptom, idx) => (
                 <motion.div
@@ -955,7 +943,7 @@ const ServiceDetailPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-title font-serif text-foreground mb-8 text-center">Opções de Tratamento</h3>
+            <h3 className="text-title font-serif text-foreground mb-8 text-center">{t('services.tmj.treatmentOptions')}</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {treatments.map((treatment, idx) => (
                 <motion.div
