@@ -287,10 +287,10 @@ const ServiceDetailPage = () => {
               className="text-center mb-12"
             >
               <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
-              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Galeria de Resultados</span>
-              <h2 className="text-title font-serif text-foreground">Casos Clínicos</h2>
+              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.resultsGallery')}</span>
+              <h2 className="text-title font-serif text-foreground">{t('services.clinicalCases')}</h2>
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Veja exemplos reais de transformações com os nossos tratamentos ortodônticos.
+                {t('services.orthodontics.casesDescription')}
               </p>
             </motion.div>
 
