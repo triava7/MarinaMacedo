@@ -769,27 +769,80 @@ const ServiceDetailPage = () => {
           </div>
         </section>
 
-        {/* Cases placeholder */}
-        <section className="py-16 bg-beige-dark/20 relative">
+        {/* Clinical Cases */}
+        <section className="py-20 bg-beige-dark/20 relative">
           <div className="container-luxury relative">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center"
+              className="text-center mb-12"
             >
               <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
               <h2 className="text-title font-serif text-foreground mb-4">Casos Clínicos</h2>
-              <p className="text-muted-foreground mb-8">
-                Em breve serão adicionados casos clínicos com resultados reais dos nossos tratamentos.
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Veja exemplos reais de reabilitações com implantes dentários realizadas na nossa clínica.
               </p>
-              <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="aspect-video bg-muted/10 rounded-xl border-2 border-dashed border-primary/20 flex items-center justify-center">
-                    <Camera className="w-8 h-8 text-primary/30" />
+            </motion.div>
+
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+              className="grid md:grid-cols-3 gap-8"
+            >
+              {[
+                {
+                  title: 'Implante Unitário Anterior',
+                  desc: 'Substituição de incisivo central com implante e coroa cerâmica para resultado estético natural.',
+                  images: [
+                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: 'Antes' },
+                    { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', caption: 'Depois' }
+                  ]
+                },
+                {
+                  title: 'Ponte sobre Implantes',
+                  desc: 'Reabilitação de 3 dentes posteriores com ponte fixa suportada por 2 implantes.',
+                  images: [
+                    { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80', caption: 'Antes' },
+                    { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80', caption: 'Depois' }
+                  ]
+                },
+                {
+                  title: 'Reabilitação Total',
+                  desc: 'Protocolo All-on-4 para reabilitação completa da arcada superior com carga imediata.',
+                  images: [
+                    { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80', caption: 'Antes' },
+                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: 'Depois' }
+                  ]
+                }
+              ].map((caseItem, idx) => (
+                <motion.div
+                  key={idx}
+                  variants={fadeInUp}
+                  className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group"
+                >
+                  <div className="grid grid-cols-2">
+                    {caseItem.images.map((img, imgIdx) => (
+                      <div
+                        key={imgIdx}
+                        className="aspect-square relative cursor-pointer"
+                        onClick={() => openImageModal(caseItem.images, imgIdx)}
+                      >
+                        <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                          <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">{img.caption}</span>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                  <div className="p-6">
+                    <h4 className="font-serif text-foreground text-lg mb-2 group-hover:text-primary transition-colors">{caseItem.title}</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{caseItem.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </section>
