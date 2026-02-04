@@ -150,31 +150,18 @@
         ],
         "whatToExpect": "Les consultations sont menées de manière ludique et accueillante, pour que les enfants se sentent à l'aise. Nous effectuons des examens adaptés à l'âge, appliquons du fluor si indiqué et guidons les parents sur les soins quotidiens."
       },
-      "prosthetics-fixed": {
-        "title": "Prothèse Fixe",
-        "shortDesc": "Couronnes, ponts et facettes pour restaurer les dents de manière permanente.",
-        "description": "La Prothèse Fixe offre des solutions permanentes pour restaurer les dents endommagées ou remplacer les dents perdues. Comprend des couronnes, des ponts et des facettes scellés aux dents, offrant une solution stable et durable.",
-        "whoIsItFor": "Personnes avec des dents fracturées, cariées ou usées nécessitant une restauration, ou ayant perdu une ou quelques dents et souhaitant une solution fixe.",
+      "prosthetics": {
+        "title": "Prothèses Fixes et Amovibles",
+        "shortDesc": "Solutions personnalisées pour restaurer la fonction et l'esthétique de votre sourire.",
+        "description": "La Prosthodontie offre des solutions pour remplacer les dents perdues ou endommagées, restaurant la fonction masticatoire, la parole et l'esthétique du sourire grâce à des prothèses fixes ou amovibles.",
+        "whoIsItFor": "Personnes ayant perdu une ou plusieurs dents, ou ayant des dents gravement endommagées nécessitant une réhabilitation.",
         "benefits": [
-          "Solution permanente et stable",
-          "Aspect naturel et esthétique",
-          "Fonction masticatoire complète",
-          "Pas de retrait quotidien nécessaire"
+          "Récupération de la fonction masticatoire",
+          "Amélioration esthétique significative",
+          "Solutions durables et confortables",
+          "Prévention des problèmes liés aux dents manquantes"
         ],
-        "whatToExpect": "Le traitement implique la préparation des dents, le moulage et la pose de la prothèse définitive. Généralement 2-3 rendez-vous sont nécessaires pour compléter le processus."
-      },
-      "prosthetics-removable": {
-        "title": "Prothèse Amovible",
-        "shortDesc": "Prothèses partielles et complètes amovibles pour la réhabilitation orale.",
-        "description": "La Prothèse Amovible offre des solutions accessibles et efficaces pour remplacer plusieurs dents ou des dentitions complètes. Ce sont des prothèses qui peuvent être retirées pour l'hygiène et l'entretien.",
-        "whoIsItFor": "Personnes ayant perdu plusieurs dents ou toutes leurs dents, ou qui ne sont pas candidates aux prothèses fixes ou aux implants.",
-        "benefits": [
-          "Solution économique",
-          "Entretien et hygiène faciles",
-          "Adaptable aux changements futurs",
-          "Récupération de la fonction et de l'esthétique"
-        ],
-        "whatToExpect": "Le processus comprend le moulage, les essayages et les ajustements jusqu'à atteindre un confort idéal. Vous recevrez des instructions détaillées sur l'utilisation, l'hygiène et l'entretien de la prothèse."
+        "whatToExpect": "Le processus commence par une évaluation complète et une planification personnalisée. Des empreintes ou des scans seront réalisés pour créer la prothèse sur mesure. Après la pose, nous effectuons des ajustements pour assurer confort et fonctionnalité."
       },
       "aesthetic-dentistry": {
         "title": "Dentisterie Esthétique",
