@@ -487,22 +487,20 @@ const ServiceDetailPage = () => {
                 <Cog className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <span className="text-primary text-sm font-medium tracking-wider uppercase">Soluções Permanentes</span>
-                <h2 className="text-title font-serif text-foreground">Prótese Fixa</h2>
+                <span className="text-primary text-sm font-medium tracking-wider uppercase">{t('services.permanentSolutions')}</span>
+                <h2 className="text-title font-serif text-foreground">{t('services.prosthetics.fixedTitle')}</h2>
               </div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  A Prótese Fixa oferece soluções permanentes para restaurar dentes danificados ou 
-                  substituir dentes perdidos. Inclui coroas, pontes e facetas que ficam cimentadas 
-                  aos dentes, proporcionando uma solução estável e duradoura.
+                  {t('services.prosthetics.fixedDesc')}
                 </p>
                 <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
-                  <h4 className="font-serif text-foreground mb-4">Vantagens:</h4>
+                  <h4 className="font-serif text-foreground mb-4">{t('services.advantages')}:</h4>
                   <ul className="space-y-2">
-                    {['Solução permanente e estável', 'Aspeto natural e estético', 'Função mastigatória completa', 'Não necessita remoção diária'].map((item, idx) => (
+                    {(t('services.prosthetics.fixedAdvantages', { returnObjects: true }) || []).map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-muted-foreground text-sm">
                         <Check className="w-4 h-4 text-primary" />
                         {item}
