@@ -55,7 +55,7 @@ const LanguageSwitch = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full right-0 mt-2 py-2 bg-card border border-border rounded-lg shadow-elegant min-w-[140px] z-50"
+            className="absolute top-full right-0 mt-2 py-2 bg-card border border-border rounded-lg shadow-elegant min-w-[140px] z-[100]"
           >
             {languages.map((lang) => (
               <button
