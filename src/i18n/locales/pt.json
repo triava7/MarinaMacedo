@@ -151,31 +151,18 @@
         ],
         "whatToExpect": "As consultas são realizadas de forma lúdica e acolhedora, para que as crianças se sintam confortáveis. Fazemos exames adaptados à idade e orientamos os pais sobre cuidados diários."
       },
-      "prosthetics-fixed": {
-        "title": "Prótese Fixa",
-        "shortDesc": "Coroas, pontes e facetas para restaurar dentes de forma permanente.",
-        "description": "A Prótese Fixa oferece soluções permanentes para restaurar dentes danificados ou substituir dentes perdidos. Inclui coroas, pontes e facetas que ficam cimentadas aos dentes, proporcionando uma solução estável e duradoura.",
-        "whoIsItFor": "Pessoas com dentes fraturados, cariados ou desgastados que precisam de restauração, ou que perderam um ou poucos dentes e desejam uma solução fixa.",
+      "prosthetics": {
+        "title": "Prótese Fixa e Removível",
+        "shortDesc": "Soluções personalizadas para restaurar a função e estética do seu sorriso.",
+        "description": "A Prostodontia oferece soluções para substituir dentes perdidos ou danificados, restaurando a função mastigatória, a fala e a estética do sorriso através de próteses fixas ou removíveis.",
+        "whoIsItFor": "Pessoas que perderam um ou mais dentes, ou que têm dentes severamente danificados que precisam de ser reabilitados.",
         "benefits": [
-          "Solução permanente e estável",
-          "Aspeto natural e estético",
-          "Função mastigatória completa",
-          "Não necessita remoção diária"
+          "Recuperação da função mastigatória",
+          "Melhoria estética significativa",
+          "Soluções duradouras e confortáveis",
+          "Prevenção de problemas associados à falta de dentes"
         ],
-        "whatToExpect": "O tratamento envolve preparação dos dentes, moldagem, e colocação da prótese definitiva. Normalmente são necessárias 2-3 consultas para completar o processo."
-      },
-      "prosthetics-removable": {
-        "title": "Prótese Removível",
-        "shortDesc": "Próteses parciais e totais removíveis para reabilitação oral.",
-        "description": "A Prótese Removível oferece soluções acessíveis e eficazes para substituir múltiplos dentes ou dentições completas. São próteses que podem ser retiradas para higiene e manutenção.",
-        "whoIsItFor": "Pessoas que perderam vários dentes ou todos os dentes, ou que não são candidatos a próteses fixas ou implantes.",
-        "benefits": [
-          "Solução económica",
-          "Fácil manutenção e higiene",
-          "Adaptável a alterações futuras",
-          "Recuperação da função e estética"
-        ],
-        "whatToExpect": "O processo inclui moldagem, provas e ajustes até alcançar o conforto ideal. Receberá instruções detalhadas sobre uso, higiene e manutenção da prótese."
+        "whatToExpect": "O processo começa com uma avaliação completa e planeamento personalizado. Serão feitas impressões ou digitalizações para criar a prótese à medida. Após a colocação, fazemos ajustes para garantir conforto e funcionalidade."
       },
       "aesthetic-dentistry": {
         "title": "Branqueamento",
