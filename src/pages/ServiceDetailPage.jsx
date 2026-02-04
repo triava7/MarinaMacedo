@@ -177,11 +177,10 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Tecnologia Avançada</span>
-              <h2 className="text-display font-serif text-foreground mb-6">Alinhadores Invisíveis</h2>
+              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.advancedTechnology')}</span>
+              <h2 className="text-display font-serif text-foreground mb-6">{t('services.orthodontics.invisibleAligners')}</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-                Feitos à medida de cada paciente com material plástico termoplástico e biocompatível, 
-                adaptando-se confortavelmente à anatomia de cada boca.
+                {t('services.orthodontics.alignersDesc')}
               </p>
             </motion.div>
 
@@ -192,11 +191,9 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-primary/20"
             >
-              <h3 className="text-xl font-serif text-foreground mb-4">Como Funcionam?</h3>
+              <h3 className="text-xl font-serif text-foreground mb-4">{t('services.orthodontics.howItWorks')}</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Funcionam através da aplicação controlada de forças suaves e progressivas que vão 
-                movimentando os dentes para as posições desejadas. Cada conjunto de alinhadores é 
-                usado durante aproximadamente duas semanas antes de passar para o seguinte.
+                {t('services.orthodontics.howItWorksDesc')}
               </p>
             </motion.div>
 
@@ -209,10 +206,10 @@ const ServiceDetailPage = () => {
               className="grid md:grid-cols-4 gap-6 mb-16"
             >
               {[
-                { icon: Eye, title: 'Estética', desc: 'Praticamente impercetíveis' },
-                { icon: Sparkle, title: 'Imperceptíveis', desc: 'Transparentes e discretos' },
-                { icon: Shield, title: 'Conforto', desc: 'Material suave e adaptável' },
-                { icon: Zap, title: 'Eficiência', desc: 'Resultados previsíveis' }
+                { icon: Eye, title: t('services.orthodontics.aesthetic'), desc: t('services.orthodontics.aestheticDesc') },
+                { icon: Sparkle, title: t('services.orthodontics.imperceptible'), desc: t('services.orthodontics.imperceptibleDesc') },
+                { icon: Shield, title: t('services.orthodontics.comfort'), desc: t('services.orthodontics.comfortDesc') },
+                { icon: Zap, title: t('services.orthodontics.efficiency'), desc: t('services.orthodontics.efficiencyDesc') }
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
@@ -235,7 +232,7 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="mb-16"
             >
-              <h3 className="text-xl font-serif text-foreground mb-6 text-center">Alinhadores em Ação</h3>
+              <h3 className="text-xl font-serif text-foreground mb-6 text-center">{t('services.orthodontics.alignersInAction')}</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {alignerImages.map((img, idx) => (
                   <motion.div
