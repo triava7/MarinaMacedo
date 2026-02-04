@@ -632,8 +632,8 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Tecnologia de Ponta</span>
-              <h2 className="text-display font-serif text-foreground mb-6">O que são Implantes Dentários?</h2>
+              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.cuttingEdgeTechnology')}</span>
+              <h2 className="text-display font-serif text-foreground mb-6">{t('services.implantology.whatAreImplants')}</h2>
             </motion.div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -644,22 +644,18 @@ const ServiceDetailPage = () => {
                 className="space-y-6"
               >
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  São pequenas estruturas, geralmente de titânio, que são colocadas cirurgicamente 
-                  no osso maxilar ou mandibular, funcionando como uma raiz artificial.
+                  {t('services.implantology.whatAreImplantsDesc')}
                 </p>
                 <div className="bg-primary/10 border border-primary/20 rounded-2xl p-8">
-                  <h4 className="font-serif text-foreground mb-4 text-xl">Biocompatibilidade</h4>
+                  <h4 className="font-serif text-foreground mb-4 text-xl">{t('services.implantology.biocompatibility')}</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    O titânio é um metal biocompatível, o que significa que é bem tolerado pelo 
-                    organismo e permite a <strong className="text-foreground">osseointegração</strong>, ou seja, 
-                    a união do implante ao osso, conferindo estabilidade e durabilidade ao tratamento.
+                    {t('services.implantology.biocompatibilityDesc')}
                   </p>
                 </div>
                 <div className="bg-beige-dark/50 rounded-2xl p-8">
-                  <h4 className="font-serif text-foreground mb-4 text-xl">Objetivo</h4>
+                  <h4 className="font-serif text-foreground mb-4 text-xl">{t('services.implantology.objective')}</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    Devolver ao paciente a função mastigatória, estética e autoestima, proporcionando 
-                    uma solução fixa, segura e duradoura para a perda dentária.
+                    {t('services.implantology.objectiveDesc')}
                   </p>
                 </div>
               </motion.div>
