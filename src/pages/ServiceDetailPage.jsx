@@ -364,8 +364,8 @@ const ServiceDetailPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">Documentação Clínica</span>
-            <h2 className="text-display font-serif text-foreground mb-6">Caso Clínico</h2>
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.clinicalDocumentation')}</span>
+            <h2 className="text-display font-serif text-foreground mb-6">{t('services.clinicalCases')}</h2>
           </motion.div>
 
           {/* Main Content Grid */}
@@ -378,20 +378,27 @@ const ServiceDetailPage = () => {
               className="space-y-8"
             >
               <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8">
-                <h3 className="text-xl font-serif text-foreground mb-4">O que é a Cirurgia Oral?</h3>
+                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.oralSurgery.whatIs')}</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico 
-                  das dores e tensões maxilares e estruturas anexas dos dentes.
+                  {t('services.oralSurgery.whatIsDesc')}
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-serif text-foreground mb-6 flex items-center gap-3">
                   <Users className="w-5 h-5 text-primary" />
-                  Para quem é indicado?
+                  {t('services.whoIsItFor')}
                 </h3>
                 <ul className="space-y-3">
-                  {indications.map((item, idx) => (
+                  {[
+                    t('services.oralSurgery.indications.cysts'),
+                    t('services.oralSurgery.indications.mucosaLesions'),
+                    t('services.oralSurgery.indications.teethExtraction'),
+                    t('services.oralSurgery.indications.fibromas'),
+                    t('services.oralSurgery.indications.prostheticSurgery'),
+                    t('services.oralSurgery.indications.gingivoplasty'),
+                    t('services.oralSurgery.indications.gingivalRetraction')
+                  ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-3 text-muted-foreground">
                       <Check className="w-5 h-5 text-primary flex-shrink-0" />
                       <span>{item}</span>
