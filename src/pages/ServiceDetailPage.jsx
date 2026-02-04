@@ -257,7 +257,7 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="mb-16"
             >
-              <h3 className="text-xl font-serif text-foreground mb-6 text-center">Modelos de Gesso - Planeamento</h3>
+              <h3 className="text-xl font-serif text-foreground mb-6 text-center">{t('services.orthodontics.plasterModels')}</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 {plasterModels.map((img, idx) => (
                   <motion.div
