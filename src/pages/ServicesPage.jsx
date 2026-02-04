@@ -50,7 +50,7 @@ const ServicesPage = () => {
   };
 
   // Services with featured/highlighted styling
-  const featuredServices = ['orthodontics'];
+  const featuredServices = [];
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
