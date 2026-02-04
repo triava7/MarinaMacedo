@@ -790,9 +790,9 @@ const ServiceDetailPage = () => {
               className="text-center mb-12"
             >
               <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
-              <h2 className="text-title font-serif text-foreground mb-4">Casos Clínicos</h2>
+              <h2 className="text-title font-serif text-foreground mb-4">{t('services.clinicalCases')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Veja exemplos reais de reabilitações com implantes dentários realizadas na nossa clínica.
+                {t('services.implantology.casesDescription')}
               </p>
             </motion.div>
 
@@ -805,27 +805,27 @@ const ServiceDetailPage = () => {
             >
               {[
                 {
-                  title: 'Implante Unitário Anterior',
-                  desc: 'Substituição de incisivo central com implante e coroa cerâmica para resultado estético natural.',
+                  title: t('services.implantology.case1Title'),
+                  desc: t('services.implantology.case1Desc'),
                   images: [
-                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: 'Antes' },
-                    { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', caption: 'Depois' }
+                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: t('services.before') },
+                    { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', caption: t('services.after') }
                   ]
                 },
                 {
-                  title: 'Ponte sobre Implantes',
-                  desc: 'Reabilitação de 3 dentes posteriores com ponte fixa suportada por 2 implantes.',
+                  title: t('services.implantology.case2Title'),
+                  desc: t('services.implantology.case2Desc'),
                   images: [
-                    { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80', caption: 'Antes' },
-                    { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80', caption: 'Depois' }
+                    { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80', caption: t('services.before') },
+                    { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80', caption: t('services.after') }
                   ]
                 },
                 {
-                  title: 'Reabilitação Total',
-                  desc: 'Protocolo All-on-4 para reabilitação completa da arcada superior com carga imediata.',
+                  title: t('services.implantology.case3Title'),
+                  desc: t('services.implantology.case3Desc'),
                   images: [
-                    { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80', caption: 'Antes' },
-                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: 'Depois' }
+                    { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80', caption: t('services.before') },
+                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: t('services.after') }
                   ]
                 }
               ].map((caseItem, idx) => (
