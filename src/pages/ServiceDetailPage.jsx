@@ -703,10 +703,9 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="text-title font-serif text-foreground mb-4">Indicações para Implantes Dentários</h2>
+              <h2 className="text-title font-serif text-foreground mb-4">{t('services.implantology.indications')}</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                A colocação de implantes está indicada para pacientes que perderam um ou mais dentes 
-                e que desejam uma solução fixa, sem recorrer a próteses removíveis.
+                {t('services.implantology.indicationsDesc')}
               </p>
             </motion.div>
 
@@ -717,7 +716,23 @@ const ServiceDetailPage = () => {
               variants={staggerContainer}
               className="grid md:grid-cols-3 gap-8"
             >
-              {indicationImages.map((item, idx) => (
+              {[
+                { 
+                  url: 'https://primadent.pt/wp-content/uploads/2025/09/266-d8fb546e-250499c1-1920w-1000x667-1920w.webp', 
+                  title: t('services.implantology.oneTooth'),
+                  desc: t('services.implantology.oneToothDesc')
+                },
+                { 
+                  url: 'https://primadent.pt/wp-content/uploads/2025/09/055-1920w-1000x666-1920w.webp', 
+                  title: t('services.implantology.severalTeeth'),
+                  desc: t('services.implantology.severalTeethDesc')
+                },
+                { 
+                  url: 'https://primadent.pt/wp-content/uploads/2025/09/427-1920w-1000x667-1920w.webp', 
+                  title: t('services.implantology.allTeeth'),
+                  desc: t('services.implantology.allTeethDesc')
+                }
+              ].map((item, idx) => (
                 <motion.div
                   key={idx}
                   variants={fadeInUp}
@@ -745,9 +760,9 @@ const ServiceDetailPage = () => {
               viewport={{ once: true }}
               className="max-w-3xl mx-auto text-center"
             >
-              <h2 className="text-title font-serif text-foreground mb-12">Vantagens dos Implantes Dentários</h2>
+              <h2 className="text-title font-serif text-foreground mb-12">{t('services.implantology.advantages')}</h2>
               <div className="space-y-4">
-                {advantages.map((item, idx) => (
+                {(t('services.implantology.advantagesList', { returnObjects: true }) || []).map((item, idx) => (
                   <motion.div
                     key={idx}
                     initial={{ opacity: 0, x: -20 }}
