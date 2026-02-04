@@ -13,8 +13,7 @@ const ServicesPage = () => {
     dental: [
       'general-dentistry',
       'pediatric-dentistry',
-      'prosthetics-fixed',
-      'prosthetics-removable',
+      'prosthetics',
       'aesthetic-dentistry',
       'implantology',
       'oral-surgery',
@@ -36,8 +35,7 @@ const ServicesPage = () => {
   const serviceIcons = {
     'general-dentistry': Stethoscope,
     'pediatric-dentistry': Baby,
-    'prosthetics-fixed': Cog,
-    'prosthetics-removable': Cog,
+    'prosthetics': Cog,
     'aesthetic-dentistry': Sparkle,
     'implantology': Target,
     'oral-surgery': Target,
