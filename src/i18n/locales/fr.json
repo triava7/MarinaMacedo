@@ -104,7 +104,9 @@
     "team": {
       "label": "Notre Équipe",
       "title": "Professionnels d'Excellence",
-      "description": "Une équipe multidisciplinaire dédiée à votre bien-être et santé bucco-dentaire."
+      "description": "Une équipe multidisciplinaire dédiée à votre bien-être et santé bucco-dentaire.",
+      "clinicalDirector": "Directrice Clinique",
+      "clinicalBody": "Équipe Clinique"
     }
   },
   "services": {
@@ -381,7 +383,7 @@
           "Traitement personnalisé",
           "Options conservatrices et chirurgicales"
         ],
-        "whatToExpect": "La consultation comprend une évaluation détaillée de votre condition, éventuellement avec des examens d'imagerie. Le plan de traitement peut inclure des médicaments, de la kinésithérapie ou, si nécessaire, une chirurgie."
+       "whatToExpect": "Consultation de traumatologie et de médecine du sport, comprenant l’évaluation des lésions liées à la pratique sportive, comme le football, ainsi que l’analyse des dommages corporels post-traumatiques à des fins d’assurance et d’arrêts de travail. Elle inclut également la rédaction de rapports d’évaluation pour les commissions médicales et la consultation pour douleurs articulaires, lésions sportives, problèmes de la colonne vertébrale ou autres affections orthopédiques."
       },
       "nutrition": {
         "title": "Nutrition",

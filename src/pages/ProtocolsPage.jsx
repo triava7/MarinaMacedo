@@ -42,16 +42,6 @@ const ProtocolsPage = () => {
       logo: pspLogo,
     },
     {
-      id: 'sams-quadros',
-      name: 'SAMS',
-      logo: samsLogo,
-    },
-    {
-      id: 'sams-sibs',
-      name: 'SAMS SIBS',
-      logo: sibsLogo,
-    },
-    {
       id: 'ctt',
       name: 'CTT',
       logo: cttLogo,
@@ -75,6 +65,16 @@ const ProtocolsPage = () => {
       id: 'sams-quadros',
       name: 'SAMS Quadros',
       logo: quadrosLogo,
+    },
+     {
+      id: 'sams-quadros',
+      name: 'SAMS',
+      logo: samsLogo,
+    },
+    {
+      id: 'sams-sibs',
+      name: 'SAMS SIBS',
+      logo: sibsLogo,
     },
   ];
 

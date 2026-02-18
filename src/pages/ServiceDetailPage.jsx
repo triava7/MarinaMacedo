@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, X, ChevronLeft, ChevronRight, Camera, Eye, Zap, Shield } from 'lucide-react';
 import { Button } from '../components/ui/button';
+import img1 from "../img/galery/6.jpeg";
+import img2 from "../img/galery/1.jpeg";
 
 const ServiceDetailPage = () => {
   const { t } = useTranslation();
@@ -35,7 +37,7 @@ const ServiceDetailPage = () => {
     'pediatric-dentistry': Baby,
     'prosthetics': Cog,
     'aesthetic-dentistry': Sparkle,
-    'implantology': Target,
+    'implantology': Shield,
     'oral-surgery': Target,
     'endodontics': FileHeart,
     'orthodontics': Smile,
@@ -47,25 +49,38 @@ const ServiceDetailPage = () => {
     'nutrition': Apple,
     'massage': HandHeart,
   };
+  
+  const dentalServices = [
+  'general-dentistry',
+  'pediatric-dentistry',
+  'prosthetics',
+  'aesthetic-dentistry',
+  'implantology',
+  'oral-surgery',
+  'endodontics',
+  'orthodontics',
+  'tmj',
+  'periodontics'
+];
 
   // Background images for each service
-  const serviceBackgrounds = {
-    'general-dentistry': 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80',
-    'pediatric-dentistry': 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&q=80',
-    'prosthetics': 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&q=80',
-    'aesthetic-dentistry': 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1920&q=80',
-    'implantology': 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
-    'oral-surgery': 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
-    'endodontics': 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&q=80',
-    'orthodontics': 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80',
-    'tmj': 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&q=80',
-    'periodontics': 'https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=1920&q=80',
-    'ent': 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1920&q=80',
-    'general-medicine': 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&q=80',
-    'orthopedics': 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1920&q=80',
-    'nutrition': 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1920&q=80',
-    'massage': 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=80',
-  };
+  // const serviceBackgrounds = {
+  //   'general-dentistry': 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80',
+  //   'pediatric-dentistry': 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&q=80',
+  //   'prosthetics': 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1920&q=80',
+  //   'aesthetic-dentistry': 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1920&q=80',
+  //   'implantology': 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
+  //   'oral-surgery': 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&q=80',
+  //   'endodontics': 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1920&q=80',
+  //   'orthodontics': 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1920&q=80',
+  //   'tmj': 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&q=80',
+  //   'periodontics': 'https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?w=1920&q=80',
+  //   'ent': 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1920&q=80',
+  //   'general-medicine': 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&q=80',
+  //   'orthopedics': 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1920&q=80',
+  //   'nutrition': 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1920&q=80',
+  //   'massage': 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=80',
+  // };
 
   // Get related services
   const relatedServices = allServices.filter(s => s !== serviceId).slice(0, 3);
@@ -166,6 +181,7 @@ const ServiceDetailPage = () => {
       }
     ];
 
+
     return (
       <>
         {/* Alinhadores Invisíveis Section */}
@@ -251,7 +267,7 @@ const ServiceDetailPage = () => {
             </motion.div>
 
             {/* Plaster Models */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -273,7 +289,7 @@ const ServiceDetailPage = () => {
                   </motion.div>
                 ))}
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </section>
 
@@ -589,37 +605,11 @@ const ServiceDetailPage = () => {
   const renderImplantologySection = () => {
     if (serviceId !== 'implantology') return null;
 
-    const implantImages = [
-      { url: 'https://images.unsplash.com/photo-1675285657370-541bd9616b85?w=800&q=80', caption: 'Implante dentário' },
-      { url: 'https://primadent.pt/wp-content/uploads/2025/09/implante-unico-e1758038758205.jpg', caption: 'Sistema de implante' },
-      { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Procedimento' },
-    ];
+    const implantImage = {
+      url: 'https://primadent.pt/wp-content/uploads/2025/09/implante-unico-e1758038758205.jpg',
+      caption: 'Implante dentário',
+    };
 
-    const indicationImages = [
-      { 
-        url: 'https://primadent.pt/wp-content/uploads/2025/09/266-d8fb546e-250499c1-1920w-1000x667-1920w.webp', 
-        title: 'Apenas 1 dente em falta',
-        desc: 'Um dente em falta deverá ser substituído por um implante dentário para prevenir problemas futuros.'
-      },
-      { 
-        url: 'https://primadent.pt/wp-content/uploads/2025/09/055-1920w-1000x666-1920w.webp', 
-        title: 'Vários dentes em falta',
-        desc: 'Se tem dois ou mais dentes em falta, a solução ideal é substituí-los através de uma ponte suportada por implantes.'
-      },
-      { 
-        url: 'https://primadent.pt/wp-content/uploads/2025/09/427-1920w-1000x667-1920w.webp', 
-        title: 'Todos os dentes em falta',
-        desc: 'Reabilitação total com protocolo All-on-4 ou All-on-6 para uma solução fixa e definitiva.'
-      },
-    ];
-
-    const advantages = [
-      'Recuperação da função mastigatória e da fala',
-      'Melhoria da estética facial e do sorriso',
-      'Prevenção da reabsorção óssea',
-      'Conforto e estabilidade superiores',
-      'Preservação dos dentes adjacentes'
-    ];
 
     return (
       <>
@@ -664,32 +654,21 @@ const ServiceDetailPage = () => {
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="grid grid-cols-2 gap-4"
+                whileHover={{ scale: 1.02 }}
+                className="relative rounded-2xl overflow-hidden shadow-lg aspect-video"
               >
-                {implantImages.slice(0, 2).map((img, idx) => (
-                  <motion.div
-                    key={idx}
-                    whileHover={{ scale: 1.03 }}
-                    className={`relative rounded-xl overflow-hidden cursor-pointer group shadow-lg ${idx === 0 ? 'col-span-2 aspect-video' : 'aspect-square'}`}
-                    onClick={() => openImageModal(implantImages, idx)}
-                  >
-                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
-                      <span className="absolute bottom-4 left-4 text-white font-medium">{img.caption}</span>
-                    </div>
-                  </motion.div>
-                ))}
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
-                  onClick={() => openImageModal(implantImages, 2)}
-                >
-                  <img src={implantImages[2].url} alt={implantImages[2].caption} className="w-full h-full object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
-                    <span className="absolute bottom-4 left-4 text-white font-medium">{implantImages[2].caption}</span>
-                  </div>
-                </motion.div>
+                <img
+                  src={implantImage.url}
+                  alt={implantImage.caption}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                  <span className="absolute bottom-4 left-4 text-white font-medium">
+                    {implantImage.caption}
+                  </span>
+                </div>
               </motion.div>
+
             </div>
           </div>
         </section>
@@ -901,7 +880,7 @@ const ServiceDetailPage = () => {
             </div>
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="relative rounded-2xl overflow-hidden shadow-2xl"
+              className="relative rounded-2xl overflow-hidden shadow-2xl ml-10"
             >
               <img
                 src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1000&q=80"
@@ -981,6 +960,22 @@ const ServiceDetailPage = () => {
     );
   }
 
+    const generalDentistryServices = [
+    'general-dentistry',
+    'pediatric-dentistry',
+    'prosthetics',
+    'aesthetic-dentistry',
+    'implantology',
+    'oral-surgery',
+    'endodontics',
+    'orthodontics',
+    'tmj',
+    'periodontics'
+  ];
+
+  // Define hero background dynamically
+  const heroBackground = generalDentistryServices.includes(serviceId)? img1: img2;
+
   return (
     <div className="overflow-hidden">
       {/* Image Modal */}
@@ -1033,10 +1028,13 @@ const ServiceDetailPage = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('${serviceBackgrounds[serviceId]}')` }} />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/75 to-background" />
-        </div>
+      <div className="absolute inset-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroBackground})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/75 to-background" />
+      </div>
 
         <div className="relative container-luxury pt-32 pb-20">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl mx-auto">
@@ -1115,6 +1113,7 @@ const ServiceDetailPage = () => {
       )}
 
       {/* CTA Section */}
+      {dentalServices.includes(serviceId) && (
       <section className="py-16 bg-beige-dark relative">
         <div className="container-luxury relative">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
@@ -1128,9 +1127,10 @@ const ServiceDetailPage = () => {
           </motion.div>
         </div>
       </section>
+      )}
 
       {/* Related Services */}
-      <section className="section-luxury bg-background relative">
+      {/* <section className="section-luxury bg-background relative">
         <div className="container-luxury relative">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
             <h2 className="text-title font-serif text-foreground">{t('services.otherServices')}</h2>
@@ -1159,7 +1159,7 @@ const ServiceDetailPage = () => {
             })}
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

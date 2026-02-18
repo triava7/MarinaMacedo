@@ -104,7 +104,9 @@
     "team": {
       "label": "A Nossa Equipa",
       "title": "Profissionais de Excelência",
-      "description": "Uma equipa multidisciplinar dedicada ao seu bem-estar e saúde oral."
+      "description": "Uma equipa multidisciplinar dedicada ao seu bem-estar e saúde oral.",
+      "clinicalDirector": "Diretora Clínica",
+      "clinicalBody": "Corpo Clínico"
     }
   },
   "services": {
@@ -206,7 +208,7 @@
     "tmj": {
       "understandDTM": "Compreender a DTM",
       "orofacialPain": "Dor Orofacial e Disfunção Temporomandibular",
-      "description": "A Disfunção Temporomandibular (DTM) afeta a articulação e os músculos da mastigação, podendo provocar dor, estalidos, dificuldade em abrir a boca e até dificuldade em fechar quando em abertura máxima com um simples bocejo.",
+      "description": "A Disfunção Temporomandibular (DTM) afeta a articulação e os músculos da mastigação, podendo provocar dor, estalidos, dificuldade em abrir a boca e até dificuldade em fechar quando em abertura máxima, como num simples bocejo.",
       "painDescription": "A dor orofacial é dor localizada na face, boca ou maxilar, com diferentes origens que requerem avaliação especializada para determinar a causa e o tratamento adequado.",
       "commonSymptoms": "Sintomas Comuns",
       "symptoms": [
@@ -309,7 +311,7 @@
       "endodontics": {
         "title": "Endodontia",
         "shortDesc": "Tratamento de canal para salvar dentes comprometidos.",
-        "description": "A Endodontia é vulgarmente conhecida como desnitalitação de dentes e é um tratamento conservador que se realiza quando a polpa ( nervo e outros tecidos que se no interior do dente) está inflamado ou sem vitalidade",
+        "description": "A Endodontia é vulgarmente conhecida como desvitalização de dentes e é um tratamento conservador que se realiza quando a polpa ( nervo e outros tecidos que se no interior do dente) está inflamado ou sem vitalidade",
         "whoIsItFor": "Pessoas com dentes com cáries profundas e atingem o interior do dente causando dor mal-estar e infeção.",
         "benefits": [
           "Preservação do dente natural",
@@ -317,7 +319,8 @@
           "Procedimento com alta taxa de sucesso",
           "Alternativa à extração"
         ],
-        "whatToExpect": "O espaço da polpa é adequado e preenchido como uma material biocompatível de modo a selar os dentes até até há a ponta da raiz"
+        "whatToExpect": "O espaço da polpa é limpo, preparado e preenchido com um material biocompatível de modo a selar os dentes até à ponta da raiz."
+
       },
       "orthodontics": {
         "title": "Ortodontia",
@@ -381,7 +384,8 @@
           "Tratamento personalizado",
           "Opções conservadoras e cirúrgicas"
         ],
-        "whatToExpect": "A consulta inclui avaliação detalhada da sua condição, possivelmente com exames de imagem. O plano de tratamento pode incluir medicação, fisioterapia ou, quando necessário, cirurgia."
+        "whatToExpect": "Consulta de traumatologia e medicina desportiva, incluindo avaliação de lesões relacionadas com a prática desportiva, como o futebol, bem como a análise de danos corporais pós-traumáticos para efeitos de seguros e baixas médicas. Inclui ainda a elaboração de relatórios de avaliação para juntas médicas e a consulta para dor articular, lesões desportivas, problemas da coluna ou outras condições ortopédicas."
+
       },
       "nutrition": {
         "title": "Nutrição",

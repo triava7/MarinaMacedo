@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { ArrowRight, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, Star } from 'lucide-react';
+import { ArrowRight, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, Star, Shield } from 'lucide-react';
 import PageHero from '../components/layout/PageHero';
 import img1 from "../img/galery/6.jpeg";
 
@@ -37,7 +37,7 @@ const ServicesPage = () => {
     'pediatric-dentistry': Baby,
     'prosthetics': Cog,
     'aesthetic-dentistry': Sparkle,
-    'implantology': Target,
+    'implantology': Shield,
     'oral-surgery': Target,
     'endodontics': FileHeart,
     'orthodontics': Smile,

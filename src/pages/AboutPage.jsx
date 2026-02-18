@@ -12,6 +12,23 @@ import {
 } from '../components/ui/carousel';
 import img1 from "../img/galery/17.jpeg";
 import img2 from "../img/galery/13.jpeg";
+import team1 from "../img/team/1.jpeg";
+import team2 from "../img/team/2.jpeg";
+import team3 from "../img/team/3.jpeg";
+import team4 from "../img/team/4.jpeg";
+import team5 from "../img/team/5.jpeg";
+import team6 from "../img/team/6.jpeg";
+import team7 from "../img/team/7.jpeg";
+import team8 from "../img/team/8.jpeg";
+import team9 from "../img/team/9.jpeg";
+import team10 from "../img/team/10.jpeg";
+import team11 from "../img/team/11.jpeg";
+import team12 from "../img/team/12.jpeg";
+import team13 from "../img/team/13.jpeg";
+import team14 from "../img/team/14.jpeg";
+import team15 from "../img/team/15.jpeg";
+import team16 from "../img/team/16.jpeg";
+
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -24,56 +41,31 @@ const AboutPage = () => {
   ];
 
   // Team members data - placeholder images
-  const teamMembers = [
-    {
-      id: 1,
-      name: 'Dra. Marina Macedo',
-      role: 'Diretora Clínica',
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 2,
-      name: 'Dr. João Silva',
-      role: 'Médico Dentista',
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 3,
-      name: 'Dra. Ana Santos',
-      role: 'Ortodontista',
-      image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 4,
-      name: 'Dr. Pedro Costa',
-      role: 'Implantologista',
-      image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 5,
-      name: 'Dra. Sofia Oliveira',
-      role: 'Odontopediatra',
-      image: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 6,
-      name: 'Dr. Miguel Ferreira',
-      role: 'Periodontologista',
-      image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 7,
-      name: 'Dra. Carla Rodrigues',
-      role: 'Endodontista',
-      image: 'https://images.unsplash.com/photo-1643297654416-05795d62e39c?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      id: 8,
-      name: 'Patrícia Almeida',
-      role: 'Assistente Dentária',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face'
-    },
-  ];
+  // Diretora Clínica (imagem 1)
+const clinicDirector = {
+  id: 1,
+  name: 'Dra. Marina Macedo',
+  image: team1,
+};
+
+// Restante equipa (2 a 16)
+const teamMembers = [
+  { id: 2, name: 'Membro 2', image: team2 },
+  { id: 3, name: 'Membro 3', image: team3 },
+  { id: 4, name: 'Membro 4', image: team4 },
+  { id: 5, name: 'Membro 5', image: team5 },
+  { id: 6, name: 'Membro 6', image: team6 },
+  { id: 7, name: 'Membro 7', image: team7 },
+  { id: 8, name: 'Membro 8', image: team8 },
+  { id: 9, name: 'Membro 9', image: team9 },
+  { id: 10, name: 'Membro 10', image: team10 },
+  { id: 11, name: 'Membro 11', image: team11 },
+  { id: 12, name: 'Membro 12', image: team12 },
+  { id: 13, name: 'Membro 13', image: team13 },
+  { id: 14, name: 'Membro 14', image: team14 },
+  { id: 15, name: 'Membro 15', image: team15 },
+  { id: 16, name: 'Membro 16', image: team16 },
+];
 
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -246,6 +238,30 @@ const AboutPage = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="relative px-12"
           >
+          {/* Diretora Clínica */}
+            <div className="mb-16 text-center">
+              <div className="max-w-md mx-auto">
+                <div className="relative aspect-square rounded-lg overflow-hidden mb-6 shadow-elegant border border-border">
+                  <img
+                    src={clinicDirector.image}
+                    alt={clinicDirector.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                <h3 className="text-2xl font-serif text-foreground mb-2">
+                  {clinicDirector.name}
+                </h3>
+                <p className="text-primary text-lg">
+                  {t('about.team.clinicalDirector')}
+                </p>
+              </div>
+            </div>
+
+            <h3 className="text-2xl md:text-3xl font-serif text-foreground text-center mb-10 relative inline-block">
+              {t('about.team.clinicalBody')}
+              <span className="block w-16 h-[2px] bg-primary mx-auto mt-3"></span>
+            </h3>
             <Carousel
               opts={{
                 align: "start",
@@ -264,14 +280,6 @@ const AboutPage = () => {
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-charcoal-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      </div>
-                      <div className="text-center">
-                        <h3 className="text-lg font-serif text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
-                          {member.name}
-                        </h3>
-                        <p className="text-sm text-primary">
-                          {member.role}
-                        </p>
                       </div>
                     </div>
                   </CarouselItem>

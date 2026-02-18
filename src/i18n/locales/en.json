@@ -104,7 +104,9 @@
     "team": {
       "label": "Our Team",
       "title": "Excellence Professionals",
-      "description": "A multidisciplinary team dedicated to your wellness and oral health."
+      "description": "A multidisciplinary team dedicated to your wellness and oral health.",
+      "clinicalDirector": "Clinical Director",
+      "clinicalBody": "Clinical Team"
     }
   },
   "services": {
@@ -381,7 +383,7 @@
           "Personalized treatment",
           "Conservative and surgical options"
         ],
-        "whatToExpect": "The consultation includes a detailed evaluation of your condition, possibly with imaging exams. The treatment plan may include medication, physiotherapy or, when necessary, surgery."
+        "whatToExpect": "Traumatology and sports medicine consultation, including the assessment of injuries related to sports practice, such as football, as well as the evaluation of post-traumatic bodily damage for insurance purposes and medical leave. It also includes the preparation of evaluation reports for medical boards and consultations for joint pain, sports injuries, spinal problems, or other orthopaedic conditions."
       },
       "nutrition": {
         "title": "Nutrition",
