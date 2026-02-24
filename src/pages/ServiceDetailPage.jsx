@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, X, ChevronLeft, ChevronRight, Camera, Eye, Zap, Shield } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import img1 from "../img/galery/6.jpeg";
-import img2 from "../img/galery/1.jpeg";
+import img2 from "../img/galery/10.jpeg";
 
 const ServiceDetailPage = () => {
   const { t } = useTranslation();

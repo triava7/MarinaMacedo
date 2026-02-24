@@ -1,28 +1,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Image as ImageIcon } from 'lucide-react';
 import PageHero from '../components/layout/PageHero';
-import img1 from "../img/galery/1.jpeg";
-import img2 from "../img/galery/2.jpeg";
-import img3 from "../img/galery/3.jpeg";
-import img4 from "../img/galery/4.jpeg";
-import img5 from "../img/galery/5.jpeg";
 import img6 from "../img/galery/6.jpeg";
 import img7 from "../img/galery/7.jpeg";
-import img8 from "../img/galery/8.jpeg";
-import img9 from "../img/galery/9.jpeg";
-import img10 from "../img/galery/10.jpeg";
 import img11 from "../img/galery/11.jpeg";
-import img12 from "../img/galery/12.jpeg";
 import img13 from "../img/galery/13.jpeg";
-import img14 from "../img/galery/14.jpeg";
-import img15 from "../img/galery/15.jpeg";
-import img16 from "../img/galery/16.jpeg";
 import img17 from "../img/galery/17.jpeg";
 import img18 from "../img/galery/18.jpeg";
 import img19 from "../img/galery/19.jpeg";
-
 
 
 const GalleryPage = () => {
@@ -40,12 +26,6 @@ const GalleryPage = () => {
       alt: 'Clinic Interior',
     },
     {
-      id: 2,
-      src: img1,
-      category: 'equipment',
-      alt: 'Modern Equipment',
-    },
-    {
       id: 3,
       src: img18,
       category: 'spaces',
@@ -58,22 +38,10 @@ const GalleryPage = () => {
       alt: 'Treatment Room',
     },
     {
-      id: 5,
-      src: img2,
-      category: 'equipment',
-      alt: 'Dental Equipment',
-    },
-    {
       id: 6,
       src: img13,
       category: 'spaces',
       alt: 'Reception',
-    },
-    {
-      id: 7,
-      src: img12,
-      category: 'clinic',
-      alt: 'Clinic Detail',
     },
     {
       id: 8,
@@ -84,6 +52,12 @@ const GalleryPage = () => {
     {
       id: 9,
       src: img17,
+      category: 'spaces',
+      alt: 'Outside View',
+    },
+        {
+      id: 10,
+      src: img19,
       category: 'spaces',
       alt: 'Outside View',
     },
