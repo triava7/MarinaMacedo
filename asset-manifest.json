@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MarinaMacedo/static/css/main.86ced36c.css",
-    "main.js": "/MarinaMacedo/static/js/main.8e9c72ea.js",
+    "main.css": "/MarinaMacedo/static/css/main.0c37218c.css",
+    "main.js": "/MarinaMacedo/static/js/main.ed86b464.js",
     "static/media/logo.png": "/MarinaMacedo/static/media/logo.ee694183e1a6bc09e70b.png",
     "static/media/17.jpeg": "/MarinaMacedo/static/media/17.829e624835ea2bbba63b.jpeg",
     "static/media/8.jpeg": "/MarinaMacedo/static/media/8.40a46805526f3e552b2b.jpeg",
@@ -29,15 +29,19 @@
     "static/media/sams.png": "/MarinaMacedo/static/media/sams.1bb7eda8e95514f95b10.png",
     "static/media/sams-quadros.png": "/MarinaMacedo/static/media/sams-quadros.01c932a1b8e5ff384f1b.png",
     "static/media/sad-gnr.png": "/MarinaMacedo/static/media/sad-gnr.d1113040e045eae57694.png",
+    "static/media/case7.1.jpeg": "/MarinaMacedo/static/media/case7.1.3d31e865bc43da77a43d.jpeg",
     "static/media/sams-sib.png": "/MarinaMacedo/static/media/sams-sib.9223cac7c4d8b51f1de4.png",
+    "static/media/case7.jpeg": "/MarinaMacedo/static/media/case7.209716abb3b9b5f0b1ef.jpeg",
+    "static/media/case6.jpeg": "/MarinaMacedo/static/media/case6.3ec295f94030054ecab7.jpeg",
+    "static/media/case6.1.jpeg": "/MarinaMacedo/static/media/case6.1.74e03e73537f6331645d.jpeg",
     "static/media/medis.png": "/MarinaMacedo/static/media/medis.f3d77a75ca4e4ea644dd.png",
     "static/media/cheque-dentista.png": "/MarinaMacedo/static/media/cheque-dentista.c7a1ba83bc654c923518.png",
     "index.html": "/MarinaMacedo/index.html",
-    "main.86ced36c.css.map": "/MarinaMacedo/static/css/main.86ced36c.css.map",
-    "main.8e9c72ea.js.map": "/MarinaMacedo/static/js/main.8e9c72ea.js.map"
+    "main.0c37218c.css.map": "/MarinaMacedo/static/css/main.0c37218c.css.map",
+    "main.ed86b464.js.map": "/MarinaMacedo/static/js/main.ed86b464.js.map"
   },
   "entrypoints": [
-    "static/css/main.86ced36c.css",
-    "static/js/main.8e9c72ea.js"
+    "static/css/main.0c37218c.css",
+    "static/js/main.ed86b464.js"
   ]
 }
