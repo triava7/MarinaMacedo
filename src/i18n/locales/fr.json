@@ -487,12 +487,94 @@
       }
     }
   },
+  "privacy": {
+    "hero": {
+      "label": "Informations Légales",
+      "title": "Politique de Confidentialité",
+      "description": "Notre engagement pour la protection de vos données personnelles et la transparence de leur traitement."
+    },
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "La Clinique Dentária Marina Macedo, Lda (« Clinique ») s'engage à protéger la vie privée et la sécurité de vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la législation nationale applicable."
+      },
+      "consent": {
+        "title": "2. Consentement",
+        "content": "En fournissant des informations personnelles via ce site ou d'autres canaux, vous acceptez la collecte, le traitement et l'utilisation de vos données conformément à cette politique."
+      },
+      "dataCollected": {
+        "title": "3. Données Personnelles Collectées",
+        "content": "Nous pouvons collecter des coordonnées, des données de santé nécessaires aux services cliniques, des données techniques (IP, navigateur) et d'autres informations fournies."
+      },
+      "purpose": {
+        "title": "4. Finalité du Traitement",
+        "content": "Vos données sont utilisées pour la gestion des rendez-vous, la communication, la facturation, l'amélioration des services et le respect des obligations légales."
+      },
+      "legalBasis": {
+        "title": "5. Base Légale du Traitement",
+        "content": "Le traitement est basé sur votre consentement, l'exécution d'un contrat, le respect d'obligations légales ou les intérêts légitimes de la Clinique."
+      },
+      "dataSharing": {
+        "title": "6. Partage des Données",
+        "content": "Vos données peuvent être partagées avec les autorités compétentes, les services de facturation et les sous-traitants, dans le respect des lois. Aucune donnée ne sera transférée hors de l’UE sans garanties appropriées."
+      },
+      "dataRetention": {
+        "title": "7. Conservation des Données",
+        "content": "Les données personnelles sont conservées uniquement le temps nécessaire aux finalités ou selon la loi."
+      },
+      "dataSecurity": {
+        "title": "8. Sécurité des Données",
+        "content": "La Clinique met en œuvre des mesures techniques et organisationnelles pour protéger vos données contre l’accès non autorisé."
+      },
+      "children": {
+        "title": "9. Confidentialité des Mineurs",
+        "content": "Nous ne collectons pas intentionnellement de données de mineurs de moins de 18 ans sans consentement parental."
+      },
+      "dataSubjectRights": {
+        "title": "10. Vos Droits",
+        "content": "Vous avez le droit d’accès, de rectification, de suppression ou de limitation du traitement des données personnelles, y compris la portabilité, le cas échéant."
+      }
+    },
+    "contact": {
+      "title": "Nous Contacter",
+      "content": "Pour toute question relative à cette Politique de Confidentialité ou pour exercer vos droits en matière de protection des données, veuillez nous contacter :\n\nEmail : clinicamarina@gmail.com\n\nUnité d’Amares :\nRua Santa Catarina n36 A\n4720-352 Ferreiros Amares, Portugal\nTéléphones : +351 253 994 232 | +351 925 460 202\n\nUnité d’Adaúfe :\nTravessa do Comércio n12 sala 2\n4710-820 Adaúfe, Portugal\nTéléphones : +351 253 284 121 | +351 913 958 650\n\nUnité de Bouro :\nLargo do Terreiro, Bâtiment Caixa Agrícola\n4720-688 Bouro Santa Maria, Portugal\nTéléphones : +351 253 377 770 | +351 935 383 101"
+    }
+  },
+  "license": {
+    "hero": {
+      "label": "Informations Légales",
+      "title": "Licence et Enregistrement Légal",
+      "description": "Transparence et conformité avec les autorités réglementaires nationales."
+    },
+    "sections": {
+      "entity": {
+        "title": "Entité Responsable",
+        "content": "Clínica Dentária Marina Macedo, Lda\nNIF : (insérer NIF)\nL’entité est dûment enregistrée et autorisée à exercer l’activité de médecine dentaire au Portugal."
+      },
+      "regulation": {
+        "title": "Licence",
+        "content": "La Clinique est autorisée par les autorités compétentes à fournir des soins dentaires, conformément aux exigences légales et techniques applicables."
+      },
+      "healthAuthority": {
+        "title": "Autorités de Santé",
+        "content": "L’activité est soumise à la supervision des autorités réglementaires nationales, notamment l’Entidade Reguladora da Saúde (ERS) et l’Administration Régionale de Santé (ARS)."
+      },
+      "professionalRegistration": {
+        "title": "Enregistrement Professionnel",
+        "content": "Les professionnels de santé de la Clinique sont inscrits à l’Ordre des Médecins Dentistes du Portugal et respectent les normes déontologiques en vigueur."
+      },
+      "insurance": {
+        "title": "Assurance Responsabilité Civile",
+        "content": "La Clinique dispose d’une assurance responsabilité civile professionnelle valide, garantissant la protection des patients et le respect des obligations légales."
+      }
+    }
+  },
   "footer": {
     "description": "Clinique multidisciplinaire dédiée à la santé bucco-dentaire et au bien-être général, avec trois décennies d'expérience.",
     "quickLinks": "Liens Rapides",
     "legal": "Mentions Légales",
     "privacy": "Politique de Confidentialité",
-    "terms": "Conditions Générales",
+    "license": "Licence et enregistrement légal",
     "complaints": "Livre des Réclamations",
     "schedule": "Horaires",
     "weekdays": "Lundi à Vendredi: 9h-12h, 14h-19h",

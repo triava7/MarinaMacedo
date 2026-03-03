@@ -116,6 +116,7 @@
       "description": "Oferecemos uma vasta gama de serviços médicos e dentários, sempre com foco na qualidade e no bem-estar do paciente."
     },
     "dental": "Medicina Dentária Geral",
+    "facial": "Estética Facial",
     "medical": "Especialidades Médicas",
     "wellness": "Bem-Estar",
     "learnMore": "Saber Mais",
@@ -269,6 +270,21 @@
         ],
         "whatToExpect": "O processo começa com uma avaliação completa e planeamento personalizado. Serão feitas impressões ou digitalizações para criar a prótese à medida. Após a colocação, fazemos ajustes para garantir conforto e funcionalidade."
       },
+      "orofacial-harmonization": {
+      "title": "Harmonização Orofacial",
+      "shortDesc": "Tratamentos estéticos minimamente invasivos para equilíbrio, rejuvenescimento e valorização da expressão facial.",
+      "description": "A Harmonização Orofacial integra um conjunto de procedimentos estéticos não cirúrgicos destinados a melhorar o equilíbrio e a harmonia do rosto. Através de técnicas seguras e personalizadas, promovemos rejuvenescimento, definição facial e melhoria da autoestima, respeitando sempre as características naturais de cada paciente.",
+      "whoIsItFor": "Indicado para pacientes que pretendem suavizar rugas, melhorar contornos faciais, corrigir assimetrias ou prevenir sinais de envelhecimento de forma segura e controlada.",
+      "benefits": [
+        "Rejuvenescimento facial natural",
+        "Suavização de rugas e linhas de expressão",
+        "Melhoria do contorno e definição facial",
+        "Procedimentos minimamente invasivos",
+        "Resultados progressivos e personalizados"
+      ],
+      "additionalText": "Aqui você pode adicionar texto descritivo sobre os benefícios ou os detalhes do tratamento de harmonização orofacial.",
+      "whatToExpect": "Após avaliação clínica detalhada, é definido um plano de tratamento personalizado que pode incluir toxina botulínica, preenchimentos com ácido hialurónico ou bioestimuladores. Os procedimentos são realizados em ambiente clínico seguro, com recuperação rápida e acompanhamento profissional."
+    },
       "aesthetic-dentistry": {
         "title": "Branqueamento",
         "shortDesc": "Transforme o seu sorriso com tratamentos estéticos avançados.",
@@ -489,12 +505,94 @@
       }
     }
   },
+  "privacy": {
+    "hero": {
+      "label": "Informação Legal",
+      "title": "Política de Privacidade",
+      "description": "Compromisso com a proteção dos seus dados pessoais e a transparência no seu tratamento."
+    },
+    "sections": {
+      "intro": {
+        "title": "1. Introdução",
+        "content": "A Clínica Dentária Marina Macedo, Lda (designada neste documento por “Clínica”) está empenhada na proteção da privacidade e segurança dos seus dados pessoais, em conformidade com o Regulamento Geral sobre a Proteção de Dados (Regulamento (UE) 2016/679 – RGPD) e legislação nacional aplicável. Esta Política de Privacidade descreve como recolhemos, utilizamos e protegemos os seus dados pessoais."
+      },
+      "consent": {
+        "title": "2. Consentimento",
+        "content": "Ao fornecer informações pessoais através deste website ou de outros canais de contacto, compreende e aceita a recolha, processamento e utilização dos seus dados nos termos desta política. Caso visite outras páginas ligadas a este website, essas páginas podem ter políticas próprias, sendo responsáveis pela proteção dos dados recolhidos fora deste site."
+      },
+      "dataCollected": {
+        "title": "3. Dados Pessoais Recolhidos",
+        "content": "Podemos recolher dados como nome, morada, contacto telefónico, email, dados técnicos (como IP e navegador), bem como dados de saúde quando necessários para prestação de serviços clínicos."
+      },
+      "purpose": {
+        "title": "4. Finalidade do Tratamento",
+        "content": "Os seus dados são processados para gestão de consultas, comunicação com o paciente, faturação, emissão de documentos, resposta a pedidos de informação, melhorias nos serviços e cumprimento de obrigações legais."
+      },
+      "legalBasis": {
+        "title": "5. Base Legal do Tratamento",
+        "content": "O tratamento dos seus dados baseia-se no seu consentimento, na execução de um contrato clínico, no cumprimento de obrigações legais ou em interesses legítimos da Clínica relacionados com a melhoria dos serviços."
+      },
+      "dataSharing": {
+        "title": "6. Partilha de Dados",
+        "content": "Os seus dados podem ser partilhados com autoridades competentes, serviços de faturação e entidades subcontratadas que suportem a prestação de serviços, sempre em conformidade com a legislação de proteção de dados. Os seus dados **não serão transferidos para fora da União Europeia** sem garantias legais adequadas."
+      },
+      "dataRetention": {
+        "title": "7. Período de Conservação",
+        "content": "Os seus dados pessoais serão conservados apenas pelo tempo necessário para os fins para os quais foram recolhidos ou conforme exigido por lei."
+      },
+      "dataSecurity": {
+        "title": "8. Segurança dos Dados",
+        "content": "A Clínica implementa medidas técnicas e organizativas para proteger os seus dados contra perda, acesso não autorizado ou tratamento ilícito."
+      },
+      "children": {
+        "title": "9. Privacidade de Menores",
+        "content": "Não recolhemos intencionalmente dados de menores de 18 anos sem o consentimento dos seus responsáveis legais."
+      },
+      "dataSubjectRights": {
+        "title": "10. Direitos dos Titulares dos Dados",
+        "content": "Tem o direito de solicitar acesso, retificação, eliminação, limitação ou oposição ao tratamento dos seus dados pessoais, bem como a portabilidade dos dados quando aplicável. Estes pedidos devem ser feitos por escrito."
+      }
+    },
+    "contact": {
+      "title": "Contactos",
+      "content": "Para questões relacionadas com esta política ou exercício dos seus direitos, contacte-nos através dos seguintes meios:\n\nEmail: clinicamarina@gmail.com\n\nUnidade de Amares:\nRua Santa Catarina n36 A\n4720-352 Ferreiros Amares\nTelefones: 253 994 232 | 925 460 202\n\nUnidade de Adaúfe:\nTravessa do Comércio n12 sala 2\n4710-820 Adaúfe\nTelefones: 253 284 121 | 913 958 650\n\nUnidade de Bouro:\nLargo do Terreiro, Edifício da Caixa Agrícola\n4720-688 Bouro Santa Maria\nTelefones: 253 377 770 | 935 383 101"
+    }
+  },
+  "license": {
+  "hero": {
+    "label": "Informação Legal",
+    "title": "Licenciamento e Registo Legal",
+    "description": "Transparência e conformidade com as entidades reguladoras nacionais."
+  },
+  "sections": {
+    "entity": {
+      "title": "Entidade Responsável",
+      "content": "Clínica Dentária Marina Macedo, Lda\nNIF: (inserir NIF)\nA entidade encontra-se devidamente registada e autorizada para o exercício da atividade de medicina dentária em Portugal."
+    },
+    "regulation": {
+      "title": "Licenciamento",
+      "content": "A Clínica Dentária Marina Macedo encontra-se licenciada pelas entidades competentes para a prestação de cuidados de saúde na área da medicina dentária, cumprindo todos os requisitos legais e técnicos aplicáveis."
+    },
+    "healthAuthority": {
+      "title": "Autoridade de Saúde",
+      "content": "A atividade encontra-se sujeita à supervisão das autoridades nacionais competentes, nomeadamente a Entidade Reguladora da Saúde (ERS) e a Administração Regional de Saúde (ARS)."
+    },
+    "professionalRegistration": {
+      "title": "Registo Profissional",
+      "content": "Os profissionais de saúde da Clínica encontram-se devidamente inscritos na Ordem dos Médicos Dentistas, cumprindo as normas deontológicas e regulamentares em vigor."
+    },
+    "insurance": {
+      "title": "Seguro de Responsabilidade Civil",
+      "content": "A Clínica dispõe de seguro de responsabilidade civil profissional válido, garantindo a proteção dos seus pacientes e o cumprimento das obrigações legais."
+    }
+  }
+},
   "footer": {
     "description": "Clínica multidisciplinar dedicada à saúde oral e bem-estar geral, com três décadas de experiência.",
     "quickLinks": "Links Rápidos",
     "legal": "Legal",
     "privacy": "Política de Privacidade",
-    "terms": "Termos e Condições",
+    "license": "Licenciamento e Registo Legal",
     "complaints": "Livro de Reclamações",
     "schedule": "Horário",
     "weekdays": "Segunda a Sexta: 9h-12h, 14h-19h",

@@ -6,6 +6,10 @@ import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stetho
 import { Button } from '../components/ui/button';
 import img1 from "../img/galery/6.jpeg";
 import img2 from "../img/galery/10.jpeg";
+import clinicalCases6 from "../img/cases/case6.jpeg";
+import clinicalCases6_1 from "../img/cases/case6.1.jpeg";
+import clinicalCases7 from "../img/cases/case7.jpeg";
+import clinicalCases7_1 from "../img/cases/case7.1.jpeg";
 
 const ServiceDetailPage = () => {
   const { t } = useTranslation();
@@ -25,6 +29,7 @@ const ServiceDetailPage = () => {
     'orthodontics',
     'tmj',
     'periodontics',
+    'orofacial-harmonization',
     'ent',
     'general-medicine',
     'orthopedics',
@@ -43,6 +48,7 @@ const ServiceDetailPage = () => {
     'orthodontics': Smile,
     'tmj': Brain,
     'periodontics': HeartPulse,
+    'orofacial-harmonization': Sparkle,
     'ent': Ear,
     'general-medicine': UserRound,
     'orthopedics': Bone,
@@ -601,7 +607,7 @@ const ServiceDetailPage = () => {
     );
   };
 
-  // ========== IMPLANTOLOGIA (Estrutura Primadent) ==========
+  // ========== IMPLANTOLOGIA ==========
   const renderImplantologySection = () => {
     if (serviceId !== 'implantology') return null;
 
@@ -780,31 +786,23 @@ const ServiceDetailPage = () => {
               whileInView="animate"
               viewport={{ once: true }}
               variants={staggerContainer}
-              className="grid md:grid-cols-3 gap-8"
+              className="grid md:grid-cols-2 gap-8"
             >
               {[
                 {
                   title: t('services.implantology.case1Title'),
                   desc: t('services.implantology.case1Desc'),
                   images: [
-                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: t('services.before') },
-                    { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', caption: t('services.after') }
+                    { url: clinicalCases6_1, caption: t('services.before') },
+                    { url: clinicalCases6, caption: t('services.after') }
                   ]
                 },
                 {
                   title: t('services.implantology.case2Title'),
                   desc: t('services.implantology.case2Desc'),
                   images: [
-                    { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80', caption: t('services.before') },
-                    { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80', caption: t('services.after') }
-                  ]
-                },
-                {
-                  title: t('services.implantology.case3Title'),
-                  desc: t('services.implantology.case3Desc'),
-                  images: [
-                    { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80', caption: t('services.before') },
-                    { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', caption: t('services.after') }
+                    { url: clinicalCases7_1, caption: t('services.before') },
+                    { url: clinicalCases7, caption: t('services.after') }
                   ]
                 }
               ].map((caseItem, idx) => (
@@ -820,7 +818,7 @@ const ServiceDetailPage = () => {
                         className="aspect-square relative cursor-pointer"
                         onClick={() => openImageModal(caseItem.images, imgIdx)}
                       >
-                        <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500"/>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
                           <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">{img.caption}</span>
                         </div>

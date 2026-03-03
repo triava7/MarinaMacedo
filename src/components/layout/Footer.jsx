@@ -124,13 +124,13 @@ const Footer = () => {
               <h5 className="text-foreground font-serif text-sm mb-3">{t('footer.legal')}</h5>
               <ul className="space-y-2 text-xs text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-primary transition-colors duration-300">
+                  <a href="#/privacypolice" className="hover:text-primary transition-colors duration-300">
                     {t('footer.privacy')}
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition-colors duration-300">
-                    {t('footer.terms')}
+                  <a href="#/license" className="hover:text-primary transition-colors duration-300">
+                    {t('footer.license')}
                   </a>
                 </li>
                 <li>

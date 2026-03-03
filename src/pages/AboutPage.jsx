@@ -50,21 +50,21 @@ const clinicDirector = {
 
 // Restante equipa (2 a 16)
 const teamMembers = [
-  { id: 2, name: 'Membro 2', image: team2 },
-  { id: 3, name: 'Membro 3', image: team3 },
-  { id: 4, name: 'Membro 4', image: team4 },
-  { id: 5, name: 'Membro 5', image: team5 },
-  { id: 6, name: 'Membro 6', image: team6 },
-  { id: 7, name: 'Membro 7', image: team7 },
-  { id: 8, name: 'Membro 8', image: team8 },
-  { id: 9, name: 'Membro 9', image: team9 },
-  { id: 10, name: 'Membro 10', image: team10 },
-  { id: 11, name: 'Membro 11', image: team11 },
-  { id: 12, name: 'Membro 12', image: team12 },
-  { id: 13, name: 'Membro 13', image: team13 },
-  { id: 14, name: 'Membro 14', image: team14 },
-  { id: 15, name: 'Membro 15', image: team15 },
-  { id: 16, name: 'Membro 16', image: team16 },
+  { id: 2, name: 'Eduardo Barreira', image: team2 },
+  { id: 3, name: 'Ana Rosa Galvão ', image: team3 },
+  { id: 4, name: 'Rute Silva', image: team4 },
+  { id: 5, name: 'Marina Macedo', image: team5 },
+  { id: 6, name: 'Marisa Ferreira', image: team6 },
+  { id: 7, name: 'Teresa Guimarães', image: team7 },
+  { id: 8, name: 'Helena Costa Pinto', image: team8 },
+  { id: 9, name: 'Rita Oliveira', image: team9 },
+  { id: 10, name: 'Carla Casais', image: team10 },
+  { id: 11, name: 'Marlene Freitas', image: team11 },
+  { id: 12, name: 'Susana Antunes', image: team12 },
+  { id: 13, name: 'Martinha Silva', image: team13 },
+  { id: 14, name: 'Maria João Lameira', image: team14 },
+  { id: 15, name: 'Beatriz Oliveira', image: team15 },
+  { id: 16, name: 'Vânia Silva', image: team16 },
 ];
 
   const fadeInUp = {
@@ -281,6 +281,9 @@ const teamMembers = [
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-charcoal-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>
+                         <h4 className="text-lg font-serif text-foreground transition-colors duration-300 group-hover:text-primary">
+                        {member.name}
+                      </h4>
                     </div>
                   </CarouselItem>
                 ))}

@@ -15,6 +15,8 @@ import ServiceDetailPage from './pages/ServiceDetailPage';
 import GalleryPage from './pages/GalleryPage';
 import ProtocolsPage from './pages/ProtocolsPage';
 import ContactsPage from './pages/ContactsPage';
+import PrivacyPolice from './pages/PrivacyPolice';
+import License from './pages/License';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/protocols" element={<ProtocolsPage />} />
             <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/privacypolice" element={<PrivacyPolice />} />
+            <Route path="/license" element={<License />} />
           </Routes>
         </main>
         <Footer />
