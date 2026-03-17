@@ -6,10 +6,30 @@ import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stetho
 import { Button } from '../components/ui/button';
 import img1 from "../img/galery/6.jpeg";
 import img2 from "../img/galery/10.jpeg";
+import clinicalCases1 from "../img/cases/case1.jpeg";
+import clinicalCases2 from "../img/cases/case2.jpeg";
+import clinicalCases3 from "../img/cases/case3.jpeg";
+import clinicalCases4 from "../img/cases/case4.jpeg";
+import clinicalCases5 from "../img/cases/case5.jpeg";
 import clinicalCases6 from "../img/cases/case6.jpeg";
 import clinicalCases6_1 from "../img/cases/case6.1.jpeg";
 import clinicalCases7 from "../img/cases/case7.jpeg";
 import clinicalCases7_1 from "../img/cases/case7.1.jpeg";
+import clinicalCases8 from "../img/cases/case8.jpeg";
+import clinicalCases9 from "../img/cases/case9.jpeg";
+import clinicalCases10 from "../img/cases/case10.jpeg";
+import clinicalCases11 from "../img/cases/case11.jpeg";
+import clinicalCases12 from "../img/cases/case12.jpeg";
+import clinicalCases13 from "../img/cases/case13.jpeg";
+import clinicalCases14 from "../img/cases/case14.jpeg";
+import clinicalCases15 from "../img/cases/case15.jpeg";
+import clinicalCases16 from "../img/cases/case16.jpeg";
+import clinicalCases17 from "../img/cases/case17.jpeg";
+import clinicalCases18 from "../img/cases/case18.jpeg";
+import clinicalCases19 from "../img/cases/case19.jpeg";
+import clinicalCases20 from "../img/cases/case20.jpeg";
+import clinicalCases21 from "../img/cases/case21.jpeg";
+import clinicalCases22 from "../img/cases/case22.jpeg";
 
 const ServiceDetailPage = () => {
   const { t } = useTranslation();
@@ -134,228 +154,205 @@ const ServiceDetailPage = () => {
   };
 
   // ========== ORTODONTIA - Alinhadores Invisíveis ==========
-  const renderOrthodonticsSection = () => {
-    if (serviceId !== 'orthodontics') return null;
+const renderOrthodonticsSection = () => {
+  if (serviceId !== 'orthodontics') return null;
 
-    const alignerImages = [
-      { url: 'https://images.unsplash.com/photo-1670250492416-570b5b7343b1?w=800&q=80', caption: 'Alinhador em posição' },
-      { url: 'https://images.unsplash.com/photo-1694364596437-904741b3335f?w=800&q=80', caption: 'Resultado do tratamento' },
-    ];
+  const orthodonticSections = [
+    {
+      title: t('services.orthodontics.conventional.title'),
+      text: t('services.orthodontics.conventional.text'),
+      indicatedForTitle: t('services.orthodontics.conventional.indicatedForTitle'),
+      indicatedFor: t('services.orthodontics.conventional.indicatedFor'),
+      expectTitle: t('services.orthodontics.conventional.expectTitle'),
+      expect: t('services.orthodontics.conventional.expect'),
+      benefitsTitle: t('services.orthodontics.conventional.benefitsTitle'),
+      benefits: t('services.orthodontics.conventional.benefits', { returnObjects: true }),
+      image: clinicalCases16,
+      alt: 'Aparelhos convencionais'
+    },
+    {
+      title: t('services.orthodontics.aligners.title'),
+      text: t('services.orthodontics.aligners.text'),
+      indicatedForTitle: t('services.orthodontics.aligners.indicatedForTitle'),
+      indicatedFor: t('services.orthodontics.aligners.indicatedFor'),
+      expectTitle: t('services.orthodontics.aligners.expectTitle'),
+      expect: t('services.orthodontics.aligners.expect'),
+      benefitsTitle: t('services.orthodontics.aligners.benefitsTitle'),
+      benefits: t('services.orthodontics.aligners.benefits', { returnObjects: true }),
+      image: clinicalCases15,
+      alt: 'Alinhadores invisíveis'
+    }
+  ];
 
-    const plasterModels = [
-      { url: 'https://images.unsplash.com/photo-1656623807884-f6c9b7f389e9?w=800&q=80', caption: 'Modelo de estudo' },
-      { url: 'https://images.unsplash.com/photo-1562330743-fbc6ef07ca78?w=800&q=80', caption: 'Planeamento ortodôntico' },
-      { url: 'https://images.pexels.com/photos/33748059/pexels-photo-33748059.jpeg?w=800', caption: 'Molde dentário' },
-    ];
+  const clinicalCases = [
+    {
+      id: 1,
+      title: 'Correção de Apinhamento',
+      description: 'Tratamento com alinhadores invisíveis para correção de apinhamento severo.',
+      images: [
+        { url: clinicalCases12, caption: 'Antes' },
+        { url: clinicalCases11, caption: 'Depois' }
+      ]
+    },
+    {
+      id: 2,
+      title: 'Encerramento de Diastema',
+      description: 'Correção de espaçamento entre dentes anteriores.',
+      images: [
+        { url: clinicalCases10, caption: 'Antes' },
+        { url: clinicalCases13, caption: 'Depois' }
+      ]
+    },
+    {
+      id: 3,
+      title: 'Mordida Cruzada',
+      description: 'Tratamento de mordida cruzada com alinhadores.',
+      images: [
+        { url: clinicalCases9, caption: 'Antes' },
+        { url: clinicalCases8, caption: 'Depois' }
+      ]
+    },
+  ];
 
-    const clinicalCases = [
-      {
-        id: 1,
-        title: 'Correção de Apinhamento',
-        description: 'Tratamento com alinhadores invisíveis para correção de apinhamento severo.',
-        images: [
-          { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
-          { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
-        ]
-      },
-      {
-        id: 2,
-        title: 'Encerramento de Diastema',
-        description: 'Correção de espaçamento entre dentes anteriores.',
-        images: [
-          { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
-          { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
-        ]
-      },
-      {
-        id: 3,
-        title: 'Mordida Cruzada',
-        description: 'Tratamento de mordida cruzada com alinhadores.',
-        images: [
-          { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Antes' },
-          { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Depois' }
-        ]
-      },
-      {
-        id: 4,
-        title: 'Sobremordida',
-        description: 'Correção de sobremordida profunda.',
-        images: [
-          { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80', caption: 'Antes' },
-          { url: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80', caption: 'Depois' }
-        ]
-      }
-    ];
+  return (
+    <>
+      <section className="py-20 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5 relative">
+        <div className="container-luxury relative">
 
+          <div className="space-y-16">
+            {orthodonticSections.map((section, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="grid lg:grid-cols-2 gap-10 items-center"
+              >
+                <div className={index % 2 !== 0 ? 'lg:order-2' : ''}>
+                  <h3 className="text-2xl font-serif text-foreground mb-4">
+                    {section.title}
+                  </h3>
 
-    return (
-      <>
-        {/* Alinhadores Invisíveis Section */}
-        <section className="py-20 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5 relative">
-          <div className="container-luxury relative">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.advancedTechnology')}</span>
-              <h2 className="text-display font-serif text-foreground mb-6">{t('services.orthodontics.invisibleAligners')}</h2>
-              <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
-                {t('services.orthodontics.alignersDesc')}
-              </p>
-            </motion.div>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    {section.text}
+                  </p>
 
-            {/* How it works */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-primary/20"
-            >
-              <h3 className="text-xl font-serif text-foreground mb-4">{t('services.orthodontics.howItWorks')}</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {t('services.orthodontics.howItWorksDesc')}
-              </p>
-            </motion.div>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-serif text-foreground mb-2">
+                        {section.indicatedForTitle}
+                      </h4>
+                      <p className="text-muted-foreground">
+                        {section.indicatedFor}
+                      </p>
+                    </div>
 
-            {/* Benefits Grid */}
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid md:grid-cols-4 gap-6 mb-16"
-            >
-              {[
-                { icon: Eye, title: t('services.orthodontics.aesthetic'), desc: t('services.orthodontics.aestheticDesc') },
-                { icon: Sparkle, title: t('services.orthodontics.imperceptible'), desc: t('services.orthodontics.imperceptibleDesc') },
-                { icon: Shield, title: t('services.orthodontics.comfort'), desc: t('services.orthodontics.comfortDesc') },
-                { icon: Zap, title: t('services.orthodontics.efficiency'), desc: t('services.orthodontics.efficiencyDesc') }
-              ].map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  variants={fadeInUp}
-                  className="text-center p-6 rounded-xl bg-background/60 border border-primary/10 hover:border-primary/30 transition-all"
-                >
-                  <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="w-6 h-6 text-primary" />
+                    <div>
+                      <h4 className="font-serif text-foreground mb-2">
+                        {section.expectTitle}
+                      </h4>
+                      <p className="text-muted-foreground">
+                        {section.expect}
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-serif text-foreground mb-2">
+                        {section.benefitsTitle}
+                      </h4>
+                      <ul className="space-y-2">
+                        {Array.isArray(section.benefits) &&
+                          section.benefits.map((benefit, idx) => (
+                            <li key={idx} className="flex items-center gap-2 text-muted-foreground">
+                              <Check className="w-4 h-4 text-primary" />
+                              <span>{benefit}</span>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
                   </div>
-                  <h4 className="font-serif text-foreground mb-2">{item.title}</h4>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
-                </motion.div>
-              ))}
-            </motion.div>
+                </div>
 
-            {/* Aligner Images */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mb-16"
-            >
-              <h3 className="text-xl font-serif text-foreground mb-6 text-center">{t('services.orthodontics.alignersInAction')}</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                {alignerImages.map((img, idx) => (
-                  <motion.div
-                    key={idx}
-                    whileHover={{ scale: 1.02 }}
-                    className="relative aspect-video rounded-xl overflow-hidden cursor-pointer group shadow-lg"
-                    onClick={() => openImageModal(alignerImages, idx)}
-                  >
-                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                      <span className="absolute bottom-4 left-4 text-white font-medium">{img.caption}</span>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Plaster Models */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mb-16"
-            >
-              <h3 className="text-xl font-serif text-foreground mb-6 text-center">{t('services.orthodontics.plasterModels')}</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                {plasterModels.map((img, idx) => (
-                  <motion.div
-                    key={idx}
-                    whileHover={{ scale: 1.03 }}
-                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
-                    onClick={() => openImageModal(plasterModels, idx)}
-                  >
-                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-                      <span className="absolute bottom-4 left-4 text-white text-sm font-medium">{img.caption}</span>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div> */}
+                <div className={index % 2 !== 0 ? 'lg:order-1' : ''}>
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+                    <img
+                      src={section.image}
+                      alt={section.alt}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Clinical Cases Gallery */}
-        <section className="py-20 bg-beige-dark/30 relative">
-          <div className="container-luxury relative">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
-              <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.resultsGallery')}</span>
-              <h2 className="text-title font-serif text-foreground">{t('services.clinicalCases')}</h2>
-              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-                {t('services.orthodontics.casesDescription')}
-              </p>
-            </motion.div>
+      <section className="py-20 bg-beige-dark/30 relative">
+        <div className="container-luxury relative">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
+              {t('services.resultsGallery')}
+            </span>
+            <h2 className="text-title font-serif text-foreground">
+              {t('services.clinicalCases')}
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              {t('services.orthodontics.casesDescription')}
+            </p>
+          </motion.div>
 
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-            >
-              {clinicalCases.map((caseItem) => (
-                <motion.div
-                  key={caseItem.id}
-                  variants={fadeInUp}
-                  className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500"
-                >
-                  <div className="grid grid-cols-2">
-                    {caseItem.images.map((img, idx) => (
-                      <div
-                        key={idx}
-                        className="aspect-square relative cursor-pointer"
-                        onClick={() => openImageModal(caseItem.images, idx)}
-                      >
-                        <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
-                          <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">{img.caption}</span>
-                        </div>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
+          >
+            {clinicalCases.map((caseItem) => (
+              <motion.div
+                key={caseItem.id}
+                variants={fadeInUp}
+                className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500"
+              >
+                <div className="grid grid-cols-2">
+                  {caseItem.images.map((img, idx) => (
+                    <div
+                      key={idx}
+                      className="aspect-square relative cursor-pointer"
+                      onClick={() => openImageModal(caseItem.images, idx)}
+                    >
+                      <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-700" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
+                        <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
+                          {img.caption}
+                        </span>
                       </div>
-                    ))}
-                  </div>
-                  <div className="p-4">
-                    <h4 className="font-serif text-foreground group-hover:text-primary transition-colors">{caseItem.title}</h4>
-                    <p className="text-muted-foreground text-sm mt-1">{caseItem.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-      </>
-    );
-  };
-
+                    </div>
+                  ))}
+                </div>
+                <div className="p-4">
+                  <h4 className="font-serif text-foreground group-hover:text-primary transition-colors">
+                    {caseItem.title}
+                  </h4>
+                  <p className="text-muted-foreground text-sm mt-1">
+                    {caseItem.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+    </>
+  );
+};
   // ========== CIRURGIA ORAL ==========
   const renderOralSurgerySection = () => {
     if (serviceId !== 'oral-surgery') return null;
@@ -483,15 +480,12 @@ const ServiceDetailPage = () => {
     if (serviceId !== 'prosthetics') return null;
 
     const fixedImages = [
-      { url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80', caption: 'Coroa cerâmica' },
-      { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80', caption: 'Ponte fixa' },
-      { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80', caption: 'Facetas' },
+      { url: clinicalCases1, caption: 'Coroa cerâmica' },
+      { url: clinicalCases2, caption: 'Coroa cerâmica' }
     ];
 
     const removableImages = [
-      { url: 'https://images.unsplash.com/photo-1562330743-fbc6ef07ca78?w=800&q=80', caption: 'Prótese parcial' },
-      { url: 'https://images.pexels.com/photos/4687406/pexels-photo-4687406.jpeg?w=800', caption: 'Prótese total' },
-      { url: 'https://images.unsplash.com/photo-1658994477987-42468f4dbbb2?w=800&q=80', caption: 'Modelo de trabalho' },
+      { url: clinicalCases5, caption: 'Prótese parcial' },
     ];
 
     return (
@@ -531,7 +525,7 @@ const ServiceDetailPage = () => {
                   </ul>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {fixedImages.map((img, idx) => (
                   <motion.div
                     key={idx}
@@ -569,7 +563,7 @@ const ServiceDetailPage = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 grid grid-cols-3 gap-4">
+              <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
                 {removableImages.map((img, idx) => (
                   <motion.div
                     key={idx}
@@ -838,6 +832,163 @@ const ServiceDetailPage = () => {
     );
   };
 
+ // ========== BRANQUEAMENTO ==========
+const renderAestheticDentistrySection = () => {
+  if (serviceId !== 'aesthetic-dentistry') return null;
+
+  const aestheticBenefits =
+    t('services.items.aesthetic-dentistry.benefits', { returnObjects: true }) || [];
+
+  const aestheticCases = [
+    {
+      images: [
+        { url: clinicalCases17, caption: t('services.before') },
+        { url: clinicalCases18, caption: t('services.after') }
+      ]
+    },
+    {
+      images: [
+        { url: clinicalCases19, caption: t('services.before') },
+        { url: clinicalCases20, caption: t('services.after') }
+      ]
+    },
+    {
+      images: [
+        { url: clinicalCases21, caption: t('services.before') },
+        { url: clinicalCases22, caption: t('services.after') }
+      ]
+    }
+  ];
+
+  return (
+    <>
+      <section className="py-20 bg-gradient-to-b from-background to-primary/5 relative">
+        <div className="container-luxury relative">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="card-luxury rounded-2xl p-8"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <Users className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.whoIsItFor')}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {t('services.items.aesthetic-dentistry.whoIsItFor')}
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="card-luxury rounded-2xl p-8"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <Gift className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.benefits')}
+              </h3>
+              <ul className="space-y-3">
+                {Array.isArray(aestheticBenefits) &&
+                  aestheticBenefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm">
+                      <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="card-luxury rounded-2xl p-8"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <ClipboardList className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.whatToExpect')}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {t('services.items.aesthetic-dentistry.whatToExpect')}
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-beige-dark/20 relative">
+        <div className="container-luxury relative">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
+              {t('services.resultsGallery')}
+            </span>
+            <h2 className="text-title font-serif text-foreground">
+              {t('services.clinicalCases')}
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              {t('services.items.aesthetic-dentistry.casesDescription')}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
+          >
+            {aestheticCases.map((caseItem, index) => (
+              <motion.div
+                key={`${serviceId}-${index}`}
+                variants={fadeInUp}
+                className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group"
+              >
+                <div className="grid grid-cols-2">
+                  {caseItem.images.map((img, imgIdx) => (
+                    <div
+                      key={imgIdx}
+                      className="aspect-[5/3] relative cursor-pointer"
+                      onClick={() => openImageModal(caseItem.images, imgIdx)}
+                    >
+                      <img
+                        src={img.url}
+                        alt={img.caption}
+                        className="w-full h-full object-cover transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+                        <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
+                          {img.caption}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+    </>
+  );
+};
+
   // ========== OCLUSÃO (TMJ) - Expandido ==========
   const renderTmjSection = () => {
     if (serviceId !== 'tmj') return null;
@@ -881,7 +1032,7 @@ const ServiceDetailPage = () => {
               className="relative rounded-2xl overflow-hidden shadow-2xl ml-10"
             >
               <img
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1000&q=80"
+                src={clinicalCases14}
                 alt={t('services.tmj.orofacialPain')}
                 className="w-full h-auto object-cover"
               />
@@ -1069,9 +1220,10 @@ const ServiceDetailPage = () => {
       {renderProstheticsSection()}
       {renderImplantologySection()}
       {renderTmjSection()}
+      {renderAestheticDentistrySection()}
 
       {/* Standard Content (for services without custom sections) */}
-      {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj'].includes(serviceId) && (
+      {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj', 'aesthetic-dentistry'].includes(serviceId) && (
         <section className="section-luxury bg-background relative">
           <div className="container-luxury relative">
             <motion.div initial="initial" whileInView="animate" viewport={{ once: true }} variants={staggerContainer} className="grid lg:grid-cols-3 gap-8">

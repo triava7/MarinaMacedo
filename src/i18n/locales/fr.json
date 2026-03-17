@@ -136,21 +136,35 @@
     "before": "Avant",
     "after": "Après",
     "orthodontics": {
-      "invisibleAligners": "Aligneurs Invisibles",
-      "alignersDesc": "Fabriqués sur mesure pour chaque patient avec un matériau plastique thermoplastique et biocompatible, s'adaptant confortablement à l'anatomie de chaque bouche.",
-      "howItWorks": "Comment Fonctionnent-ils?",
-      "howItWorksDesc": "Ils fonctionnent grâce à l'application contrôlée de forces douces et progressives qui déplacent progressivement les dents vers les positions souhaitées. Chaque ensemble d'aligneurs est porté pendant environ deux semaines avant de passer au suivant.",
-      "aesthetic": "Esthétique",
-      "aestheticDesc": "Pratiquement imperceptibles",
-      "imperceptible": "Imperceptibles",
-      "imperceptibleDesc": "Transparents et discrets",
-      "comfort": "Confort",
-      "comfortDesc": "Matériau souple et adaptable",
-      "efficiency": "Efficacité",
-      "efficiencyDesc": "Résultats prévisibles",
-      "alignersInAction": "Aligneurs en Action",
-      "plasterModels": "Modèles en Plâtre - Planification",
-      "casesDescription": "Voir des exemples réels de transformations avec nos traitements orthodontiques."
+      "introTitle": "Orthodontie",
+      "introText": "L’orthodontie corrige la position des dents dans les mâchoires grâce à des solutions conventionnelles et invisibles.",
+      "conventional": {
+        "title": "Appareils Conventionnels",
+        "text": "Les appareils orthodontiques conventionnels restent une solution efficace et accessible pour le traitement orthodontique. Avec des brackets métalliques ou esthétiques, ils permettent de corriger l’alignement des dents et l’occlusion (la manière dont les dents s’emboîtent) de façon prévisible et sûre.",
+        "indicatedForTitle": "Pour qui est-ce indiqué",
+        "indicatedFor": "Les cas plus complexes, offrant des résultats éprouvés et durables.",
+        "expectTitle": "À quoi s’attendre",
+        "expect": "Efficacité et qualité du traitement.",
+        "benefitsTitle": "Avantages",
+        "benefits": [
+          "Plus économique"
+        ]
+      },
+      "aligners": {
+        "title": "Aligneurs Invisibles",
+        "text": "Les aligneurs invisibles représentent l’une des plus grandes innovations de la médecine dentaire ces dernières années. Ce sont des dispositifs transparents, amovibles et fabriqués sur mesure pour chaque patient. Ils sont réalisés en matériau plastique thermomoulé et biocompatible, s’adaptant parfaitement à l’anatomie dentaire. Ils fonctionnent grâce à l’application contrôlée de forces douces et progressives qui déplacent progressivement les dents vers les positions souhaitées.",
+        "indicatedForTitle": "Pour qui est-ce indiqué",
+        "indicatedFor": "Pour les personnes qui souhaitent un traitement plus esthétique. Ils sont pratiquement invisibles.",
+        "expectTitle": "À quoi s’attendre",
+        "expect": "Efficacité et qualité du traitement.",
+        "benefitsTitle": "Avantages",
+        "benefits": [
+          "Esthétique",
+          "Pratiquement invisibles",
+          "Confort"
+        ]
+      },
+      "casesDescription": "Découvrez des exemples réels de transformations réalisées avec nos traitements orthodontiques."
     },
     "oralSurgery": {
       "whatIs": "Qu'est-ce que la Chirurgie Buccale?",
@@ -228,6 +242,10 @@
         "occlusalAdjustment": { "title": "Ajustement Occlusal", "desc": "Correction de l'occlusion pour soulager les tensions" }
       }
     },
+    "aestheticDentistry": {
+      "whitening": "Blanchiment dentaire",
+      "facets": "Facettes dentaires"
+    },
     "items": {
       "general-dentistry": {
         "title": "Dentisterie Générale",
@@ -279,7 +297,8 @@
           "Résultats naturels et durables",
           "Procédures minimalement invasives"
         ],
-        "whatToExpect": "Nous commençons par une consultation d'évaluation pour comprendre vos objectifs. Nous présentons les options de traitement les plus adaptées et créons un plan personnalisé pour atteindre le sourire que vous avez toujours voulu."
+        "whatToExpect": "Nous commençons par une consultation d'évaluation pour comprendre vos objectifs. Nous présentons les options de traitement les plus adaptées et créons un plan personnalisé pour atteindre le sourire que vous avez toujours voulu.",
+        "casesDescription": "Découvrez des exemples réels avant et après de traitements de blanchiment dentaire."
       },
       "implantology": {
         "title": "Implantologie et Chirurgie Buccale",

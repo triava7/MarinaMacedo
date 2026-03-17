@@ -136,21 +136,35 @@
     "before": "Before",
     "after": "After",
     "orthodontics": {
-      "invisibleAligners": "Invisible Aligners",
-      "alignersDesc": "Custom-made for each patient with thermoplastic and biocompatible plastic material, comfortably adapting to the anatomy of each mouth.",
-      "howItWorks": "How Do They Work?",
-      "howItWorksDesc": "They work through the controlled application of gentle and progressive forces that gradually move the teeth to the desired positions. Each set of aligners is worn for approximately two weeks before moving to the next.",
-      "aesthetic": "Aesthetic",
-      "aestheticDesc": "Practically imperceptible",
-      "imperceptible": "Imperceptible",
-      "imperceptibleDesc": "Transparent and discreet",
-      "comfort": "Comfort",
-      "comfortDesc": "Soft and adaptable material",
-      "efficiency": "Efficiency",
-      "efficiencyDesc": "Predictable results",
-      "alignersInAction": "Aligners in Action",
-      "plasterModels": "Plaster Models - Planning",
-      "casesDescription": "See real examples of transformations with our orthodontic treatments."
+      "introTitle": "Orthodontics",
+      "introText": "Orthodontics corrects the positioning of teeth in the jaws through conventional and invisible solutions.",
+      "conventional": {
+        "title": "Conventional Braces",
+        "text": "Conventional braces remain an effective and accessible solution in orthodontic treatment. With metal or aesthetic brackets, they allow the correction of tooth alignment and bite (how teeth fit together) in a predictable and safe way.",
+        "indicatedForTitle": "Who is it for",
+        "indicatedFor": "More complex cases, offering proven and long-lasting results.",
+        "expectTitle": "What to expect",
+        "expect": "Efficiency and quality in treatment.",
+        "benefitsTitle": "Benefits",
+        "benefits": [
+          "More affordable"
+        ]
+      },
+      "aligners": {
+        "title": "Invisible Aligners",
+        "text": "Invisible aligners are one of the greatest innovations in dentistry in recent years. They are transparent, removable devices made to measure for each patient. They are manufactured from thermoplastic and biocompatible material, adapting completely to dental anatomy. They work by applying controlled, gentle and progressive forces that gradually move the teeth into the desired positions.",
+        "indicatedForTitle": "Who is it for",
+        "indicatedFor": "For those who want a more aesthetic treatment. They are practically invisible.",
+        "expectTitle": "What to expect",
+        "expect": "Efficiency and quality in treatment.",
+        "benefitsTitle": "Benefits",
+        "benefits": [
+          "Aesthetic appearance",
+          "Almost invisible",
+          "Comfort"
+        ]
+      },
+      "casesDescription": "See real examples of transformations achieved with our orthodontic treatments."
     },
     "oralSurgery": {
       "whatIs": "What is Oral Surgery?",
@@ -228,6 +242,10 @@
         "occlusalAdjustment": { "title": "Occlusal Adjustment", "desc": "Bite correction to relieve tension" }
       }
     },
+    "aestheticDentistry": {
+      "whitening": "Teeth Whitening",
+      "facets": "Dental Veneers"
+    },
     "items": {
       "general-dentistry": {
         "title": "General Dentistry",
@@ -279,7 +297,8 @@
           "Natural and lasting results",
           "Minimally invasive procedures"
         ],
-        "whatToExpect": "We start with an evaluation consultation to understand your goals. We present the most suitable treatment options and create a personalized plan to achieve the smile you have always wanted."
+        "whatToExpect": "We start with an evaluation consultation to understand your goals. We present the most suitable treatment options and create a personalized plan to achieve the smile you have always wanted.",
+        "casesDescription": "See real before-and-after examples of teeth whitening treatments"
       },
       "implantology": {
         "title": "Implantology and Oral Surgery",

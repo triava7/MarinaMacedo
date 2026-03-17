@@ -138,22 +138,36 @@
     "before": "Antes",
     "after": "Depois",
     "orthodontics": {
-      "invisibleAligners": "Alinhadores Invisíveis",
-      "alignersDesc": "Feitos à medida de cada paciente com material plástico termoplástico e biocompatível, adaptando-se confortavelmente à anatomia de cada boca.",
-      "howItWorks": "Como Funcionam?",
-      "howItWorksDesc": "Funcionam através da aplicação controlada de forças suaves e progressivas que vão movimentando os dentes para as posições desejadas. Cada conjunto de alinhadores é usado durante aproximadamente duas semanas antes de passar para o seguinte.",
-      "aesthetic": "Estética",
-      "aestheticDesc": "Praticamente impercetíveis",
-      "imperceptible": "Imperceptíveis",
-      "imperceptibleDesc": "Transparentes e discretos",
-      "comfort": "Conforto",
-      "comfortDesc": "Material suave e adaptável",
-      "efficiency": "Eficiência",
-      "efficiencyDesc": "Resultados previsíveis",
-      "alignersInAction": "Alinhadores em Ação",
-      "plasterModels": "Modelos de Gesso - Planeamento",
-      "casesDescription": "Veja exemplos reais de transformações com os nossos tratamentos ortodônticos."
-    },
+        "introTitle": "Ortodontia",
+        "introText": "A ortodontia corrige o posicionamento dos dentes nos maxilares, através de soluções convencionais e invisíveis.",
+        "conventional": {
+          "title": "Aparelhos Convencionais",
+          "text": "Os aparelhos convencionais continuam a ser uma solução eficaz e acessível no tratamento ortodôntico. Com brackets metálicos ou estéticos, permitem corrigir o alinhamento dos dentes e a mordida (maneira como encaixam) de forma previsível e segura.",
+          "indicatedForTitle": "Para quem é indicado",
+          "indicatedFor": "Casos mais complexos, oferecendo resultados comprovados e duradouros.",
+          "expectTitle": "O que esperar",
+          "expect": "Eficiência e qualidade no tratamento.",
+          "benefitsTitle": "Benefícios",
+          "benefits": [
+            "Mais económicos"
+          ]
+        },
+        "aligners": {
+          "title": "Alinhadores Invisíveis",
+          "text": "Os alinhadores invisíveis são uma das maiores inovações da medicina dentária dos últimos anos. São dispositivos transparentes, removíveis e feitos à medida de cada paciente. São fabricados em material plástico termomoldável e biocompatível, adaptando-se completamente à anatomia dentária. Funcionam através da aplicação controlada de forças suaves e progressivas que vão movimentando os dentes para as posições desejadas.",
+          "indicatedForTitle": "Para quem é indicado",
+          "indicatedFor": "Para quem quer um tratamento mais estético. São praticamente impercetíveis.",
+          "expectTitle": "O que esperar",
+          "expect": "Eficiência e qualidade no tratamento.",
+          "benefitsTitle": "Benefícios",
+          "benefits": [
+            "Estética",
+            "Impercetíveis",
+            "Conforto"
+          ]
+        },
+        "casesDescription": "Veja exemplos reais de transformações com os nossos tratamentos ortodônticos."
+      },
     "oralSurgery": {
       "whatIs": "O que é a Cirurgia Oral?",
       "whatIsDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das dores e tensões maxilares e estruturas anexas dos dentes.",
@@ -230,6 +244,10 @@
         "occlusalAdjustment": { "title": "Ajuste Oclusal", "desc": "Correção da mordida para aliviar tensões" }
       }
     },
+    "aestheticDentistry": {
+      "whitening": "Branqueamento",
+      "facets": "Facetas"
+    },
     "items": {
       "general-dentistry": {
         "title": "Medicina Dentária Geral",
@@ -296,7 +314,8 @@
           "Resultados naturais e duradouros",
           "Procedimentos minimamente invasivos"
         ],
-        "whatToExpect": "Melhorar a autoestima sendo que o branqueamento varia de pessoa para pessoa dependendo da permeabilidade dos dentes"
+        "whatToExpect": "Melhorar a autoestima sendo que o branqueamento varia de pessoa para pessoa dependendo da permeabilidade dos dentes",
+        "casesDescription": "Veja exemplos reais de antes e depois em tratamentos de branqueamento dentário."
       },
       "implantology": {
         "title": "Implantologia",
