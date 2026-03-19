@@ -30,6 +30,7 @@ import clinicalCases19 from "../img/cases/case19.jpeg";
 import clinicalCases20 from "../img/cases/case20.jpeg";
 import clinicalCases21 from "../img/cases/case21.jpeg";
 import clinicalCases22 from "../img/cases/case22.jpeg";
+import nutri from "../img/cases/nutri.png"
 
 const ServiceDetailPage = () => {
   const { t } = useTranslation();
@@ -480,12 +481,13 @@ const renderOrthodonticsSection = () => {
     if (serviceId !== 'prosthetics') return null;
 
     const fixedImages = [
-      { url: clinicalCases1, caption: 'Coroa cerâmica' },
-      { url: clinicalCases2, caption: 'Coroa cerâmica' }
+      { url: clinicalCases1 },
+      { url: clinicalCases2 },
+      { url: clinicalCases4 },
     ];
 
     const removableImages = [
-      { url: clinicalCases5, caption: 'Prótese parcial' },
+      { url: clinicalCases5},
     ];
 
     return (
@@ -525,7 +527,7 @@ const renderOrthodonticsSection = () => {
                   </ul>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 {fixedImages.map((img, idx) => (
                   <motion.div
                     key={idx}
@@ -606,8 +608,7 @@ const renderOrthodonticsSection = () => {
     if (serviceId !== 'implantology') return null;
 
     const implantImage = {
-      url: 'https://primadent.pt/wp-content/uploads/2025/09/implante-unico-e1758038758205.jpg',
-      caption: 'Implante dentário',
+      url: 'https://primadent.pt/wp-content/uploads/2025/09/implante-unico-e1758038758205.jpg'
     };
 
 
@@ -989,6 +990,7 @@ const renderAestheticDentistrySection = () => {
   );
 };
 
+
   // ========== OCLUSÃO (TMJ) - Expandido ==========
   const renderTmjSection = () => {
     if (serviceId !== 'tmj') return null;
@@ -1123,7 +1125,12 @@ const renderAestheticDentistrySection = () => {
   ];
 
   // Define hero background dynamically
-  const heroBackground = generalDentistryServices.includes(serviceId)? img1: img2;
+  const heroBackground =
+    serviceId === 'nutrition'
+      ? nutri
+      : generalDentistryServices.includes(serviceId)
+        ? img1
+        : img2;
 
   return (
     <div className="overflow-hidden">
