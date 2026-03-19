@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MarinaMacedo/static/css/main.ab8af3ee.css",
-    "main.js": "/MarinaMacedo/static/js/main.6531f9ae.js",
+    "main.css": "/MarinaMacedo/static/css/main.143a0f44.css",
+    "main.js": "/MarinaMacedo/static/js/main.11cd57c3.js",
     "static/media/logo.png": "/MarinaMacedo/static/media/logo.ee694183e1a6bc09e70b.png",
     "static/media/17.jpeg": "/MarinaMacedo/static/media/17.829e624835ea2bbba63b.jpeg",
     "static/media/8.jpeg": "/MarinaMacedo/static/media/8.40a46805526f3e552b2b.jpeg",
@@ -9,6 +9,7 @@
     "static/media/7.jpeg": "/MarinaMacedo/static/media/7.56d69a69285dea618783.jpeg",
     "static/media/6.jpeg": "/MarinaMacedo/static/media/6.28c44a9cba006adbdd60.jpeg",
     "static/media/13.jpeg": "/MarinaMacedo/static/media/13.65c65e225fb0c6a3976f.jpeg",
+    "static/media/nutri.png": "/MarinaMacedo/static/media/nutri.d0c465e381f1c40197a6.png",
     "static/media/11.jpeg": "/MarinaMacedo/static/media/11.aad7dd964d3167d2fce5.jpeg",
     "static/media/14.jpeg": "/MarinaMacedo/static/media/14.59e8a605ff9047ec9fe3.jpeg",
     "static/media/case9.jpeg": "/MarinaMacedo/static/media/case9.47df7d6fe2ba99d53d81.jpeg",
@@ -55,11 +56,11 @@
     "static/media/case18.jpeg": "/MarinaMacedo/static/media/case18.8664627b1ce451de8f90.jpeg",
     "static/media/case20.jpeg": "/MarinaMacedo/static/media/case20.394eb131a8d9a92dfbcf.jpeg",
     "index.html": "/MarinaMacedo/index.html",
-    "main.ab8af3ee.css.map": "/MarinaMacedo/static/css/main.ab8af3ee.css.map",
-    "main.6531f9ae.js.map": "/MarinaMacedo/static/js/main.6531f9ae.js.map"
+    "main.143a0f44.css.map": "/MarinaMacedo/static/css/main.143a0f44.css.map",
+    "main.11cd57c3.js.map": "/MarinaMacedo/static/js/main.11cd57c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab8af3ee.css",
-    "static/js/main.6531f9ae.js"
+    "static/css/main.143a0f44.css",
+    "static/js/main.11cd57c3.js"
   ]
 }
