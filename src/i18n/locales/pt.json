@@ -168,6 +168,91 @@
         },
         "casesDescription": "Veja exemplos reais de transformações com os nossos tratamentos ortodônticos."
       },
+      "orofacialHarmonization": {
+        "label": "Tratamentos de Face",
+        "title": "Veja os tratamentos de face que temos na clínica",
+        "description": "Conheça os procedimentos de harmonização orofacial disponíveis, com foco em resultados naturais, segurança e personalização.",
+        "treatments": [
+          {
+            "title": "Botox",
+            "items": [
+              "Tratamento estético",
+              "Procedimento rápido",
+              "Uso médico (suor excessivo, enxaqueca e bruxismo)",
+              "Resultados temporários"
+            ]
+          },
+          {
+            "title": "Ácido Hialurónico",
+            "items": [
+              "Hidratação e volume",
+              "Resultados imediatos",
+              "Baixo risco de reações",
+              "Durabilidade e manutenção"
+            ]
+          },
+          {
+            "title": "Microagulhamento",
+            "items": [
+              "Tratamento de rejuvenescimento",
+              "Melhoria da textura da pele",
+              "Rápido e com pouco tempo de recuperação",
+              "Resultados graduais e duradouros"
+            ]
+          },
+          {
+            "title": "Mesoterapia",
+            "items": [
+              "Não invasivo",
+              "Reduz gordura localizada e celulite",
+              "Rápido e com mínimos efeitos colaterais"
+            ]
+          },
+          {
+            "title": "Fototerapia",
+            "items": [
+              "Tratamento estético com luz",
+              "Ajuda na regeneração da pele (acne, rosácea e envelhecimento)",
+              "Sem efeitos colaterais"
+            ]
+          },
+          {
+            "title": "Peeling químico",
+            "items": [
+              "Renovação da pele",
+              "Reduz imperfeições",
+              "Regeneração da pele",
+              "Resultados duradouros"
+            ]
+          },
+          {
+            "title": "Radiofrequência",
+            "items": [
+              "Rejuvenescimento.",
+              "Melhora a elasticidade e textura da pele.",
+              "Resultados duradouros."
+            ]
+          },
+          {
+            "title": "Hydra Face",
+            "items": [
+              "Limpeza e hidratação.",
+              "Tecnologia avançada.",
+              "Para todos os tipos de pele.",
+              "Resultados imediatos e revitalização."
+            ]
+          },
+          {
+            "title": "Bioestimulação de colagénio",
+            "items": [
+              "Radiesse – volume.",
+              "Profhilo – textura, luminosidade, hidratação e firmeza.",
+              "Sculptra – estimula a produção de colagénio.",
+              "Rejuvenescimento."
+            ]
+          }
+        ]
+      },
     "oralSurgery": {
       "whatIs": "O que é a Cirurgia Oral?",
       "whatIsDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das dores e tensões maxilares e estruturas anexas dos dentes.",

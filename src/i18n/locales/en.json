@@ -179,6 +179,91 @@
         "gingivalRetraction": "Gingival recession correction"
       }
     },
+    "orofacialHarmonization": {
+      "label": "Facial Treatments",
+      "title": "Discover the facial treatments available at our clinic",
+      "description": "Explore our orofacial harmonization procedures, focused on natural-looking results, safety, and personalization.",
+      "treatments": [
+        {
+          "title": "Botox",
+          "items": [
+            "Aesthetic treatment.",
+            "Quick procedure.",
+            "Can also be used medically for excessive sweating, migraines, and bruxism.",
+            "Temporary results."
+          ]
+        },
+        {
+          "title": "Hyaluronic Acid",
+          "items": [
+            "Hydration and volume.",
+            "Immediate results.",
+            "Low risk of reactions.",
+            "Durability and maintenance."
+          ]
+        },
+        {
+          "title": "Microneedling",
+          "items": [
+            "Rejuvenation treatment.",
+            "Improves skin texture.",
+            "Quick procedure with little recovery time.",
+            "Gradual and long-lasting results."
+          ]
+        },
+        {
+          "title": "Mesotherapy",
+          "items": [
+            "Non-invasive.",
+            "Helps reduce localized fat and cellulite.",
+            "Quick treatment with minimal side effects."
+          ]
+        },
+        {
+          "title": "Phototherapy",
+          "items": [
+            "Aesthetic treatment using light.",
+            "Helps regenerate the skin for acne, rosacea, and aging.",
+            "No side effects."
+          ]
+        },
+        {
+          "title": "Chemical Peel",
+          "items": [
+            "Skin renewal.",
+            "Reduces imperfections.",
+            "Skin regeneration.",
+            "Long-lasting results."
+          ]
+        },
+        {
+          "title": "Radiofrequency",
+          "items": [
+            "Rejuvenation.",
+            "Improves skin elasticity and texture.",
+            "Long-lasting results."
+          ]
+        },
+        {
+          "title": "HydraFacial",
+          "items": [
+            "Cleansing and hydration.",
+            "Advanced technology.",
+            "Suitable for all skin types.",
+            "Immediate results and revitalization."
+          ]
+        },
+        {
+          "title": "Collagen Biostimulation",
+          "items": [
+            "Radiesse – volume.",
+            "Profhilo – texture, glow, hydration, and firmness.",
+            "Sculptra – stimulates collagen production.",
+            "Rejuvenation."
+          ]
+        }
+      ]
+    },
     "prosthetics": {
       "fixedTitle": "Fixed Prosthetics",
       "fixedDesc": "Fixed Prosthetics offers permanent solutions to restore damaged teeth or replace missing teeth. Includes crowns, bridges and veneers that are cemented to the teeth, providing a stable and lasting solution.",

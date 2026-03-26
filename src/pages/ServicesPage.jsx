@@ -22,10 +22,9 @@ const ServicesPage = () => {
       'tmj',
       'periodontics',
     ],
-    facial: [ 
-      'orofacial-harmonization',
-    ],
+
     medical: [
+      'orofacial-harmonization',
       'general-medicine',
       'orthopedics',
       'nutrition',
@@ -157,7 +156,6 @@ const ServicesPage = () => {
       <section className="section-luxury bg-background relative">
         <div className="container-luxury relative">
           {renderCategory('dental', serviceCategories.dental)}
-          {renderCategory('facial', serviceCategories.facial)}
           {renderCategory('medical', serviceCategories.medical)}
           {renderCategory('wellness', serviceCategories.wellness)}
         </div>

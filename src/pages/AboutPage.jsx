@@ -44,7 +44,7 @@ const AboutPage = () => {
   // Diretora Clínica (imagem 1)
 const clinicDirector = {
   id: 1,
-  name: 'Dra. Marina Macedo',
+  name: 'Marina Macedo',
   image: team1,
 };
 

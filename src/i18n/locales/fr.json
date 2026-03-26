@@ -179,6 +179,91 @@
         "gingivalRetraction": "Correction des récessions gingivales"
       }
     },
+    "orofacialHarmonization": {
+      "label": "Traitements du Visage",
+      "title": "Découvrez les traitements du visage disponibles dans notre clinique",
+      "description": "Découvrez nos procédures d’harmonisation orofaciale, axées sur des résultats naturels, la sécurité et la personnalisation.",
+      "treatments": [
+        {
+          "title": "Botox",
+          "items": [
+            "Traitement esthétique.",
+            "Procédure rapide.",
+            "Usage médical possible en cas de transpiration excessive, migraine et bruxisme.",
+            "Résultats temporaires."
+          ]
+        },
+        {
+          "title": "Acide hyaluronique",
+          "items": [
+            "Hydratation et volume.",
+            "Résultats immédiats.",
+            "Faible risque de réactions.",
+            "Durabilité et entretien."
+          ]
+        },
+        {
+          "title": "Microneedling",
+          "items": [
+            "Traitement de rajeunissement.",
+            "Améliore la texture de la peau.",
+            "Rapide et avec peu de temps de récupération.",
+            "Résultats progressifs et durables."
+          ]
+        },
+        {
+          "title": "Mésothérapie",
+          "items": [
+            "Non invasive.",
+            "Réduit la graisse localisée et la cellulite.",
+            "Rapide avec des effets secondaires minimes."
+          ]
+        },
+        {
+          "title": "Photothérapie",
+          "items": [
+            "Traitement esthétique par lumière.",
+            "Aide à régénérer la peau en cas d’acné, rosacée et vieillissement.",
+            "Sans effets secondaires."
+          ]
+        },
+        {
+          "title": "Peeling chimique",
+          "items": [
+            "Renouvellement de la peau.",
+            "Réduit les imperfections.",
+            "Régénération de la peau.",
+            "Résultats durables."
+          ]
+        },
+        {
+        "title": "Radiofréquence",
+        "items": [
+          "Rajeunissement.",
+          "Améliore l’élasticité et la texture de la peau.",
+          "Résultats durables."
+        ]
+      },
+      {
+        "title": "HydraFacial",
+        "items": [
+          "Nettoyage et hydratation.",
+          "Technologie avancée.",
+          "Convient à tous les types de peau.",
+          "Résultats immédiats et revitalisation."
+        ]
+      },
+      {
+        "title": "Biostimulation du collagène",
+        "items": [
+          "Radiesse – volume.",
+          "Profhilo – texture, luminosité, hydratation et fermeté.",
+          "Sculptra – stimule la production de collagène.",
+          "Rajeunissement."
+        ]
+      }
+      ]
+    },
     "prosthetics": {
       "fixedTitle": "Prothèse Fixe",
       "fixedDesc": "La Prothèse Fixe offre des solutions permanentes pour restaurer les dents endommagées ou remplacer les dents manquantes. Comprend des couronnes, des ponts et des facettes scellés aux dents, offrant une solution stable et durable.",

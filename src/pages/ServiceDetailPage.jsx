@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, X, ChevronLeft, ChevronRight, Camera, Eye, Zap, Shield } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Users, Gift, ClipboardList, Phone, Stethoscope, Baby, Cog, Sparkle, Target, FileHeart, Smile, Brain, HeartPulse, Ear, UserRound, Bone, Apple, HandHeart, X, ChevronLeft, ChevronRight, Camera, Eye, Zap, Shield, Plus, Minus } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import img1 from "../img/galery/6.jpeg";
 import img2 from "../img/galery/10.jpeg";
-import clinicalCases1 from "../img/cases/case1.jpeg";
-import clinicalCases2 from "../img/cases/case2.jpeg";
+import clinicalCases1 from "../img/cases/case1.jpg";
 import clinicalCases3 from "../img/cases/case3.jpeg";
 import clinicalCases4 from "../img/cases/case4.jpeg";
 import clinicalCases5 from "../img/cases/case5.jpeg";
@@ -30,6 +29,7 @@ import clinicalCases19 from "../img/cases/case19.jpeg";
 import clinicalCases20 from "../img/cases/case20.jpeg";
 import clinicalCases21 from "../img/cases/case21.jpeg";
 import clinicalCases22 from "../img/cases/case22.jpeg";
+import clinicalCases23 from "../img/cases/cases23.jpg";
 import nutri from "../img/cases/nutri.png"
 
 const ServiceDetailPage = () => {
@@ -38,6 +38,7 @@ const ServiceDetailPage = () => {
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [openAccordion, setOpenAccordion] = useState(null);
 
   const allServices = [
     'general-dentistry',
@@ -188,8 +189,6 @@ const renderOrthodonticsSection = () => {
   const clinicalCases = [
     {
       id: 1,
-      title: 'Correção de Apinhamento',
-      description: 'Tratamento com alinhadores invisíveis para correção de apinhamento severo.',
       images: [
         { url: clinicalCases12, caption: 'Antes' },
         { url: clinicalCases11, caption: 'Depois' }
@@ -197,8 +196,6 @@ const renderOrthodonticsSection = () => {
     },
     {
       id: 2,
-      title: 'Encerramento de Diastema',
-      description: 'Correção de espaçamento entre dentes anteriores.',
       images: [
         { url: clinicalCases10, caption: 'Antes' },
         { url: clinicalCases13, caption: 'Depois' }
@@ -206,8 +203,6 @@ const renderOrthodonticsSection = () => {
     },
     {
       id: 3,
-      title: 'Mordida Cruzada',
-      description: 'Tratamento de mordida cruzada com alinhadores.',
       images: [
         { url: clinicalCases9, caption: 'Antes' },
         { url: clinicalCases8, caption: 'Depois' }
@@ -317,35 +312,31 @@ const renderOrthodonticsSection = () => {
             className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
           >
             {clinicalCases.map((caseItem) => (
-              <motion.div
-                key={caseItem.id}
-                variants={fadeInUp}
-                className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500"
-              >
-                <div className="grid grid-cols-2">
-                  {caseItem.images.map((img, idx) => (
-                    <div
-                      key={idx}
-                      className="aspect-square relative cursor-pointer"
-                      onClick={() => openImageModal(caseItem.images, idx)}
-                    >
-                      <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-700" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
-                        <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
-                          {img.caption}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
+          <motion.div
+            key={caseItem.id}
+            variants={fadeInUp}
+            className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 max-w-2xl mx-auto"
+          >
+            <div className="flex flex-col">
+              {caseItem.images.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="aspect-[16/10] relative cursor-pointer"
+                  onClick={() => openImageModal(caseItem.images, idx)}
+                >
+                  <img
+                    src={img.url}
+                    alt={img.caption}
+                    className="w-full h-full object-cover transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0">
+                    <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
+                      {img.caption}
+                    </span>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h4 className="font-serif text-foreground group-hover:text-primary transition-colors">
-                    {caseItem.title}
-                  </h4>
-                  <p className="text-muted-foreground text-sm mt-1">
-                    {caseItem.description}
-                  </p>
-                </div>
+              ))}
+            </div>
               </motion.div>
             ))}
           </motion.div>
@@ -358,21 +349,6 @@ const renderOrthodonticsSection = () => {
   const renderOralSurgerySection = () => {
     if (serviceId !== 'oral-surgery') return null;
 
-    const clinicalImages = [
-      { url: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80', caption: 'Procedimento cirúrgico' },
-      { url: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80', caption: 'Ambiente cirúrgico' },
-      { url: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=80', caption: 'Resultado pós-operatório' },
-    ];
-
-    const indications = [
-      'Quistos',
-      'Lesões na mucosa/língua',
-      'Dentes para extrair (inclusos ou não)',
-      'Fibromas',
-      'Cirurgia para preparação protética',
-      'Gengivoplastias',
-      'Correção de retrações gengivais'
-    ];
 
     return (
       <section className="py-20 bg-gradient-to-b from-background to-beige-dark/20 relative">
@@ -384,12 +360,10 @@ const renderOrthodonticsSection = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">{t('services.clinicalDocumentation')}</span>
-            <h2 className="text-display font-serif text-foreground mb-6">{t('services.clinicalCases')}</h2>
           </motion.div>
 
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols gap-12 items-start">
             {/* Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -427,49 +401,6 @@ const renderOrthodonticsSection = () => {
                 </ul>
               </div>
             </motion.div>
-
-            {/* Large Images */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              {/* Main Large Image */}
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer group shadow-2xl"
-                onClick={() => openImageModal(clinicalImages, 0)}
-              >
-                <img 
-                  src={clinicalImages[0].url} 
-                  alt={clinicalImages[0].caption} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
-                  <div className="absolute bottom-6 left-6">
-                    <span className="text-white font-serif text-xl">{clinicalImages[0].caption}</span>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Two smaller images */}
-              <div className="grid grid-cols-2 gap-6">
-                {clinicalImages.slice(1).map((img, idx) => (
-                  <motion.div
-                    key={idx}
-                    whileHover={{ scale: 1.03 }}
-                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
-                    onClick={() => openImageModal(clinicalImages, idx + 1)}
-                  >
-                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <span className="text-white text-sm font-medium">{img.caption}</span>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -481,13 +412,12 @@ const renderOrthodonticsSection = () => {
     if (serviceId !== 'prosthetics') return null;
 
     const fixedImages = [
-      { url: clinicalCases1 },
-      { url: clinicalCases2 },
       { url: clinicalCases4 },
+      { url: clinicalCases5},
     ];
 
     const removableImages = [
-      { url: clinicalCases5},
+      { url: clinicalCases1 },
     ];
 
     return (
@@ -527,7 +457,7 @@ const renderOrthodonticsSection = () => {
                   </ul>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {fixedImages.map((img, idx) => (
                   <motion.div
                     key={idx}
@@ -565,20 +495,26 @@ const renderOrthodonticsSection = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
+              <div className="order-2 lg:order-1 flex justify-center">
                 {removableImages.map((img, idx) => (
-                  <motion.div
-                    key={idx}
-                    whileHover={{ scale: 1.05 }}
-                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
-                    onClick={() => openImageModal(removableImages, idx)}
-                  >
-                    <img src={img.url} alt={img.caption} className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <span className="text-white text-xs font-medium text-center px-2">{img.caption}</span>
-                    </div>
-                  </motion.div>
-                ))}
+                <motion.div
+                  key={idx}
+                  whileHover={{ scale: 1.05 }}
+                  className="relative w-full max-w-sm aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                  onClick={() => openImageModal(removableImages, idx)}
+                >
+                  <img
+                    src={img.url}
+                    alt={img.caption}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-xs font-medium text-center px-2">
+                      {img.caption}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
               </div>
               <div className="order-1 lg:order-2 space-y-6">
                 <p className="text-muted-foreground leading-relaxed text-lg">
@@ -656,18 +592,13 @@ const renderOrthodonticsSection = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
-                className="relative rounded-2xl overflow-hidden shadow-lg aspect-video"
+                className="relative rounded-2xl overflow-hidden w-full h-auto"
               >
                 <img
                   src={implantImage.url}
                   alt={implantImage.caption}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
-                  <span className="absolute bottom-4 left-4 text-white font-medium">
-                    {implantImage.caption}
-                  </span>
-                </div>
               </motion.div>
 
             </div>
@@ -760,75 +691,79 @@ const renderOrthodonticsSection = () => {
           </div>
         </section>
 
-        {/* Clinical Cases */}
-        <section className="py-20 bg-beige-dark/20 relative">
-          <div className="container-luxury relative">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
-              <h2 className="text-title font-serif text-foreground mb-4">{t('services.clinicalCases')}</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                {t('services.implantology.casesDescription')}
-              </p>
-            </motion.div>
+          {/* Clinical Cases */}
+          <section className="py-20 bg-beige-dark/20 relative">
+            <div className="container-luxury relative">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-12"
+              >
+                <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
+                <h2 className="text-title font-serif text-foreground mb-4">
+                  {t('services.clinicalCases')}
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  {t('services.implantology.casesDescription')}
+                </p>
+              </motion.div>
 
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid md:grid-cols-2 gap-8"
-            >
-              {[
-                {
-                  title: t('services.implantology.case1Title'),
-                  desc: t('services.implantology.case1Desc'),
-                  images: [
-                    { url: clinicalCases6_1, caption: t('services.before') },
-                    { url: clinicalCases6, caption: t('services.after') }
-                  ]
-                },
-                {
-                  title: t('services.implantology.case2Title'),
-                  desc: t('services.implantology.case2Desc'),
-                  images: [
-                    { url: clinicalCases7_1, caption: t('services.before') },
-                    { url: clinicalCases7, caption: t('services.after') }
-                  ]
-                }
-              ].map((caseItem, idx) => (
-                <motion.div
-                  key={idx}
-                  variants={fadeInUp}
-                  className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all group"
-                >
-                  <div className="grid grid-cols-2">
-                    {caseItem.images.map((img, imgIdx) => (
-                      <div
-                        key={imgIdx}
-                        className="aspect-square relative cursor-pointer"
-                        onClick={() => openImageModal(caseItem.images, imgIdx)}
-                      >
-                        <img src={img.url} alt={img.caption} className="w-full h-full object-cover transition-transform duration-500"/>
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
-                          <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">{img.caption}</span>
+              <motion.div
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={staggerContainer}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto"
+              >
+                {[
+                  {
+                    title: t('services.implantology.case1Title'),
+                    desc: t('services.implantology.case1Desc'),
+                    images: [
+                      { url: clinicalCases6_1, caption: t('services.before') },
+                      { url: clinicalCases6, caption: t('services.after') }
+                    ]
+                  },
+                  {
+                    title: t('services.implantology.case2Title'),
+                    desc: t('services.implantology.case2Desc'),
+                    images: [
+                      { url: clinicalCases7_1, caption: t('services.before') },
+                      { url: clinicalCases7, caption: t('services.after') }
+                    ]
+                  }
+                ].map((caseItem, idx) => (
+                  <motion.div
+                    key={idx}
+                    variants={fadeInUp}
+                    className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 w-full"
+                  >
+                   <div className="flex flex-col h-[400px]">
+                      {caseItem.images.map((img, imgIdx) => (
+                        <div
+                          key={imgIdx}
+                          className="h-1/2 relative cursor-pointer"
+                          onClick={() => openImageModal(caseItem.images, imgIdx)}
+                        >
+                          <img
+                            src={img.url}
+                            alt={img.caption}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0">
+                            <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
+                              {img.caption}
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="p-6">
-                    <h4 className="font-serif text-foreground text-lg mb-2 group-hover:text-primary transition-colors">{caseItem.title}</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{caseItem.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
+                      ))}
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+          </section>
       </>
     );
   };
@@ -934,6 +869,22 @@ const renderAestheticDentistrySection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="mb-10"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[16/7]">
+              <img
+                src={clinicalCases3}
+                alt={t('services.items.aesthetic-dentistry.title')}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="text-center mb-12"
           >
             <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
@@ -961,26 +912,26 @@ const renderAestheticDentistrySection = () => {
                 variants={fadeInUp}
                 className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="grid grid-cols-2">
-                  {caseItem.images.map((img, imgIdx) => (
-                    <div
-                      key={imgIdx}
-                      className="aspect-[5/3] relative cursor-pointer"
-                      onClick={() => openImageModal(caseItem.images, imgIdx)}
-                    >
-                      <img
-                        src={img.url}
-                        alt={img.caption}
-                        className="w-full h-full object-cover transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
-                        <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
-                          {img.caption}
-                        </span>
-                      </div>
+              <div className="flex flex-col">
+                {caseItem.images.map((img, imgIdx) => (
+                  <div
+                    key={imgIdx}
+                    className="aspect-[16/10] relative cursor-pointer"
+                    onClick={() => openImageModal(caseItem.images, imgIdx)}
+                  >
+                    <img
+                      src={img.url}
+                      alt={img.caption}
+                      className="w-full h-full object-cover transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0">
+                      <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
+                        {img.caption}
+                      </span>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
+              </div>
               </motion.div>
             ))}
           </motion.div>
@@ -1095,6 +1046,189 @@ const renderAestheticDentistrySection = () => {
     );
   };
 
+  //harmonização orafacial
+ const renderOrofacialHarmonizationSection = () => {
+  if (serviceId !== 'orofacial-harmonization') return null;
+
+  const treatments =
+    t('services.orofacialHarmonization.treatments', { returnObjects: true }) || [];
+
+  const benefits =
+    t('services.items.orofacial-harmonization.benefits', { returnObjects: true }) || [];
+
+  return (
+    <>
+      {/* Info cards */}
+      <section className="py-20 bg-gradient-to-b from-background to-primary/5 relative">
+        <div className="container-luxury relative">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="card-luxury rounded-2xl p-8"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <Users className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.whoIsItFor')}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {t('services.items.orofacial-harmonization.whoIsItFor')}
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="card-luxury rounded-2xl p-8"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <Gift className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.benefits')}
+              </h3>
+              <ul className="space-y-3">
+                {Array.isArray(benefits) &&
+                  benefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm">
+                      <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="card-luxury rounded-2xl p-8"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <ClipboardList className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.whatToExpect')}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {t('services.items.orofacial-harmonization.whatToExpect')}
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accordion + image */}
+      <section className="py-20 bg-beige-dark/20 relative">
+        <div className="container-luxury relative">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-14"
+          >
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
+              {t('services.orofacialHarmonization.label')}
+            </span>
+            <h2 className="text-title font-serif text-foreground mb-4">
+              {t('services.orofacialHarmonization.title')}
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {t('services.orofacialHarmonization.description')}
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-4"
+            >
+              {treatments.map((treatment, index) => {
+                const isOpen = openAccordion === index;
+
+                return (
+                  <div
+                    key={treatment.title}
+                    className="rounded-2xl border border-primary/15 bg-background overflow-hidden shadow-sm"
+                  >
+                    <button
+                      type="button"
+                      onClick={() => setOpenAccordion(isOpen ? null : index)}
+                      className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-primary/5 transition-colors"
+                    >
+                      <span className="text-lg font-serif text-foreground">
+                        {treatment.title}
+                      </span>
+
+                      <span className="text-primary flex-shrink-0">
+                        {isOpen ? (
+                          <Minus className="w-5 h-5" />
+                        ) : (
+                          <Plus className="w-5 h-5" />
+                        )}
+                      </span>
+                    </button>
+
+                    <AnimatePresence initial={false}>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.25 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-6 pb-6">
+                            <ul className="space-y-3">
+                              {treatment.items.map((item, idx) => (
+                                <li
+                                  key={idx}
+                                  className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed"
+                                >
+                                  <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              })}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="lg:sticky lg:top-24"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
+                <img
+                  src={clinicalCases23}
+                  alt={t('services.items.orofacial-harmonization.title')}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
   if (!allServices.includes(serviceId)) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -1125,12 +1259,12 @@ const renderAestheticDentistrySection = () => {
   ];
 
   // Define hero background dynamically
-  const heroBackground =
-    serviceId === 'nutrition'
-      ? nutri
-      : generalDentistryServices.includes(serviceId)
-        ? img1
-        : img2;
+const heroBackground =
+  serviceId === 'nutrition'
+    ? nutri
+    : generalDentistryServices.includes(serviceId)
+      ? img1
+      : img2;
 
   return (
     <div className="overflow-hidden">
@@ -1228,9 +1362,10 @@ const renderAestheticDentistrySection = () => {
       {renderImplantologySection()}
       {renderTmjSection()}
       {renderAestheticDentistrySection()}
+      {renderOrofacialHarmonizationSection()}
 
       {/* Standard Content (for services without custom sections) */}
-      {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj', 'aesthetic-dentistry'].includes(serviceId) && (
+      {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj', 'aesthetic-dentistry', 'orofacial-harmonization'].includes(serviceId) && (
         <section className="section-luxury bg-background relative">
           <div className="container-luxury relative">
             <motion.div initial="initial" whileInView="animate" viewport={{ once: true }} variants={staggerContainer} className="grid lg:grid-cols-3 gap-8">
