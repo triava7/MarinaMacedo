@@ -756,7 +756,7 @@ const renderOrthodonticsSection = () => {
                               {img.caption}
                             </span>
                           </div>
-                        </div>
+                        </div> 
                       ))}
                     </div>
                   </motion.div>

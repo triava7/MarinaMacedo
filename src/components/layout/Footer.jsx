@@ -83,15 +83,6 @@ const Footer = () => {
           <div>
             <h4 className="text-primary font-serif text-lg mb-6">{t('contacts.info.title')}</h4>
             <ul className="space-y-4">
-              <li>
-                <a
-                  href="mailto:clinicamarina@gmail.com"
-                  className="flex items-center gap-3 text-muted-foreground text-sm hover:text-primary transition-colors duration-300"
-                >
-                  <Mail className="w-4 h-4 text-primary" />
-                  clinicamarina@gmail.com
-                </a>
-              </li>
               {locations.map((loc) => (
                 <li key={loc.name}>
                   <a
@@ -148,7 +139,7 @@ const Footer = () => {
       <div className="border-t border-border">
         <div className="container-luxury py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-xs">
-            © {currentYear} Clínica Dentária Marina Macedo e Cª Lda. {t('footer.rights')}
+            © {currentYear} Clínica Dentária Marina Macedo {t('footer.rights')}
           </p>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
