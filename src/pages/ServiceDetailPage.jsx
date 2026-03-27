@@ -500,7 +500,7 @@ const renderOrthodonticsSection = () => {
                 <motion.div
                   key={idx}
                   whileHover={{ scale: 1.05 }}
-                  className="relative w-full max-w-sm aspect-square rounded-xl overflow-hidden cursor-pointer group shadow-lg"
+                  className="relative w-full max-w-sm h-[500px] rounded-xl overflow-hidden cursor-pointer group shadow-lg"
                   onClick={() => openImageModal(removableImages, idx)}
                 >
                   <img
@@ -1364,45 +1364,74 @@ const heroBackground =
       {renderAestheticDentistrySection()}
       {renderOrofacialHarmonizationSection()}
 
-      {/* Standard Content (for services without custom sections) */}
-      {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj', 'aesthetic-dentistry', 'orofacial-harmonization'].includes(serviceId) && (
-        <section className="section-luxury bg-background relative">
-          <div className="container-luxury relative">
-            <motion.div initial="initial" whileInView="animate" viewport={{ once: true }} variants={staggerContainer} className="grid lg:grid-cols-3 gap-8">
-              <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
-                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                  <Users className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.whoIsItFor')}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{t(`services.items.${serviceId}.whoIsItFor`)}</p>
-              </motion.div>
+    {/* Standard Content (for services without custom sections) */}
+    {!['orthodontics', 'oral-surgery', 'prosthetics', 'implantology', 'tmj', 'aesthetic-dentistry', 'orofacial-harmonization'].includes(serviceId) && (
+      <section className="section-luxury bg-background relative">
+        <div className="container-luxury relative">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid lg:grid-cols-3 gap-8"
+          >
+            <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <Users className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.whoIsItFor')}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {t(`services.items.${serviceId}.whoIsItFor`)}
+              </p>
+            </motion.div>
 
-              <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
-                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                  <Gift className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.benefits')}</h3>
-                <ul className="space-y-3">
-                  {Array.isArray(benefits) && benefits.map((benefit, index) => (
+            <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <Gift className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.benefits')}
+              </h3>
+              <ul className="space-y-3">
+                {Array.isArray(benefits) &&
+                  benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm">
                       <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                       <span>{benefit}</span>
                     </li>
                   ))}
-                </ul>
-              </motion.div>
-
-              <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
-                <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                  <ClipboardList className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="text-xl font-serif text-foreground mb-4">{t('services.whatToExpect')}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{t(`services.items.${serviceId}.whatToExpect`)}</p>
-              </motion.div>
+              </ul>
             </motion.div>
-          </div>
-        </section>
-      )}
+
+            <motion.div variants={fadeInUp} className="card-luxury rounded-lg p-8">
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
+                <ClipboardList className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-serif text-foreground mb-4">
+                {t('services.whatToExpect')}
+              </h3>
+
+              {serviceId === 'orthopedics' ? (
+                <ul className="space-y-3">
+                  {(t(`services.items.${serviceId}.whatToExpect`, { returnObjects: true }) || []).map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-muted-foreground text-sm leading-relaxed">
+                      <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {t(`services.items.${serviceId}.whatToExpect`)}
+                </p>
+              )}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+    )}
 
       {/* CTA Section */}
       {dentalServices.includes(serviceId) && (

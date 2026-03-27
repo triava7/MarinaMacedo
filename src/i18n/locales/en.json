@@ -180,8 +180,8 @@
       }
     },
     "orofacialHarmonization": {
-      "label": "Facial Treatments",
-      "title": "Discover the facial treatments available at our clinic",
+      "label": "",
+      "title": "Discover the treatments available at our clinic",
       "description": "Explore our orofacial harmonization procedures, focused on natural-looking results, safety, and personalization.",
       "treatments": [
         {
@@ -398,6 +398,10 @@
         ],
         "whatToExpect": "Treatment begins with detailed exams and digital planning. Implant placement is done under local anesthesia, followed by a healing period. Finally, the definitive crown is placed."
       },
+      "oral-surgery": {
+        "title": "Oral Surgery",
+        "description": "Area of dental medicine dedicated to the diagnosis and surgical treatment of diseases and lesions of the jaws and associated structures, also encompassing dental anomalies."
+      },
       "endodontics": {
         "title": "Endodontics",
         "shortDesc": "Root canal treatment to save compromised teeth.",
@@ -425,9 +429,9 @@
         "whatToExpect": "After a complete evaluation with exams and photographs, we present a personalized treatment plan. Treatment time varies according to complexity, with regular appointments for adjustments."
       },
       "tmj": {
-        "title": "TMJ & Orofacial Pain",
+        "title": "Occlusion",
         "shortDesc": "Specialized treatment for temporomandibular joint dysfunctions.",
-        "description": "The TMJ and Orofacial Pain specialty treats problems of the joint that connects the jaw to the skull, as well as related headaches, facial and cervical pain.",
+        "description": "Occlusion refers to how the upper and lower teeth come together when the mouth closes. Proper occlusion is essential for efficient chewing, muscle comfort, and healthy jaw joints, helping to prevent pain and excessive tooth wear.",
         "whoIsItFor": "People with jaw pain, clicking when opening the mouth, difficulty chewing, frequent headaches or teeth grinding.",
         "benefits": [
           "Pain and discomfort relief",
@@ -487,7 +491,13 @@
           "Personalized treatment",
           "Conservative and surgical options"
         ],
-        "whatToExpect": "Traumatology and sports medicine consultation, including the assessment of injuries related to sports practice, such as football, as well as the evaluation of post-traumatic bodily damage for insurance purposes and medical leave. It also includes the preparation of evaluation reports for medical boards and consultations for joint pain, sports injuries, spinal problems, or other orthopaedic conditions."
+        "whatToExpect": [
+          "Traumatology consultation",
+          "Sports medicine",
+          "Assessment of post-traumatic bodily damage for insurance purposes and medical leave",
+          "Evaluation report for medical boards",
+          "Consultation for joint pain, sports injuries, spine problems, osteoarthritis, or other orthopedic conditions"
+        ]
       },
       "nutrition": {
         "title": "Nutrition",

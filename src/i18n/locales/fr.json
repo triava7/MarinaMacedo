@@ -180,8 +180,8 @@
       }
     },
     "orofacialHarmonization": {
-      "label": "Traitements du Visage",
-      "title": "Découvrez les traitements du visage disponibles dans notre clinique",
+      "label": "",
+      "title": "Découvrez les traitements disponibles dans notre clinique",
       "description": "Découvrez nos procédures d’harmonisation orofaciale, axées sur des résultats naturels, la sécurité et la personnalisation.",
       "treatments": [
         {
@@ -398,6 +398,10 @@
         ],
         "whatToExpect": "Le traitement commence par des examens détaillés et une planification numérique. La pose de l'implant se fait sous anesthésie locale, suivie d'une période de cicatrisation. Enfin, la couronne définitive est placée."
       },
+      "oral-surgery": {
+        "title": "Chirurgie Orale",
+        "description": "Spécialité de la médecine dentaire dédiée au diagnostic et au traitement chirurgical des maladies et lésions des maxillaires et des structures associées, incluant également les anomalies dentaires."
+      },
       "endodontics": {
         "title": "Endodontie",
         "shortDesc": "Traitement de canal pour sauver les dents compromises.",
@@ -425,9 +429,9 @@
         "whatToExpect": "Après une évaluation complète avec examens et photographies, nous présentons un plan de traitement personnalisé. La durée du traitement varie selon la complexité, avec des rendez-vous réguliers pour les ajustements."
       },
       "tmj": {
-        "title": "ATM et Douleur Orofaciale",
+        "title": "Occlusion",
         "shortDesc": "Traitement spécialisé pour les dysfonctions de l'articulation temporo-mandibulaire.",
-        "description": "La spécialité ATM et Douleur Orofaciale traite les problèmes de l'articulation qui relie la mâchoire au crâne, ainsi que les maux de tête, douleurs faciales et cervicales associés.",
+        "description": "L’occlusion correspond à la manière dont les dents supérieures et inférieures s’emboîtent lorsque la bouche se ferme. Une occlusion équilibrée est essentielle pour une mastication efficace, le confort musculaire et la santé des articulations de la mâchoire, en prévenant les douleurs et l’usure dentaire",
         "whoIsItFor": "Personnes souffrant de douleurs à la mâchoire, de claquements à l'ouverture de la bouche, de difficultés à mastiquer, de maux de tête fréquents ou de grincement de dents.",
         "benefits": [
           "Soulagement de la douleur et de l'inconfort",
@@ -500,7 +504,13 @@
           "Amélioration de la santé générale",
           "Suivi continu"
         ],
-        "whatToExpect": "La première consultation comprend une évaluation complète de vos habitudes alimentaires, des mesures corporelles et la définition d'objectifs. Vous recevrez un plan alimentaire personnalisé et un suivi régulier."
+        "whatToExpect": [
+          "Consultation en traumatologie",
+          "Médecine du sport",
+          "Évaluation des dommages corporels post-traumatiques à des fins d’assurance et d’arrêt de travail",
+          "Rapport d’évaluation pour les commissions médicales",
+          "Consultation pour douleurs articulaires, blessures sportives, problèmes de colonne vertébrale, arthrose ou autres affections orthopédiques"
+        ]
       },
       "massage": {
         "title": "Massages Thérapeutiques et de Relaxation",

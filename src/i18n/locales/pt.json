@@ -169,8 +169,8 @@
         "casesDescription": "Veja exemplos reais de transformações com os nossos tratamentos ortodônticos."
       },
       "orofacialHarmonization": {
-        "label": "Tratamentos de Face",
-        "title": "Veja os tratamentos de face que temos na clínica",
+        "label": "",
+        "title": "Veja os tratamentos que temos na clínica",
         "description": "Conheça os procedimentos de harmonização orofacial disponíveis, com foco em resultados naturais, segurança e personalização.",
         "treatments": [
           {
@@ -197,7 +197,7 @@
               "Tratamento de rejuvenescimento",
               "Melhoria da textura da pele",
               "Rápido e com pouco tempo de recuperação",
-              "Resultados graduais e duradouros"
+              "Resultados gradativos e duradouros"
             ]
           },
           {
@@ -211,8 +211,7 @@
           {
             "title": "Fototerapia",
             "items": [
-              "Tratamento estético com luz",
-              "Ajuda na regeneração da pele (acne, rosácea e envelhecimento)",
+              "Tratamento estético com luz para regenerar a pele (acne, rosácea e envelhecimento)",
               "Sem efeitos colaterais"
             ]
           },
@@ -229,7 +228,7 @@
             "title": "Radiofrequência",
             "items": [
               "Rejuvenescimento.",
-              "Melhora a elasticidade e textura da pele.",
+              "Melhora a elasticidade e textura.",
               "Resultados duradouros."
             ]
           },
@@ -247,15 +246,15 @@
             "items": [
               "Radiesse – volume.",
               "Profhilo – textura, luminosidade, hidratação e firmeza.",
-              "Sculptra – estimula a produção de colagénio.",
-              "Rejuvenescimento."
+              "Sculptra – estimula a produção de colagénio e rejuvenescimento."
+
             ]
           }
         ]
       },
     "oralSurgery": {
       "whatIs": "O que é a Cirurgia Oral?",
-      "whatIsDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das dores e tensões maxilares e estruturas anexas dos dentes.",
+      "whatIsDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das doenças e lesões dos maxilares e estruturas anexas, também abrange anomalias dos dentes.",
       "indications": {
         "cysts": "Quistos",
         "mucosaLesions": "Lesões na mucosa/língua",
@@ -278,7 +277,7 @@
       "whatAreImplants": "O que são Implantes Dentários?",
       "whatAreImplantsDesc": "São pequenas estruturas, geralmente de titânio, que são colocadas cirurgicamente no osso maxilar ou mandibular, funcionando como uma raiz artificial.",
       "biocompatibility": "Biocompatibilidade",
-      "biocompatibilityDesc": "O titânio é um metal biocompatível, o que significa que é bem tolerado pelo organismo e permite a osseointegração, ou seja, a união do implante ao osso, conferindo estabilidade e durabilidade ao tratamento.",
+      "biocompatibilityDesc": "O titânio é um metal biocompatível, o que significa que é bem tolerado pelo organismo e permite a osteointegração, ou seja, a união do implante ao osso, conferindo estabilidade e durabilidade ao tratamento.",
       "objective": "Objetivo",
       "objectiveDesc": "Devolver ao paciente a função mastigatória, estética e autoestima, proporcionando uma solução fixa, segura e duradoura para a perda dentária.",
       "indications": "Indicações para Implantes Dentários",
@@ -417,8 +416,8 @@
       },
        "oral-surgery": {
         "title": "Cirurgia Oral",
-        "shortDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das dores e tensões(?) maxilares e estruturas anexas dos dentes",
-        "description": "A Implantologia oferece a solução mais avançada para substituição de dentes perdidos. Os implantes funcionam como raízes artificiais, proporcionando uma base sólida para coroas, pontes ou próteses.",
+        "shortDesc": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das dores e tensões maxilares e estruturas anexas dos dentes.",
+        "description": "Área da medicina dentária que se dedica ao diagnóstico e tratamento cirúrgico das doenças e lesões dos maxilares e estruturas anexa, também abrange anomalias dos dentes.",
         "whoIsItFor": "Quistos, Lesões na mucosa/ língua, Dentes para extrair inclusos ou não, Fibromas (?), Cirurgia para a preparação protética (colocação/ … do osso maxilar/ mandíbula), Gengivoplastias, Correção de retrações gengivais (foto)",
         "benefits": [
           "Solução permanente e duradoura",
@@ -458,7 +457,7 @@
       "tmj": {
         "title": "Oclusão",
         "shortDesc": "Tratamento especializado para disfunções da articulação temporomandibular.",
-        "description": "Disfunção Mandibular (DTM) afeta a articulação e os músculos da mastigação podendo provocar dor estalidos dificuldade em abrir a boca e até de fechar quando em abertura máxima com um simples bocejoA dor oral facial é dor localizada na face, boca ou maxilar. Com diferentes origens e requer avaliação especializada",
+        "description": "A oclusão refere-se à forma como os dentes superiores e inferiores encaixam entre si ao fechar a boca. Uma oclusão equilibrada é essencial para uma mastigação correta, conforto muscular e saúde das articulações da mandíbula, prevenindo dores e desgaste dentário.",
         "whoIsItFor": "Pessoas com dor maxilar constante ao abrir a boca têm dificuldade em mastigar dor de cabeça frequente e/ou que afetam dentes levando ao seu desgaste",
         "benefits": [
           "Alívio da dor e desconforto",
@@ -504,8 +503,13 @@
           "Tratamento personalizado",
           "Opções conservadoras e cirúrgicas"
         ],
-        "whatToExpect": "Consulta de traumatologia e medicina desportiva, incluindo avaliação de lesões relacionadas com a prática desportiva, como o futebol, bem como a análise de danos corporais pós-traumáticos para efeitos de seguros e baixas médicas. Inclui ainda a elaboração de relatórios de avaliação para juntas médicas e a consulta para dor articular, lesões desportivas, problemas da coluna ou outras condições ortopédicas."
-
+        "whatToExpect": [
+          "Consulta de traumatologia",
+          "Medicina do desporto",
+          "Avaliação de danos corporais pós-traumáticos para efeitos de seguros e baixas",
+          "Relatório de avaliação para juntas médicas",
+          "Consulta para dor articular, lesões desportivas, problemas da coluna, artroses ou outras condições ortopédicas"
+        ]
       },
       "nutrition": {
         "title": "Nutrição",
@@ -610,84 +614,88 @@
     }
   },
   "privacy": {
-    "hero": {
-      "label": "Informação Legal",
-      "title": "Política de Privacidade",
-      "description": "Compromisso com a proteção dos seus dados pessoais e a transparência no seu tratamento."
+  "hero": {
+    "label": "Informação Legal",
+    "title": "Política de Privacidade",
+    "description": "Compromisso com a proteção dos seus dados pessoais e a transparência no seu tratamento."
+  },
+  "sections": {
+    "intro": {
+      "title": "1. Introdução",
+      "content": "A Clínica Dentária Marina Macedo, Lda. (doravante designada por “Clínica”) está empenhada na proteção da privacidade e dos dados pessoais dos utilizadores do website, pacientes, contactos e demais titulares de dados. O tratamento de dados pessoais é realizado em conformidade com o Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho, de 27 de abril de 2016 (RGPD), com a Lei n.º 58/2019, de 8 de agosto, e restante legislação aplicável em Portugal. A presente Política de Privacidade explica como recolhemos, utilizamos, conservamos e protegemos os seus dados pessoais."
     },
-    "sections": {
-      "intro": {
-        "title": "1. Introdução",
-        "content": "A Clínica Dentária Marina Macedo, Lda (designada neste documento por “Clínica”) está empenhada na proteção da privacidade e segurança dos seus dados pessoais, em conformidade com o Regulamento Geral sobre a Proteção de Dados (Regulamento (UE) 2016/679 – RGPD) e legislação nacional aplicável. Esta Política de Privacidade descreve como recolhemos, utilizamos e protegemos os seus dados pessoais."
-      },
-      "consent": {
-        "title": "2. Consentimento",
-        "content": "Ao fornecer informações pessoais através deste website ou de outros canais de contacto, compreende e aceita a recolha, processamento e utilização dos seus dados nos termos desta política. Caso visite outras páginas ligadas a este website, essas páginas podem ter políticas próprias, sendo responsáveis pela proteção dos dados recolhidos fora deste site."
-      },
-      "dataCollected": {
-        "title": "3. Dados Pessoais Recolhidos",
-        "content": "Podemos recolher dados como nome, morada, contacto telefónico, email, dados técnicos (como IP e navegador), bem como dados de saúde quando necessários para prestação de serviços clínicos."
-      },
-      "purpose": {
-        "title": "4. Finalidade do Tratamento",
-        "content": "Os seus dados são processados para gestão de consultas, comunicação com o paciente, faturação, emissão de documentos, resposta a pedidos de informação, melhorias nos serviços e cumprimento de obrigações legais."
-      },
-      "legalBasis": {
-        "title": "5. Base Legal do Tratamento",
-        "content": "O tratamento dos seus dados baseia-se no seu consentimento, na execução de um contrato clínico, no cumprimento de obrigações legais ou em interesses legítimos da Clínica relacionados com a melhoria dos serviços."
-      },
-      "dataSharing": {
-        "title": "6. Partilha de Dados",
-        "content": "Os seus dados podem ser partilhados com autoridades competentes, serviços de faturação e entidades subcontratadas que suportem a prestação de serviços, sempre em conformidade com a legislação de proteção de dados. Os seus dados **não serão transferidos para fora da União Europeia** sem garantias legais adequadas."
-      },
-      "dataRetention": {
-        "title": "7. Período de Conservação",
-        "content": "Os seus dados pessoais serão conservados apenas pelo tempo necessário para os fins para os quais foram recolhidos ou conforme exigido por lei."
-      },
-      "dataSecurity": {
-        "title": "8. Segurança dos Dados",
-        "content": "A Clínica implementa medidas técnicas e organizativas para proteger os seus dados contra perda, acesso não autorizado ou tratamento ilícito."
-      },
-      "children": {
-        "title": "9. Privacidade de Menores",
-        "content": "Não recolhemos intencionalmente dados de menores de 18 anos sem o consentimento dos seus responsáveis legais."
-      },
-      "dataSubjectRights": {
-        "title": "10. Direitos dos Titulares dos Dados",
-        "content": "Tem o direito de solicitar acesso, retificação, eliminação, limitação ou oposição ao tratamento dos seus dados pessoais, bem como a portabilidade dos dados quando aplicável. Estes pedidos devem ser feitos por escrito."
-      }
+    "controller": {
+      "title": "2. Responsável pelo Tratamento",
+      "content": "O responsável pelo tratamento dos dados pessoais é a Clínica Dentária Marina Macedo, Lda. Caso aplicável, deverão ainda ser identificados nesta secção o NIF da sociedade, a morada da sede e os contactos oficiais para matérias de privacidade."
     },
-    "contact": {
-      "title": "Contactos",
-      "content": "Para questões relacionadas com esta política ou exercício dos seus direitos, contacte-nos através dos seguintes meios:\n\nEmail: clinicamarina@gmail.com\n\nUnidade de Amares:\nRua Santa Catarina n36 A\n4720-352 Ferreiros Amares\nTelefones: 253 994 232 | 925 460 202\n\nUnidade de Adaúfe:\nTravessa do Comércio n12 sala 2\n4710-820 Adaúfe\nTelefones: 253 284 121 | 913 958 650\n\nUnidade de Bouro:\nLargo do Terreiro, Edifício da Caixa Agrícola\n4720-688 Bouro Santa Maria\nTelefones: 253 377 770 | 935 383 101"
+    "dataCollection": {
+      "title": "3. Dados Pessoais Recolhidos",
+      "content": "A Clínica poderá recolher e tratar, consoante a finalidade aplicável, as seguintes categorias de dados pessoais: dados de identificação, dados de contacto, dados de faturação, dados relativos a marcações e comunicações, dados técnicos de navegação no website e, quando necessário à prestação de cuidados de saúde, dados de saúde e demais elementos clínicos relevantes."
+    },
+    "collectionMethods": {
+      "title": "4. Como os Dados São Recolhidos",
+      "content": "Os dados pessoais podem ser recolhidos através do website, formulários de contacto, pedidos de marcação, comunicações por telefone, por e-mail, presencialmente nas clínicas, bem como no decurso da prestação de cuidados de saúde e da relação administrativa com o paciente."
+    },
+    "purposes": {
+      "title": "5. Finalidades do Tratamento",
+      "content": "Os dados pessoais são tratados para as seguintes finalidades: gestão de marcações e prestação de cuidados de saúde; elaboração e gestão de processos clínicos; comunicação com pacientes e contactos; faturação, cobrança e cumprimento de obrigações contabilísticas e fiscais; resposta a pedidos de informação; gestão administrativa e operacional das clínicas; cumprimento de obrigações legais e regulamentares; defesa de direitos e interesses legítimos da Clínica; e, quando exista consentimento, envio de comunicações informativas ou promocionais."
+    },
+    "legalBasis": {
+      "title": "6. Fundamentos Jurídicos do Tratamento",
+      "content": "O tratamento dos dados pessoais é realizado com base, consoante o caso, na execução de diligências pré-contratuais ou de um contrato, no cumprimento de obrigações legais, na prossecução de interesses legítimos da Clínica e no consentimento do titular quando este for exigido. No caso de dados de saúde, o tratamento é efetuado quando necessário para fins de prestação de cuidados ou tratamentos de saúde, gestão de sistemas e serviços de saúde, medicina preventiva, diagnóstico médico ou cumprimento de obrigações legais aplicáveis."
+    },
+    "healthData": {
+      "title": "7. Dados de Saúde",
+      "content": "Os dados de saúde são considerados uma categoria especial de dados pessoais e são tratados com especiais medidas de confidencialidade, segurança e acesso restrito. O tratamento destes dados é limitado ao estritamente necessário para a prestação de cuidados de saúde, acompanhamento clínico, registos obrigatórios e cumprimento das normas legais e deontológicas aplicáveis."
+    },
+    "dataSharing": {
+      "title": "8. Partilha de Dados",
+      "content": "Os dados pessoais poderão ser comunicados a entidades subcontratantes que prestem serviços à Clínica, tais como prestadores de serviços informáticos, software de gestão clínica, faturação, contabilidade ou arquivo, bem como a entidades públicas, seguradoras, subsistemas de saúde ou outras entidades quando tal seja necessário para o cumprimento de obrigações legais, para a prestação de serviços solicitados pelo titular ou para a defesa de direitos e interesses legítimos da Clínica. Em qualquer caso, a partilha será limitada ao estritamente necessário."
+    },
+    "internationalTransfers": {
+      "title": "9. Transferências Internacionais de Dados",
+      "content": "Em princípio, os dados pessoais são tratados no espaço da União Europeia. Caso venha a ocorrer alguma transferência internacional de dados para fora do Espaço Económico Europeu, a Clínica assegurará a existência de garantias adequadas nos termos da legislação aplicável."
+    },
+    "retention": {
+      "title": "10. Período de Conservação",
+      "content": "Os dados pessoais serão conservados apenas pelo período necessário para as finalidades que justificaram a sua recolha e tratamento, sem prejuízo dos prazos de conservação legalmente exigidos, nomeadamente em matéria clínica, fiscal, contabilística, administrativa ou de responsabilidade legal."
+    },
+    "security": {
+      "title": "11. Segurança dos Dados",
+      "content": "A Clínica adota medidas técnicas e organizativas adequadas para proteger os dados pessoais contra destruição, perda, alteração, divulgação, acesso não autorizado ou qualquer outra forma de tratamento ilícito. O acesso aos dados é limitado às pessoas que deles necessitam para o exercício das respetivas funções."
+    },
+    "children": {
+      "title": "12. Dados de Menores",
+      "content": "O tratamento de dados pessoais de menores é realizado apenas nos termos legalmente permitidos e, quando aplicável, com a intervenção ou autorização dos titulares das responsabilidades parentais ou representantes legais."
+    },
+    "dataSubjectRights": {
+      "title": "13. Direitos dos Titulares dos Dados",
+      "content": "Nos termos da lei, o titular dos dados pode solicitar o acesso aos seus dados pessoais, a sua retificação, o apagamento, a limitação do tratamento, a oposição ao tratamento e, quando aplicável, a portabilidade dos dados. O titular pode ainda retirar o consentimento nos casos em que o tratamento se baseie nesse fundamento, sem comprometer a licitude do tratamento anteriormente efetuado."
+    },
+    "complaints": {
+      "title": "14. Reclamações",
+      "content": "Sem prejuízo de qualquer outro meio de recurso administrativo ou judicial, o titular dos dados tem o direito de apresentar reclamação junto da Comissão Nacional de Proteção de Dados (CNPD), caso considere que o tratamento dos seus dados pessoais viola a legislação aplicável."
+    },
+    "changes": {
+      "title": "15. Alterações à Política de Privacidade",
+      "content": "A Clínica poderá atualizar a presente Política de Privacidade a qualquer momento, sempre que tal se revele necessário para a adequar a alterações legislativas, regulamentares ou operacionais. A versão mais recente estará sempre disponível através dos meios habituais de comunicação da Clínica."
     }
   },
-  "license": {
+  "contact": {
+    "title": "Contactos",
+    "content": "Para questões relacionadas com esta Política de Privacidade ou para o exercício dos seus direitos, poderá contactar a Clínica através dos seguintes meios:\n\nUnidade de Amares:\nRua Santa Catarina n36 A\n4720-352 Ferreiros Amares\nTelefones: 253 994 232 | 925 460 202\n\nUnidade de Adaúfe:\nTravessa do Comércio n12 sala 2\n4710-820 Adaúfe\nTelefones: 253 284 121 | 913 958 650\n\nUnidade de Bouro:\nLargo do Terreiro, Edifício da Caixa Agrícola\n4720-688 Bouro Santa Maria\nTelefones: 253 377 770 | 935 383 101\n\nAutoridade de controlo competente:\nComissão Nacional de Proteção de Dados (CNPD)"
+  }
+},
+ "license": {
   "hero": {
     "label": "Informação Legal",
     "title": "Licenciamento e Registo Legal",
     "description": "Transparência e conformidade com as entidades reguladoras nacionais."
   },
   "sections": {
-    "entity": {
-      "title": "Entidade Responsável",
-      "content": "Clínica Dentária Marina Macedo, Lda\nNIF: (inserir NIF)\nA entidade encontra-se devidamente registada e autorizada para o exercício da atividade de medicina dentária em Portugal."
-    },
-    "regulation": {
-      "title": "Licenciamento",
-      "content": "A Clínica Dentária Marina Macedo encontra-se licenciada pelas entidades competentes para a prestação de cuidados de saúde na área da medicina dentária, cumprindo todos os requisitos legais e técnicos aplicáveis."
-    },
-    "healthAuthority": {
-      "title": "Autoridade de Saúde",
-      "content": "A atividade encontra-se sujeita à supervisão das autoridades nacionais competentes, nomeadamente a Entidade Reguladora da Saúde (ERS) e a Administração Regional de Saúde (ARS)."
-    },
-    "professionalRegistration": {
-      "title": "Registo Profissional",
-      "content": "Os profissionais de saúde da Clínica encontram-se devidamente inscritos na Ordem dos Médicos Dentistas, cumprindo as normas deontológicas e regulamentares em vigor."
-    },
-    "insurance": {
-      "title": "Seguro de Responsabilidade Civil",
-      "content": "A Clínica dispõe de seguro de responsabilidade civil profissional válido, garantindo a proteção dos seus pacientes e o cumprimento das obrigações legais."
+    "clinicLicenses": {
+      "title": "Licenças das Clínicas",
+      "content": "Clínica de Bouro\nNº de Registo de Entidade: E103289\nLicença de Funcionamento: 1634\nDiretora Clínica: Daniela Marisa Mendes Ferreira (OMD 04714)\n\nClínica de Adaúfe\nNº de Registo de Entidade: E103290\nLicença de Funcionamento: 1636\nDiretora Clínica: Ana Rosa Galvão de Castro (OMD 11939)\n\nClínica Médico Dentária Amares\nDiretora Clínica Dentária: Marina Gabriela do Couto Barbosa de Macedo (OMD 01505)\nDiretora Clínica Consultório: Rafaela de Macedo Fernandes (OM 75961)"
     }
   }
 },
