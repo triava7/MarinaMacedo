@@ -557,9 +557,9 @@
     "hero": {
       "label": "Protocolos",
       "title": "Acordos e Convenções",
-      "description": "Trabalhamos com diversas entidades para facilitar o seu acesso aos nossos serviços."
+      "description": "Trabalhamos com diversas entidades para facilitar o seu acesso a alguns dos nossos serviços."
     },
-    "intro": "A nossa clínica mantém protocolos e acordos com várias entidades, permitindo aos beneficiários usufruir de condições especiais nos nossos serviços.",
+    "intro": "A nossa clínica mantém protocolos e acordos com várias entidades, permitindo aos beneficiários usufruir de condições especiais em alguns dos nossos serviços.",
     "contact": "Para mais informações sobre as condições específicas de cada protocolo, entre em contacto connosco."
   },
   "contacts": {
@@ -695,7 +695,7 @@
   "sections": {
     "clinicLicenses": {
       "title": "Licenças das Clínicas",
-      "content": "Clínica de Bouro\nNº de Registo de Entidade: E103289\nLicença de Funcionamento: 1634\nDiretora Clínica: Daniela Marisa Mendes Ferreira (OMD 04714)\n\nClínica de Adaúfe\nNº de Registo de Entidade: E103290\nLicença de Funcionamento: 1636\nDiretora Clínica: Ana Rosa Galvão de Castro (OMD 11939)\n\nClínica Médico Dentária Amares\nDiretora Clínica Dentária: Marina Gabriela do Couto Barbosa de Macedo (OMD 01505)\nDiretora Clínica Consultório: Rafaela de Macedo Fernandes (OM 75961)"
+      "content": "Clínica de Bouro\nNº de Registo de Entidade: E103289\nLicença de Funcionamento: 1634\nDiretora Clínica: Daniela Marisa Mendes Ferreira (OMD 04714)\n\nClínica de Adaúfe\nNº de Registo de Entidade: E103290\nLicença de Funcionamento: 1636\nDiretora Clínica: Ana Rosa Galvão de Castro (OMD 11939)\n\nClínica Médico Dentária Amares\nNº de Registo de Entidade: E178327\nLicença de Funcionamento: 26295\nDiretora Clínica Dentária: Marina Gabriela do Couto Barbosa de Macedo (OMD 01505)\nDiretora Clínica Consultório: Rafaela de Macedo Fernandes (OM 75961)"
     }
   }
 },

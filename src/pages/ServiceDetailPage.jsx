@@ -212,6 +212,67 @@ const renderOrthodonticsSection = () => {
 
   return (
     <>
+
+    <section className="py-20 bg-beige-dark/30 relative">
+        <div className="container-luxury relative">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
+            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
+              {t('services.resultsGallery')}
+            </span>
+            <h2 className="text-title font-serif text-foreground">
+              {t('services.clinicalCases')}
+            </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              {t('services.orthodontics.casesDescription')}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
+          >
+            {clinicalCases.map((caseItem) => (
+          <motion.div
+            key={caseItem.id}
+            variants={fadeInUp}
+            className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 max-w-2xl mx-auto"
+          >
+            <div className="flex flex-col">
+              {caseItem.images.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="aspect-[16/10] relative cursor-pointer"
+                  onClick={() => openImageModal(caseItem.images, idx)}
+                >
+                  <img
+                    src={img.url}
+                    alt={img.caption}
+                    className="w-full h-full object-cover transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0">
+                    <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
+                      {img.caption}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      
       <section className="py-20 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5 relative">
         <div className="container-luxury relative">
 
@@ -281,65 +342,6 @@ const renderOrthodonticsSection = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-beige-dark/30 relative">
-        <div className="container-luxury relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
-            <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-              {t('services.resultsGallery')}
-            </span>
-            <h2 className="text-title font-serif text-foreground">
-              {t('services.clinicalCases')}
-            </h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              {t('services.orthodontics.casesDescription')}
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
-          >
-            {clinicalCases.map((caseItem) => (
-          <motion.div
-            key={caseItem.id}
-            variants={fadeInUp}
-            className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 max-w-2xl mx-auto"
-          >
-            <div className="flex flex-col">
-              {caseItem.images.map((img, idx) => (
-                <div
-                  key={idx}
-                  className="aspect-[16/10] relative cursor-pointer"
-                  onClick={() => openImageModal(caseItem.images, idx)}
-                >
-                  <img
-                    src={img.url}
-                    alt={img.caption}
-                    className="w-full h-full object-cover transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0">
-                    <span className="absolute bottom-2 left-2 text-white text-xs font-semibold px-2 py-1 bg-primary/80 rounded">
-                      {img.caption}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </section>
     </>
@@ -412,7 +414,6 @@ const renderOrthodonticsSection = () => {
     if (serviceId !== 'prosthetics') return null;
 
     const fixedImages = [
-      { url: clinicalCases4 },
       { url: clinicalCases5},
     ];
 
@@ -457,7 +458,8 @@ const renderOrthodonticsSection = () => {
                   </ul>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="order-2 lg:order-1 flex justify-center">
                 {fixedImages.map((img, idx) => (
                   <motion.div
                     key={idx}
@@ -471,6 +473,7 @@ const renderOrthodonticsSection = () => {
                     </div>
                   </motion.div>
                 ))}
+              </div>
               </div>
             </div>
           </motion.div>
@@ -788,12 +791,7 @@ const renderAestheticDentistrySection = () => {
         { url: clinicalCases20, caption: t('services.after') }
       ]
     },
-    {
-      images: [
-        { url: clinicalCases21, caption: t('services.before') },
-        { url: clinicalCases22, caption: t('services.after') }
-      ]
-    }
+
   ];
 
   return (
@@ -904,14 +902,14 @@ const renderAestheticDentistrySection = () => {
             whileInView="animate"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
+            className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center"
           >
             {aestheticCases.map((caseItem, index) => (
-              <motion.div
-                key={`${serviceId}-${index}`}
-                variants={fadeInUp}
-                className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group"
-              >
+            <motion.div
+              key={`${serviceId}-${index}`}
+              variants={fadeInUp}
+              className="bg-background rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group w-full max-w-sm"
+            >
               <div className="flex flex-col">
                 {caseItem.images.map((img, imgIdx) => (
                   <div
