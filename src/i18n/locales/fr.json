@@ -583,7 +583,7 @@
         "address": "Rua Santa Catarina n36 A",
         "city": "4720-352 Ferreiros Amares",
         "phones": ["253 994 232", "925 460 202"],
-        "hours": "Lundi à Vendredi: 9h-12h, 14h-19h\nSamedi: 9h-12h30"
+        "hours": "Lundi à Vendredi: 9h-12h, 14h-19h\nSamedi: 9h-13h"
       },
       "adaufe": {
         "name": "Adaúfe",
@@ -597,7 +597,7 @@
         "address": "Largo do Terreiro, Bâtiment Caixa Agrícola",
         "city": "4720-688 Bouro Santa Maria",
         "phones": ["253 377 770", "935 383 101"],
-        "hours": "À confirmer"
+        "hours": "Lundi au vendredi : 9h-12h, 14h/15h-19h\nSamedi : 9h-13h"
       }
     }
   },

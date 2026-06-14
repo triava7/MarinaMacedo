@@ -29,7 +29,7 @@ const HomePage = () => {
       city: '4720-352 Ferreiros Amares',
       phone: '253 994 232',
       mobilePhone: '925 460 202',
-      hours: 'Seg-Sex: 9h-12h, 14h-19h',
+      hours: 'Seg-Sex: 9h-12h, 14h-19h; Sáb: 9h-13h',
     },
     {
       id: 'adaufe',
