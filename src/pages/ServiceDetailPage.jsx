@@ -217,8 +217,8 @@ const renderOrthodonticsSection = () => {
         <div className="container-luxury relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
             <Camera className="w-8 h-8 text-primary mx-auto mb-4" />
@@ -233,17 +233,15 @@ const renderOrthodonticsSection = () => {
             </p>
           </motion.div>
 
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true, amount: 0 }}
-            variants={staggerContainer}
+          <div
             className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
           >
-            {clinicalCases.map((caseItem) => (
+            {clinicalCases.map((caseItem, caseIdx) => (
           <motion.div
             key={caseItem.id}
-            variants={fadeInUp}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: caseIdx * 0.1 }}
             className="card-luxury rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 max-w-2xl mx-auto"
           >
             <div className="flex flex-col">
@@ -268,7 +266,7 @@ const renderOrthodonticsSection = () => {
             </div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
