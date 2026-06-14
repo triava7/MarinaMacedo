@@ -101,18 +101,7 @@ const Footer = () => {
 
           {/* Schedule */}
           <div>
-            <h4 className="text-primary font-serif text-lg mb-6">{t('footer.schedule')}</h4>
-            <div className="space-y-3 text-sm text-muted-foreground">
-              <div className="flex items-start gap-3">
-                <Clock className="w-4 h-4 text-primary mt-0.5" />
-                <div>
-                  <p>{t('footer.weekdays')}</p>
-                  <p>{t('footer.saturday')}</p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-6">
-              <h5 className="text-foreground font-serif text-sm mb-3">{t('footer.legal')}</h5>
+              <h5 className="text-primary font-serif text-lg mb-6">{t('footer.legal')}</h5>
               <ul className="space-y-2 text-xs text-muted-foreground">
                 <li>
                   <a href="#/privacypolice" className="hover:text-primary transition-colors duration-300">
@@ -130,7 +119,6 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
       </div>

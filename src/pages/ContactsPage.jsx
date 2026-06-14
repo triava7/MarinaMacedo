@@ -35,7 +35,7 @@ const ContactsPage = () => {
       city: t('contacts.locations.bouro.city'),
       phones: ['253 377 770', '935 383 101'],
       hours: t('contacts.locations.bouro.hours'),
-      mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.123456789!2d-8.22!3d41.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLargo%20do%20Terreiro%2C%20Bouro%20Santa%20Maria!5e0!3m2!1spt!2spt!4v1234567890',
+      mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1490.4035555316239!2d-8.272332561063132!3d41.659909396705466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd251d0225097c87%3A0x2c2e977c7ea18a5f!2sR.%20de%20Terreiro%20142!5e0!3m2!1sen!2spt!4v1781435180090!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade',
     },
   ];
 

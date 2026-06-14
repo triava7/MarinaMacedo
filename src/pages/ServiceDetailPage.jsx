@@ -236,7 +236,7 @@ const renderOrthodonticsSection = () => {
           <motion.div
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0 }}
             variants={staggerContainer}
             className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6"
           >
@@ -272,7 +272,7 @@ const renderOrthodonticsSection = () => {
         </div>
       </section>
 
-      
+
       <section className="py-20 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5 relative">
         <div className="container-luxury relative">
 
